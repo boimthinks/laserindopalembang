@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+import SEOHead from '../components/SEOHead.astro';
+import Schema from '../components/Schema.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ScrollReveal from '../components/ScrollReveal';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  noindex?: boolean;
+  schemaType?: 'LocalBusiness' | 'WebSite' | 'FAQPage' | 'BreadcrumbList' | 'Article';
+  schemaData?: Record<string, any>;
+  breadcrumbs?: Array<{ name: string; slug: string }>;
+}
+
+const { title, description, ogImage, noindex, schemaType, schemaData, breadcrumbs } = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="geo.region" content="ID-SS" />
+    <meta name="geo.placename" content="Palembang" />
+    <meta name="geo.position" content="-2.9761;104.7754" />
+    <meta name="ICBM" content="-2.9761, 104.7754" />
+
+    <SEOHead title={title} description={description} ogImage={ogImage} noindex={noindex} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <Schema type="WebSite" />
+    <Schema type="Organization" />
+    {schemaType && <Schema type={schemaType} data={schemaData} />}
+    {breadcrumbs && <Schema type="BreadcrumbList" data={{ items: breadcrumbs }} />}
+  </head>
+  <body class="bg-white min-h-[100dvh] flex flex-col">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <ScrollReveal />
+  </body>
+</html>

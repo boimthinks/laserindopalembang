@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/CTABanner.astro';
+import { materials } from '../../data/materials';
+
+export async function getStaticPaths() {
+  return materials.map((m) => ({
+    params: { slug: m.slug },
+    props: { material: m },
+  }));
+}
+
+const { material } = Astro.props;
+---
+
+<BaseLayout
+  title={material.title}
+  description={material.description}
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Material', slug: '/material/besi' }, { name: material.title, slug: `/material/${material.slug}` }]}
+>
+  <div class="pt-24 pb-12 bg-zinc-50 border-b border-zinc-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <span class="text-xs font-semibold text-brand-accent uppercase tracking-widest">Material</span>
+        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">{material.title}</h1>
+        <p class="text-zinc-600 mt-3 leading-relaxed">{material.intro}</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-primary/10 text-brand-primary text-sm font-medium">
+            Ketebalan: {material.thickness}
+          </span>
+          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-accent/10 text-brand-accent text-sm font-medium">
+            {material.priceRange}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8">
+        <section>
+          <h2 class="text-xl font-bold text-brand-dark mb-4">Keunggulan</h2>
+          <ul class="space-y-3">
+            {material.advantages.map((a) => (
+              <li class="flex items-start gap-3 text-sm text-zinc-600">
+                <svg class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                {a}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-bold text-brand-dark mb-4">Cocok Untuk</h2>
+          <div class="flex flex-wrap gap-2">
+            {material.uses.map((u) => (
+              <span class="px-4 py-2 rounded-lg bg-zinc-50 border border-zinc-200 text-sm text-zinc-700">{u}</span>
+            ))}
+          </div>
+
+          <div class="mt-8 bg-zinc-50 rounded-xl p-6 border border-zinc-100">
+            <h3 class="font-semibold text-brand-dark mb-2">Harga Jasa Potong</h3>
+            <p class="text-sm text-zinc-600">{material.priceRange}</p>
+            <p class="text-xs text-zinc-400 mt-1">*Harga dapat berubah tergantung kerumitan dan quantity</p>
+            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20tanya%20harga" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
+              Tanya Harga
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <CTABanner />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTABanner from '../components/CTABanner.astro';
+import { motifs, motifCategories } from '../data/motifs';
+---
+
+<BaseLayout
+  title="Portfolio Motif Laser Cutting"
+  description="Galeri motif laser cutting Palembang. 15+ motif pagar, kanopi, partisi, railing, dan fasad. Geometris, floral, kaligrafi, batik, dan songket."
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Portfolio', slug: '/portfolio' }]}
+>
+  <div class="pt-24 pb-12 bg-zinc-50 border-b border-zinc-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark">Portfolio Motif</h1>
+        <p class="text-zinc-600 mt-3 leading-relaxed">
+          Inspirasi motif laser cutting untuk pagar, kanopi, partisi, railing, dan fasad bangunan Anda. Klik motif untuk detail.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-wrap gap-2 mb-10">
+        <button class="px-4 py-2 rounded-lg bg-brand-primary text-white text-sm font-medium filter-btn active" data-filter="all">Semua</button>
+        {motifCategories.map((cat) => (
+          <button class="px-4 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-sm font-medium filter-btn hover:bg-zinc-200 transition-colors" data-filter={cat}>
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="motif-grid">
+        {motifs.map((m) => (
+          <div class="motif-item bg-white rounded-xl border border-zinc-100 overflow-hidden hover:shadow-lg transition-all group" data-category={m.category}>
+            <div class="h-48 bg-gradient-to-br from-zinc-50 to-zinc-100 flex items-center justify-center">
+              <span class="text-6xl opacity-60 group-hover:scale-110 transition-transform">{m.icon}</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-semibold text-brand-dark">{m.name}</h3>
+                <span class="text-[10px] font-medium text-zinc-400 bg-zinc-100 px-2 py-0.5 rounded-full">{m.category}</span>
+              </div>
+              <p class="text-sm text-zinc-500 leading-relaxed">{m.description}</p>
+              <div class="mt-3 flex flex-wrap gap-1.5">
+                {m.suitableFor.map((sf) => (
+                  <span class="text-[10px] font-medium text-brand-primary bg-brand-primary/5 px-2 py-0.5 rounded-full">{sf}</span>
+                ))}
+              </div>
+              {(m.isPopular || m.isTrending) && (
+                <div class="mt-3">
+                  {m.isPopular && <span class="text-[10px] font-semibold text-brand-accent bg-brand-accent/10 px-2 py-0.5 rounded-full">★ Populer</span>}
+                  {m.isTrending && <span class="text-[10px] font-semibold text-brand-primary bg-brand-primary/10 px-2 py-0.5 rounded-full">✦ Tren 2026</span>}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="bg-gradient-to-r from-brand-accent/10 to-brand-primary/10 rounded-xl p-6 border border-brand-accent/20 text-center">
+        <h3 class="text-lg font-bold text-brand-dark mb-2">Coba Rancang Motif Sendiri</h3>
+        <p class="text-sm text-zinc-600 mb-4">Pilih motif, atur ukuran, dan lihat preview langsung — gratis!</p>
+        <a href="/builder" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
+          Buka Interactive Builder
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <CTABanner />
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.filter-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach((b) => {
+        b.className = b.className.replace(' bg-brand-primary text-white', ' bg-zinc-100 text-zinc-600');
+        b.classList.remove('active');
+      });
+      btn.className = btn.className.replace(' bg-zinc-100 text-zinc-600', ' bg-brand-primary text-white');
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.motif-item').forEach((item) => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

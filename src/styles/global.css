@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand-primary: #224da8;
+  --color-brand-primary-light: #3366cc;
+  --color-brand-accent: #ff6634;
+  --color-brand-accent-light: #ff8844;
+  --color-brand-dark: #0f1d3d;
+  --color-brand-gray: #64748b;
+  --color-brand-light: #f8fafc;
+  --font-family-display: 'Outfit', sans-serif;
+  --font-family-body: 'Satoshi', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-body);
+    color: #27272a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-stagger > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.animate-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+.animate-stagger.visible > *:nth-child(2) { transition-delay: 100ms; }
+.animate-stagger.visible > *:nth-child(3) { transition-delay: 200ms; }
+.animate-stagger.visible > *:nth-child(4) { transition-delay: 300ms; }
+.animate-stagger.visible > *:nth-child(5) { transition-delay: 400ms; }
+.animate-stagger.visible > *:nth-child(6) { transition-delay: 500ms; }
+.animate-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}

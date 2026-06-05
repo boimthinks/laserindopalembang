@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/CTABanner.astro';
+import { blogPosts } from '../../data/blog';
+
+export async function getStaticPaths() {
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaseLayout
+  title={post.title}
+  description={post.description}
+  schemaType="Article"
+  schemaData={{ headline: post.title, description: post.description, datePublished: post.publishDate, dateModified: post.publishDate }}
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Blog', slug: '/blog' }, { name: post.title, slug: `/blog/${post.slug}` }]}
+>
+  <article class="pt-24 pb-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="mb-8">
+        <div class="flex items-center gap-3 text-xs text-zinc-400 mb-3">
+          <span class="font-medium text-brand-primary bg-brand-primary/5 px-2 py-0.5 rounded-full">{post.category}</span>
+          <span>{post.publishDate}</span>
+          <span>&bull;</span>
+          <span>{post.readTime}</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark leading-tight">{post.title}</h1>
+        <p class="text-zinc-500 mt-3 text-lg">{post.description}</p>
+      </div>
+
+      <div set:html={post.content} class="prose prose-zinc prose-lg max-w-none
+        prose-headings:text-brand-dark prose-headings:font-bold prose-headings:mt-8 prose-headings:mb-3
+        prose-h2:text-xl
+        prose-p:text-zinc-600 prose-p:leading-relaxed
+        prose-strong:text-brand-dark
+        prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline
+        prose-ul:space-y-2 prose-li:text-zinc-600" />
+    </div>
+  </article>
+
+  <div class="pb-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <CTABanner />
+    </div>
+  </div>
+</BaseLayout>

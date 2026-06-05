@@ -1,0 +1,118 @@
+---
+import { SITE } from '../config/site';
+
+interface Props {
+  type: 'LocalBusiness' | 'FAQPage' | 'WebSite' | 'Organization' | 'BreadcrumbList' | 'Service' | 'Article' | 'Product';
+  data?: Record<string, any>;
+}
+
+const { type, data = {} } = Astro.props;
+const siteUrl = Astro.site?.toString() || `https://${SITE.domain}`;
+
+const schemas: Record<string, object> = {
+  WebSite: {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE.name,
+    url: siteUrl,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${siteUrl}/search?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  Organization: {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE.parentBrand,
+    url: siteUrl,
+    logo: `${siteUrl}/favicon.svg`,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: SITE.contact.phone,
+      contactType: 'customer service',
+    },
+  },
+  LocalBusiness: {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: SITE.name,
+    url: siteUrl,
+    image: `${siteUrl}/og-default.png`,
+    telephone: SITE.contact.phone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: SITE.address.street,
+      addressLocality: SITE.address.kelurahan,
+      addressRegion: SITE.address.provinsi,
+      postalCode: SITE.address.kodePos,
+      addressCountry: 'ID',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: -2.9761,
+      longitude: 104.7754,
+    },
+    openingHoursSpecification: [
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '08:00', closes: '17:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '14:00' },
+    ],
+    priceRange: '$$',
+    parentOrganization: { '@type': 'Organization', name: SITE.parentBrand, url: siteUrl },
+  },
+  FAQPage: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: (data.questions || []).map((q: any) => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: { '@type': 'Answer', text: q.answer },
+    })),
+  },
+  BreadcrumbList: {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: (data.items || []).map((item: any, i: number) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: `${siteUrl}${item.slug}`,
+    })),
+  },
+  Service: {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: data.name || '',
+    description: data.description || '',
+    provider: { '@type': 'LocalBusiness', name: SITE.name },
+    areaServed: { '@type': 'City', name: SITE.geo.city },
+  },
+  Article: {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: data.headline || '',
+    description: data.description || '',
+    image: data.image || `${siteUrl}/og-default.png`,
+    datePublished: data.datePublished || '',
+    dateModified: data.dateModified || '',
+    author: { '@type': 'Organization', name: SITE.parentBrand, url: siteUrl },
+  },
+  Product: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: data.name || '',
+    description: data.description || '',
+    image: data.image || `${siteUrl}/og-default.png`,
+    offers: {
+      '@type': 'Offer',
+      price: data.price || '0',
+      priceCurrency: data.currency || 'IDR',
+      availability: 'https://schema.org/InStock',
+    },
+  },
+};
+
+const schema = schemas[type];
+---
+
+{type !== 'FAQPage' && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}

@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { blogPosts } from '../../data/blog';
+
+const posts = blogPosts.map((p) => ({
+  slug: p.slug,
+  title: p.title,
+  description: p.description,
+  publishDate: p.publishDate,
+  category: p.category,
+  readTime: p.readTime,
+}));
+
+const categories = [...new Set(posts.map((p) => p.category))];
+---
+
+<BaseLayout
+  title="Blog & Tips Laser Cutting"
+  description="Blog jasa laser cutting Palembang. Inspirasi desain pagar, kanopi, partisi, tips perawatan, dan tren terbaru 2026."
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Blog', slug: '/blog' }]}
+>
+  <div class="pt-24 pb-12 bg-zinc-50 border-b border-zinc-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark">Blog & Tips</h1>
+        <p class="text-zinc-600 mt-3 leading-relaxed">Inspirasi desain, panduan harga, tips perawatan, dan tren laser cutting terbaru.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-wrap gap-2 mb-10">
+        <button class="px-4 py-2 rounded-lg bg-brand-primary text-white text-sm font-medium blog-filter active" data-cat="all">Semua</button>
+        {categories.map((cat) => (
+          <button class="px-4 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-sm font-medium blog-filter hover:bg-zinc-200 transition-colors" data-cat={cat}>{cat}</button>
+        ))}
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="blog-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.slug}`} class="blog-card bg-white rounded-xl border border-zinc-100 overflow-hidden hover:shadow-lg transition-all no-underline group" data-cat={post.category}>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-zinc-400 mb-3">
+                <span class="font-medium text-brand-primary bg-brand-primary/5 px-2 py-0.5 rounded-full">{post.category}</span>
+                <span>{post.publishDate}</span>
+                <span>&bull;</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h2 class="text-base font-semibold text-brand-dark group-hover:text-brand-primary transition-colors leading-snug">{post.title}</h2>
+              <p class="text-sm text-zinc-500 mt-2 leading-relaxed line-clamp-2">{post.description}</p>
+              <span class="inline-flex items-center gap-1 text-sm text-brand-accent font-medium mt-4 group-hover:gap-2 transition-all">
+                Baca Selengkapnya
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.blog-filter').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.blog-filter').forEach((b) => {
+        b.className = b.className.replace(' bg-brand-primary text-white', ' bg-zinc-100 text-zinc-600');
+        b.classList.remove('active');
+      });
+      btn.className = btn.className.replace(' bg-zinc-100 text-zinc-600', ' bg-brand-primary text-white');
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      document.querySelectorAll('.blog-card').forEach((card) => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

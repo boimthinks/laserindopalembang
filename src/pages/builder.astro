@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SVGWorkspace from '../components/svg-builder/SVGWorkspace';
+---
+
+<BaseLayout
+  title="Interactive SVG Builder"
+  description="Rancang motif laser cutting custom Anda sendiri. Pilih motif, atur ukuran, dan dapatkan estimasi harga langsung."
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Builder', slug: '/builder' }]}
+>
+  <div class="min-h-[100dvh] flex flex-col pt-16">
+    <SVGWorkspace client:load />
+  </div>
+</BaseLayout>

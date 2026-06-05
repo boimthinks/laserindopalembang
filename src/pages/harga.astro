@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTABanner from '../components/CTABanner.astro';
+import Schema from '../components/Schema.astro';
+import { pricingServices, pricingMaterials } from '../data/pricing';
+import { formatPrice } from '../lib/utils';
+---
+
+<BaseLayout
+  title="Harga Laser Cutting Palembang"
+  description="Daftar harga laser cutting Palembang terbaru 2026. Jasa potong plat, pagar, kanopi, partisi, railing, dan fasad. Transparan dan terpercaya."
+  schemaType="LocalBusiness"
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Harga', slug: '/harga' }]}
+>
+  <div class="pt-24 pb-12 bg-zinc-50 border-b border-zinc-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <span class="text-xs font-semibold text-brand-accent uppercase tracking-widest">GEO Pillar #1</span>
+        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Harga Laser Cutting Palembang</h1>
+        <p class="text-zinc-600 mt-3 leading-relaxed">
+          Butuh tahu berapa biaya bikin pagar atau kanopi laser cutting? Berikut perkiraan harga pasar Palembang. 
+          <strong>Harga bisa berbeda tergantung kerumitan motif, material, dan ukuran.</strong> Hubungi kami untuk estimasi akurat!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-xl font-bold text-brand-dark mb-6">Kisaran Harga Layanan</h2>
+      <div class="overflow-x-auto rounded-xl border border-zinc-200 mb-12">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-zinc-50">
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Layanan</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Harga Terendah</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Harga Tertinggi</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Satuan</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Catatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricingServices.map((p) => (
+              <tr class="border-t border-zinc-100 hover:bg-zinc-50 transition-colors">
+                <td class="px-5 py-4 font-medium text-brand-dark">{p.item}</td>
+                <td class="px-5 py-4 text-zinc-700">{formatPrice(p.lowest)}</td>
+                <td class="px-5 py-4 text-zinc-700">{formatPrice(p.highest)}</td>
+                <td class="px-5 py-4 text-zinc-500">/ {p.unit}</td>
+                <td class="px-5 py-4 text-zinc-400 text-xs">{p.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-xl font-bold text-brand-dark mb-6">Harga Jasa Potong per Material</h2>
+      <div class="overflow-x-auto rounded-xl border border-zinc-200">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-zinc-50">
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Material</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Ketebalan</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-700">Harga / m²</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricingMaterials.map((m) => (
+              <tr class="border-t border-zinc-100 hover:bg-zinc-50 transition-colors">
+                <td class="px-5 py-4 font-medium text-brand-dark">{m.material}</td>
+                <td class="px-5 py-4 text-zinc-500">{m.thickness}</td>
+                <td class="px-5 py-4 text-zinc-700">{m.priceRange}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-12">
+        <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-100">
+          <h3 class="text-sm font-semibold text-brand-dark mb-3">💡 Contoh Estimasi</h3>
+          <ul class="space-y-2 text-sm text-zinc-600">
+            <li>• <strong>Pagar 3m × 2m</strong> model geometris sederhana = Rp4.800.000 - Rp9.000.000</li>
+            <li>• <strong>Kanopi 4m × 1.5m</strong> motif hexagon = Rp5.400.000 - Rp14.000.000</li>
+            <li>• <strong>Partisi 2m × 2m</strong> motif floral = Rp2.400.000 - Rp8.000.000</li>
+            <li>• <strong>Railing tangga 4 meter lari</strong> motif garis = Rp3.000.000 - Rp10.000.000</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <CTABanner />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
