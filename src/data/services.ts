@@ -7,6 +7,9 @@ export interface ServiceItem {
   description: string;
   intro: string;
   benefits: string[];
+  longDescription: string;
+  process: { title: string; description: string }[];
+  materialSpecs: { label: string; value: string }[];
   priceRange: string;
   priceMin: number;
   priceMax: number;
@@ -30,6 +33,19 @@ export const services: ServiceItem[] = [
       'Motif songket Palembang, floral, geometris, atau abstrak',
       'Pemasangan profesional dengan garansi 1 tahun',
     ],
+    longDescription: 'Pagar laser cutting adalah solusi modern bagi Anda yang menginginkan keamanan sekaligus nilai estetika tinggi pada hunian. Di Laserindo Palembang, kami memproduksi pagar menggunakan plat besi (mild steel) berkualitas yang dipotong dengan mesin fiber laser tercanggih. Proses ini memungkinkan terciptanya desain yang sangat rumit dan mendetail, mulai dari pola geometris minimalis hingga motif songket khas Palembang yang ikonik. Setiap pagar dirancang untuk tahan terhadap cuaca ekstrem Palembang, memberikan perlindungan maksimal bagi keluarga Anda sekaligus meningkatkan prestise bangunan.',
+    process: [
+      { title: 'Konsultasi Desain', description: 'Kami membantu Anda memilih atau membuat motif custom yang sesuai dengan karakter rumah Anda.' },
+      { title: 'Mockup 3D', description: 'Visualisasi desain pagar pada foto rumah Anda agar hasil akhir sesuai ekspektasi.' },
+      { title: 'Produksi Presisi', description: 'Pemotongan plat menggunakan mesin fiber laser dengan toleransi akurasi hingga 0.1mm.' },
+      { title: 'Finishing & Coating', description: 'Pemberian lapisan anti karat dan cat finishing premium (powder coating atau epoxy).' }
+    ],
+    materialSpecs: [
+      { label: 'Ketebalan Plat', value: '1.2 mm - 2.0 mm' },
+      { label: 'Rangka Utama', value: 'Hollow Galvanis 40x40 / 40x60' },
+      { label: 'Sistem Las', value: 'TIG Welding (Rapi & Kuat)' },
+      { label: 'Warna Finishing', value: 'Black Doff, White, Gold, Bronze' }
+    ],
     priceRange: 'Rp. 800.000 - Rp. 3.000.000 / m²',
     priceMin: 800000,
     priceMax: 3000000,
@@ -50,6 +66,19 @@ export const services: ServiceItem[] = [
       'Tersedia motif geometris, floral, arabesque, dan custom',
       'Finishing cat doff anti karat',
       'Konsultasi desain gratis sebelum produksi',
+    ],
+    longDescription: 'Kanopi laser cutting memberikan sentuhan artistik yang dramatis pada eksterior rumah Anda. Cahaya matahari yang masuk melalui celah motif akan menciptakan bayangan unik di lantai teras, memberikan suasana yang nyaman dan mewah. Kami menggunakan kombinasi rangka yang kokoh dan plat laser cutting yang presisi untuk menjamin keamanan dan keindahan jangka panjang. Cocok untuk area carport, teras depan, hingga balkon lantai dua.',
+    process: [
+      { title: 'Pengukuran Lokasi', description: 'Tim kami melakukan survey untuk memastikan dimensi kanopi presisi dengan area teras.' },
+      { title: 'Pemilihan Atap', description: 'Pilihan atap kaca tempered, polycarbonate, atau alderon di atas panel laser.' },
+      { title: 'Cutting & Fabrikasi', description: 'Pemotongan panel dekoratif menggunakan teknologi fiber laser terbaru.' },
+      { title: 'Instalasi Lapangan', description: 'Pemasangan oleh tim profesional dengan fokus pada keamanan struktur.' }
+    ],
+    materialSpecs: [
+      { label: 'Tebal Plat Panel', value: '1.2 mm - 1.5 mm' },
+      { label: 'Rangka Kanopi', value: 'Hollow Galvanis 50x100 / 40x80' },
+      { label: 'Atap Pelindung', value: 'Tempered Glass / Polycarbonate' },
+      { label: 'Finishing', value: 'Epoxy Primer & PU Paint' }
     ],
     priceRange: 'Rp. 900.000 - Rp. 3.500.000 / m²',
     priceMin: 900000,
@@ -72,6 +101,19 @@ export const services: ServiceItem[] = [
       'Desain custom sesuai tema ruangan',
       'Finishing halus, aman untuk interior',
     ],
+    longDescription: 'Partisi laser cutting adalah pilihan cerdas untuk membagi area fungsional dalam satu ruangan tanpa harus membangun dinding permanen yang masif. Dengan panel yang tembus pandang secara visual (semi-transparent), ruangan tetap terasa luas dan aliran udara tidak terhambat. Material yang kami tawarkan sangat beragam, mulai dari besi untuk kesan industrial, hingga akrilik atau kayu MDF untuk kesan yang lebih ringan dan hangat.',
+    process: [
+      { title: 'Analisis Ruang', description: 'Menentukan dimensi dan tingkat privasi yang dibutuhkan pada sekat ruangan.' },
+      { title: 'Custom Motif', description: 'Bisa mengintegrasikan logo perusahaan atau pola dekoratif kustom.' },
+      { title: 'Cutting Halus', description: 'Proses pemotongan dengan kecepatan tinggi untuk hasil tepi yang halus.' },
+      { title: 'Finishing Interior', description: 'Cat premium yang tidak berbau dan aman untuk lingkungan dalam ruangan.' }
+    ],
+    materialSpecs: [
+      { label: 'Pilihan Material', value: 'Besi, Akrilik, Wood/MDF' },
+      { label: 'Tebal Material', value: '2 mm - 10 mm (Tergantung jenis)' },
+      { label: 'Frame Panel', value: 'Besi Siku / Frame Minimalis' },
+      { label: 'Pemasangan', value: 'Fixing Bolt / Rel Gantung' }
+    ],
     priceRange: 'Rp. 600.000 - Rp. 2.000.000 / m²',
     priceMin: 600000,
     priceMax: 2000000,
@@ -92,6 +134,19 @@ export const services: ServiceItem[] = [
       'Kuat dan aman untuk pegangan tangga',
       'Pilihan motif geometris, floral, atau custom',
       'Finishing cat doff atau coating anti karat',
+    ],
+    longDescription: 'Railing tangga laser cutting menggantikan jeruji tangga konvensional dengan panel dekoratif yang kokoh. Ini adalah solusi bagi rumah bertingkat yang ingin menonjolkan detail arsitektural pada tangga. Dengan teknologi laser, setiap lengkungan pada pegangan tangga dan panel motif diproduksi secara akurat agar pas saat dipasang di lokasi. Keamanan bagi anak-anak juga menjadi prioritas kami dengan mengatur kerapatan motif.',
+    process: [
+      { title: 'Template Lapangan', description: 'Pembuatan mal atau template manual untuk tangga yang memiliki sudut unik.' },
+      { title: 'Produksi Panel', description: 'Pemotongan lembaran plat sesuai dengan kemiringan tangga Anda.' },
+      { title: 'Perakitan Handrail', description: 'Pengelasan panel ke tiang dan pegangan tangga secara presisi.' },
+      { title: 'Finishing Premium', description: 'Pengecatan dengan teknik semprot halus agar nyaman saat disentuh.' }
+    ],
+    materialSpecs: [
+      { label: 'Tebal Plat', value: '1.2 mm - 1.5 mm' },
+      { label: 'Tiang Railing', value: 'Hollow Galvanis / Stainless' },
+      { label: 'Handrail', value: 'Kayu Kamper / Besi Hollow' },
+      { label: 'Toleransi Presisi', value: '0.1 mm' }
     ],
     priceRange: 'Rp. 750.000 - Rp. 2.500.000 / meter lari',
     priceMin: 750000,
@@ -114,6 +169,19 @@ export const services: ServiceItem[] = [
       'Tersedia motif kaligrafi, geometris, arabesque, dan abstrak',
       'Nilai tambah properti Anda',
     ],
+    longDescription: 'Fasad atau "second skin" laser cutting adalah tren arsitektur terbaru yang banyak diaplikasikan pada gedung perkantoran dan ruko di Palembang. Selain memberikan estetika yang sangat kuat, fasad ini berfungsi sebagai penahan panas matahari (sun shading) tanpa menghalangi pandangan ke luar. Kami mampu memproduksi panel fasad dalam jumlah besar dengan konsistensi motif yang sangat terjaga menggunakan mesin fiber laser berkapasitas besar.',
+    process: [
+      { title: 'Survey Konstruksi', description: 'Pengecekan kekuatan struktur bangunan untuk menopang beban fasad.' },
+      { title: 'Desain Modulasi', description: 'Pembagian area fasad menjadi modul-modul yang mudah dipasang.' },
+      { title: 'Cutting Kapasitas Besar', description: 'Produksi cepat untuk mengejar deadline proyek konstruksi.' },
+      { title: 'Pemasangan Scaffold', description: 'Instalasi oleh tim yang berpengalaman bekerja di ketinggian.' }
+    ],
+    materialSpecs: [
+      { label: 'Material Favorit', value: 'Besi Plat / ACP' },
+      { label: 'Tebal Plat', value: '1.4 mm - 2.0 mm' },
+      { label: 'Coating', value: 'Powder Coating (Sangat Awet)' },
+      { label: 'Bracket System', value: 'Heavy Duty Dynabolt' }
+    ],
     priceRange: 'Rp. 1.000.000 - Rp. 4.000.000 / m²',
     priceMin: 1000000,
     priceMax: 4000000,
@@ -134,6 +202,19 @@ export const services: ServiceItem[] = [
       'Tersedia material akrilik, stainless, besi, atau kayu MDF',
       'Pengerjaan cepat — ready dalam 1-2 hari kerja',
       'Cocok untuk papan nama ruangan, trofi, plakat, dan signage',
+    ],
+    longDescription: 'Plat nama dan trofi membutuhkan tingkat ketelitian mikroskopis. Dengan teknologi fiber laser kami, setiap lekukan logo perusahaan atau font yang sangat kecil sekalipun dapat terpotong dengan bersih tanpa sisa pembakaran. Kami melayani pembuatan signage indoor untuk lobi kantor hingga plakat penghargaan eksklusif untuk acara besar di Palembang.',
+    process: [
+      { title: 'Finalisasi Logo', description: 'Pengecekan file logo agar siap dipotong secara digital (vectorizing).' },
+      { title: 'Pemilihan Material', description: 'Kombinasi material akrilik, stainless mirror, atau kayu elegan.' },
+      { title: 'Engraving & Cutting', description: 'Proses potong sekaligus ukir nama dan detail penghargaan.' },
+      { title: 'Packaging Aman', description: 'Pengemasan khusus agar trofi sampai di tangan Anda tanpa cacat.' }
+    ],
+    materialSpecs: [
+      { label: 'Material Akrilik', value: 'Clear, White, Gold Mirror' },
+      { label: 'Material Logam', value: 'Stainless Steel / Brass' },
+      { label: 'Teknik Tambahan', value: 'UV Print / Gravir' },
+      { label: 'Lead Time', value: '1 - 3 Hari Kerja' }
     ],
     priceRange: 'Rp. 50.000 - Rp. 500.000 / pcs',
     priceMin: 50000,

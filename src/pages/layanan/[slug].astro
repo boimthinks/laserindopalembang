@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTABanner from '../../components/CTABanner.astro';
-import Schema from '../../components/Schema.astro';
+import SidebarCTA from '../../components/SidebarCTA.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
 import { SITE } from '../../config/site';
 import { waUrl } from '../../lib/utils';
 import { services } from '../../data/services';
@@ -23,10 +24,25 @@ export async function getStaticPaths() {
 const { service } = Astro.props;
 const siteUrl = Astro.site?.toString() || `https://laserindopalembang.com`;
 const ogImage = `${siteUrl}${service.image}`;
+
 const faqFiltered = faqGeneral.filter((f) =>
   f.question.toLowerCase().includes('harga') ||
   f.question.toLowerCase().includes(service.shortTitle.toLowerCase())
 );
+
+// TOC Headings for Service Page
+const headings = [
+  { slug: 'deskripsi', text: `Tentang ${service.shortTitle}` },
+  { slug: 'keunggulan', text: 'Keunggulan Kami' },
+  { slug: 'proses', text: 'Proses Pengerjaan' },
+  { slug: 'motif', text: 'Pilihan Motif' },
+  { slug: 'spesifikasi', text: 'Spesifikasi Material' },
+  { slug: 'harga', text: 'Estimasi Biaya' },
+];
+
+if (faqFiltered.length > 0) {
+  headings.push({ slug: 'faq', text: 'Tanya Jawab' });
+}
 ---
 
 <BaseLayout
@@ -38,63 +54,113 @@ const faqFiltered = faqGeneral.filter((f) =>
   showLocalBusiness={true}
   breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Index Layanan', slug: '/layanan' }, { name: service.title, slug: `/layanan/${service.slug}` }]}
 >
-  <div class="pt-36 pb-20 bg-brand-surface-alt border-b border-zinc-800 relative overflow-hidden">
+  <!-- Hero Section -->
+  <div class="relative pt-36 pb-20 bg-brand-surface border-b border-zinc-800 overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src={service.image} alt={service.titleSeo} title={service.titleSeo} class="w-full h-full object-cover opacity-20" aria-hidden="true" />
-      <div class="absolute inset-0 bg-gradient-to-r from-brand-surface-alt via-brand-surface-alt/95 to-brand-surface-alt/80"></div>
+      <img src={service.image} alt={service.titleSeo} class="w-full h-full object-cover opacity-10" aria-hidden="true" />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-brand-surface/90 to-transparent"></div>
     </div>
+    
     <div class="max-w-7xl mx-auto px-4 relative z-10">
-      <div class="max-w-2xl">
-        <span class="text-xs font-semibold text-brand-accent uppercase tracking-widest">Layanan</span>
-        <h1 class="text-3xl md:text-4xl font-bold text-white mt-2">{service.title} Palembang</h1>
-        <p class="text-zinc-400 mt-3 leading-relaxed">{service.intro}</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20mau%20tanya%20tentang%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
-            Tanya via WhatsApp
+      <div class="max-w-3xl">
+        <span class="text-xs font-semibold text-brand-primary bg-brand-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">Layanan Utama</span>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mt-6 uppercase leading-tight" style="font-family: 'Oxanium', sans-serif">
+          {service.title} <span class="text-brand-primary">Palembang</span>
+        </h1>
+        <p class="text-zinc-400 mt-6 text-lg md:text-xl leading-relaxed">
+          {service.description}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20mau%20tanya%20tentang%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-primary text-white font-bold hover:bg-brand-primary-light transition-all shadow-lg shadow-brand-primary/20">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Konsultasi Gratis
           </a>
-          <span class="inline-flex items-center px-5 py-2.5 rounded-lg bg-brand-surface border border-zinc-700 text-zinc-300 text-sm font-medium">
+          <div class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-surface-alt border border-zinc-800 text-zinc-300 font-medium">
             {service.priceRange}
-          </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="py-16">
+  <div class="py-16 lg:py-24 bg-brand-surface">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="md:col-span-2 space-y-10">
-          <section>
-            <div class="rounded-xl overflow-hidden border border-zinc-800 mb-8">
-              <img src={service.image} alt={service.titleSeo} title={service.titleSeo} class="w-full aspect-[4/3] object-cover" loading="eager" />
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Main Content -->
+        <main class="lg:col-span-8 space-y-16">
+          
+          <!-- Image & Intro -->
+          <div id="deskripsi" class="scroll-mt-32">
+            <div class="rounded-3xl overflow-hidden aspect-[4/3] border border-zinc-800 shadow-2xl mb-10">
+              <img src={service.image} alt={service.titleSeo} class="w-full h-full object-cover" loading="eager" />
+            </div>
+            <div class="bg-brand-surface-alt p-8 rounded-3xl border border-zinc-800">
+                <p class="text-zinc-300 text-lg leading-relaxed">
+                    {service.longDescription}
+                </p>
+            </div>
+          </div>
+
+          <!-- Keunggulan -->
+          <section id="keunggulan" class="scroll-mt-32">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
+                <span class="w-8 h-1 bg-brand-primary"></span>
+                Keunggulan Kami
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+              {service.benefits.map((b) => (
+                <div class="flex items-start gap-4 p-5 bg-brand-surface-alt rounded-2xl border border-zinc-800 hover:border-brand-primary/30 transition-colors">
+                  <div class="w-8 h-8 rounded-lg bg-brand-primary/10 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-brand-primary" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  </div>
+                  <span class="text-zinc-400 text-sm leading-relaxed">{b}</span>
+                </div>
+              ))}
             </div>
           </section>
 
-          <section>
-            <h2 class="text-xl font-bold text-white mb-4">Keunggulan {service.title}</h2>
-            <ul class="space-y-3">
-              {service.benefits.map((b) => (
-                <li class="flex items-start gap-3 text-sm text-zinc-400">
-                  <svg class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                  {b}
-                </li>
-              ))}
-            </ul>
+          <!-- Proses Pengerjaan -->
+          <section id="proses" class="scroll-mt-32">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
+                <span class="w-8 h-1 bg-brand-primary"></span>
+                Alur Kerja
+            </h2>
+            <div class="space-y-6">
+                {service.process.map((p, index) => (
+                    <div class="flex gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center font-bold shrink-0">
+                                {index + 1}
+                            </div>
+                            {index !== service.process.length - 1 && <div class="w-0.5 h-full bg-zinc-800 my-2"></div>}
+                        </div>
+                        <div class="pb-6">
+                            <h3 class="text-white font-bold text-lg mb-2">{p.title}</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed">{p.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
           </section>
 
-          <section>
-            <h2 class="text-xl font-bold text-white mb-4">Motif Populer untuk {service.title}</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <!-- Motif -->
+          <section id="motif" class="scroll-mt-32">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
+                <span class="w-8 h-1 bg-brand-primary"></span>
+                Pilihan Motif Populer
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
               {service.motifs.map((m) => {
                 const ms = motifSlug(m);
                 const sm = serviceMotifs.find((x) => x.serviceSlug === service.slug && x.slug === ms);
                 return (
-                  <a href={`/layanan/${service.slug}/motif/${ms}`} class="group block bg-brand-surface rounded-xl border border-zinc-800 overflow-hidden hover:border-brand-primary/50 transition-all no-underline">
-                    <div class="aspect-[4/3] overflow-hidden bg-brand-surface-alt">
-                      <img src={sm ? sm.image : service.image} alt={m} title={m} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <a href={`/layanan/${service.slug}/motif/${ms}`} class="group block bg-brand-surface-alt rounded-2xl border border-zinc-800 overflow-hidden hover:border-brand-primary/50 transition-all no-underline">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src={sm ? sm.image : service.image} alt={m} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                     </div>
-                    <div class="p-3">
-                      <span class="text-sm text-zinc-300 group-hover:text-brand-primary transition-colors">{m}</span>
+                    <div class="p-4">
+                      <span class="text-sm font-semibold text-zinc-300 group-hover:text-brand-primary transition-colors">{m}</span>
                     </div>
                   </a>
                 );
@@ -102,57 +168,97 @@ const faqFiltered = faqGeneral.filter((f) =>
             </div>
           </section>
 
-          <section>
-            <h2 class="text-xl font-bold text-white mb-4">Harga {service.title}</h2>
-            <div class="bg-brand-surface-alt rounded-xl p-6 border border-zinc-800">
-              <p class="text-sm text-zinc-400">Kisaran harga untuk {service.title.toLowerCase()} di Palembang:</p>
-              <div class="mt-3 text-2xl font-bold text-brand-primary">{formatPrice(service.priceMin)} - {formatPrice(service.priceMax)}</div>
-              <p class="text-xs text-zinc-500 mt-1">Harga tergantung ukuran, material, dan kerumitan motif</p>
+          <!-- Spesifikasi -->
+          <section id="spesifikasi" class="scroll-mt-32">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
+                <span class="w-8 h-1 bg-brand-primary"></span>
+                Spesifikasi Teknis
+            </h2>
+            <div class="bg-brand-surface-alt rounded-3xl border border-zinc-800 overflow-hidden">
+                <table class="w-full text-left">
+                    <tbody class="divide-y divide-zinc-800">
+                        {service.materialSpecs.map((spec) => (
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-bold text-white bg-zinc-900/50 w-1/3">{spec.label}</td>
+                                <td class="px-6 py-4 text-sm text-zinc-400">{spec.value}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
           </section>
 
+          <!-- Harga -->
+          <section id="harga" class="scroll-mt-32">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
+                <span class="w-8 h-1 bg-brand-primary"></span>
+                Estimasi Biaya
+            </h2>
+            <div class="bg-gradient-to-br from-brand-surface-alt to-zinc-900 rounded-3xl p-8 md:p-10 border border-zinc-800 relative overflow-hidden group">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-full blur-3xl -z-10 group-hover:bg-brand-primary/10 transition-colors"></div>
+              <p class="text-zinc-400 text-sm mb-4">Mulai dari harga pasar Palembang 2026:</p>
+              <div class="text-3xl md:text-5xl font-bold text-brand-primary tracking-tighter">
+                {formatPrice(service.priceMin)} - {formatPrice(service.priceMax)}
+              </div>
+              <p class="text-zinc-500 text-xs mt-6 border-t border-zinc-800 pt-4">
+                * Harga sudah termasuk material standar, jasa cutting laser, dan finishing cat. Harga final ditentukan setelah survey lokasi dan pemilihan motif.
+              </p>
+              <div class="mt-8">
+                <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20ingin%20estimasi%20biaya%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-white bg-brand-primary px-6 py-3 rounded-xl font-bold hover:bg-brand-primary-light transition-all">
+                    Dapatkan Penawaran Resmi
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ -->
           {faqFiltered.length > 0 && (
-            <section>
-              <h2 class="text-xl font-bold text-white mb-4">FAQ {service.title}</h2>
-              <div class="space-y-3">
-                {faqFiltered.slice(0, 4).map((f) => (
-                  <details class="group bg-brand-surface-alt rounded-xl border border-zinc-800 open:border-brand-primary/30 transition-all">
-                    <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-                      <span class="text-sm font-medium text-white">{f.question}</span>
-                      <svg class="w-4 h-4 text-zinc-500 shrink-0 group-open:rotate-180 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            <section id="faq" class="scroll-mt-32">
+              <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
+                <span class="w-8 h-1 bg-brand-primary"></span>
+                Tanya Jawab
+              </h2>
+              <div class="space-y-4">
+                {faqFiltered.slice(0, 5).map((f) => (
+                  <details class="group bg-brand-surface-alt rounded-2xl border border-zinc-800 open:border-brand-primary/30 transition-all">
+                    <summary class="flex items-center justify-between px-6 py-5 cursor-pointer list-none">
+                      <span class="font-bold text-white pr-4">{f.question}</span>
+                      <svg class="w-5 h-5 text-zinc-500 shrink-0 group-open:rotate-180 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
                     </summary>
-                    <div class="px-5 pb-4">
-                      <p class="text-sm text-zinc-400 leading-relaxed">{f.answer}</p>
+                    <div class="px-6 pb-6 border-t border-zinc-800/50 pt-4 text-zinc-400 leading-relaxed text-sm">
+                      {f.answer}
                     </div>
                   </details>
                 ))}
               </div>
             </section>
           )}
-        </div>
+        </main>
 
-        <div class="space-y-4">
-          <div class="bg-brand-surface-alt rounded-xl border border-zinc-800 p-6 sticky top-24">
-            <h3 class="font-semibold text-white mb-3">Layanan Lainnya</h3>
-            <div class="space-y-2">
+        <!-- Sidebar -->
+        <aside class="lg:col-span-4 space-y-8 lg:sticky lg:top-32 h-fit">
+          <TableOfContents headings={headings} />
+          <SidebarCTA />
+          
+          <div class="bg-brand-surface-alt rounded-2xl border border-zinc-800 p-6">
+            <h3 class="text-white font-bold text-sm uppercase tracking-widest mb-6">Layanan Lainnya</h3>
+            <div class="space-y-3">
               {services.filter((s) => s.slug !== service.slug).map((s) => (
-                <a href={`/layanan/${s.slug}`} class="block px-3 py-2 rounded-lg text-sm text-zinc-400 hover:bg-zinc-800/50 hover:text-brand-primary transition-colors no-underline">
-                  {s.title}
+                <a href={`/layanan/${s.slug}`} class="flex items-center justify-between p-3 rounded-xl bg-zinc-900/50 border border-zinc-800 hover:border-brand-primary/30 hover:bg-zinc-800/50 transition-all group no-underline text-zinc-400 hover:text-white">
+                  <span class="text-sm font-medium">{s.title}</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-0 group-hover:opacity-100 transition-opacity"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
               ))}
             </div>
-            <div class="mt-6 pt-4 border-t border-zinc-800">
-              <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20mau%20konsultasi%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="block w-full text-center px-4 py-3 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
-                Konsultasi Gratis
-              </a>
-            </div>
           </div>
-        </div>
+        </aside>
+
       </div>
     </div>
   </div>
 
-  <div class="pb-16">
+  <div class="pb-24">
     <div class="max-w-7xl mx-auto px-4">
       <CTABanner />
     </div>
