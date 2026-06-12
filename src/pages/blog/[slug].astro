@@ -1,49 +1,164 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTABanner from '../../components/CTABanner.astro';
-import { blogPosts } from '../../data/blog';
+import SidebarCTA from '../../components/SidebarCTA.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  return blogPosts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post },
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
   }));
 }
 
-const { post } = Astro.props;
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+
+// Related articles logic: same topic only, exclude current
+const allEntries = await getCollection('blog');
+const relatedPosts = allEntries
+  .filter((p) => p.id !== entry.id && p.data.topik === entry.data.topik)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
 ---
 
 <BaseLayout
-  title={post.title}
-  description={post.description}
+  title={entry.data.titleSeo}
+  description={entry.data.excerpt}
   schemaType="Article"
-  schemaData={{ headline: post.title, description: post.description, datePublished: post.publishDate, dateModified: post.publishDate }}
-  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Blog', slug: '/blog' }, { name: post.title, slug: `/blog/${post.slug}` }]}
+  schemaData={{ 
+    headline: entry.data.title, 
+    description: entry.data.excerpt, 
+    datePublished: entry.data.date, 
+    dateModified: entry.data.date,
+    image: entry.data.imgurl
+  }}
+  breadcrumbs={[
+    { name: 'Beranda', slug: '/' }, 
+    { name: 'Blog', slug: '/blog' }, 
+    { name: entry.data.title, slug: `/blog/${entry.id}` }
+  ]}
 >
-  <article class="pt-24 pb-16">
-    <div class="max-w-3xl mx-auto px-4">
-      <div class="mb-8">
-        <div class="flex items-center gap-3 text-xs text-zinc-400 mb-3">
-          <span class="font-medium text-brand-primary bg-brand-primary/5 px-2 py-0.5 rounded-full">{post.category}</span>
-          <span>{post.publishDate}</span>
-          <span>&bull;</span>
-          <span>{post.readTime}</span>
+  <!-- Hero Section -->
+  <section class="relative pt-36 pb-20 bg-brand-surface border-b border-zinc-800 overflow-hidden">
+    <!-- Background Decoration -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-primary/5 to-transparent -z-10"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl -z-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-4xl">
+        <div class="flex items-center gap-3 text-xs font-semibold mb-6">
+          <span class="text-brand-primary bg-brand-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">{entry.data.topik}</span>
+          <span class="text-zinc-500 uppercase tracking-widest">{entry.data.date}</span>
         </div>
-        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark leading-tight">{post.title}</h1>
-        <p class="text-zinc-500 mt-3 text-lg">{post.description}</p>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight uppercase" style="font-family: 'Oxanium', sans-serif">
+          {entry.data.title}
+        </h1>
+        <p class="text-zinc-400 mt-6 text-lg md:text-xl leading-relaxed max-w-3xl">
+          {entry.data.excerpt}
+        </p>
       </div>
-
-      <div set:html={post.content} class="prose prose-zinc prose-lg max-w-none
-        prose-headings:text-brand-dark prose-headings:font-bold prose-headings:mt-8 prose-headings:mb-3
-        prose-h2:text-xl
-        prose-p:text-zinc-600 prose-p:leading-relaxed
-        prose-strong:text-brand-dark
-        prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline
-        prose-ul:space-y-2 prose-li:text-zinc-600" />
     </div>
-  </article>
+  </section>
 
-  <div class="pb-16">
+  <div class="bg-brand-surface py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Main Content -->
+        <main class="lg:col-span-8">
+          <!-- Featured Image -->
+          <div class="rounded-3xl overflow-hidden aspect-[4/3] border border-zinc-800 bg-zinc-900 mb-12 shadow-2xl">
+            <img 
+              src={entry.data.imgurl} 
+              alt={entry.data.imgalt}
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Intro / Pengantar -->
+          <div class="mb-12">
+            <div class="bg-brand-primary/5 border-l-4 border-brand-primary p-8 rounded-r-2xl">
+              <p class="text-zinc-400 text-lg leading-relaxed italic">
+                "{entry.data.pengantar}"
+              </p>
+            </div>
+          </div>
+
+          <!-- Article Body -->
+          <div class="prose prose-invert prose-lg max-w-none
+            prose-headings:text-white prose-headings:font-bold prose-headings:mt-12 prose-headings:mb-6
+            prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:border-b prose-h2:border-zinc-800 prose-h2:pb-4
+            prose-p:text-zinc-400 prose-p:leading-relaxed prose-p:mb-6
+            prose-strong:text-white
+            prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline
+            prose-ul:space-y-3 prose-li:text-zinc-400
+            prose-table:border prose-table:border-zinc-800 prose-th:bg-zinc-900 prose-td:border-zinc-800
+            prose-blockquote:border-l-brand-primary prose-blockquote:text-zinc-400 prose-blockquote:bg-brand-primary/5 prose-blockquote:p-6 prose-blockquote:rounded-r-xl">
+            <Content />
+          </div>
+
+          <!-- Conclusion / Kesimpulan -->
+          <div class="mt-16 p-8 md:p-12 bg-brand-surface-alt rounded-3xl border border-zinc-800 relative overflow-hidden group">
+            <div class="absolute top-0 left-0 w-2 h-full bg-brand-primary"></div>
+            <h2 class="text-white font-bold text-2xl mb-6 flex items-center gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="text-brand-primary"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Kesimpulan
+            </h2>
+            <p class="text-zinc-300 text-lg leading-relaxed">
+              {entry.data.kesimpulan}
+            </p>
+          </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-4 space-y-8 lg:sticky lg:top-32">
+          {headings.length > 0 && <TableOfContents headings={headings} />}
+          <SidebarCTA />
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Articles -->
+  <section class="py-24 bg-brand-surface-alt border-y border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-xl">
+          <span class="text-xs font-semibold text-brand-primary uppercase tracking-widest">Update Terkait</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 uppercase" style="font-family: 'Oxanium', sans-serif">Artikel Lainnya</h2>
+          <p class="text-zinc-400 mt-4 leading-relaxed">
+            Temukan lebih banyak inspirasi dan panduan seputar jasa laser cutting untuk hunian dan bisnis Anda.
+          </p>
+        </div>
+        <a href="/blog" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-zinc-800 text-white font-medium hover:bg-zinc-800 transition-colors">
+          Lihat Semua Blog
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        {relatedPosts.map((post) => (
+          <BlogCard 
+            id={post.id}
+            title={post.data.title}
+            excerpt={post.data.excerpt}
+            imgurl={post.data.imgurl}
+            imgalt={post.data.imgalt}
+            topik={post.data.topik}
+            date={post.data.date}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <div class="py-16">
     <div class="max-w-7xl mx-auto px-4">
       <CTABanner />
     </div>

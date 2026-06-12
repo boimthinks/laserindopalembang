@@ -9,12 +9,12 @@ import { SITE } from '../config/site';
   description="Bagian dari Sriwijaya Grafika, cutting laser Palembang melayani pemotongan presisi untuk pagar, kanopi, partisi, railing, dan fasad sejak 2008."
   breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Tentang', slug: '/tentang' }]}
 >
-  <div class="pt-24 pb-12 bg-zinc-50 border-b border-zinc-100">
+  <div class="pt-36 pb-20 bg-brand-surface-alt border-b border-zinc-800">
     <div class="max-w-7xl mx-auto px-4">
       <div class="max-w-2xl">
-        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark">Tentang Kami</h1>
-        <p class="text-zinc-600 mt-3 leading-relaxed">
-          {SITE.name} adalah bagian dari {SITE.parentBrand} — perusahaan advertising dan percetakan yang berdiri sejak 2008 di Palembang.
+        <h1 class="text-3xl md:text-4xl font-bold text-white">Tentang Kami</h1>
+        <p class="text-zinc-400 mt-3 leading-relaxed">
+          {SITE.name} adalah spesialisasi laser cutting dari {SITE.parentBrand} — perusahaan advertising dan percetakan terpercaya di Palembang sejak 2008.
         </p>
       </div>
     </div>
@@ -23,36 +23,39 @@ import { SITE } from '../config/site';
   <div class="py-16">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-start">
-        <div class="space-y-6">
+        <div class="space-y-8">
           <section>
-            <h2 class="text-xl font-bold text-brand-dark mb-3">Cerita Kami</h2>
-            <p class="text-sm text-zinc-600 leading-relaxed">
-              Berawal dari workshop kecil di Talang Jambe, Sukarami, Palembang, {SITE.parentBrand} telah melayani ratusan klien dari berbagai sektor — UMKM, properti, hotel, hingga korporat.
+            <h2 class="text-xl font-bold text-white mb-4">Sejarah & Filosofi</h2>
+            <p class="text-zinc-400 leading-relaxed">
+              {SITE.brandNarrative.history}
             </p>
-            <p class="text-sm text-zinc-600 leading-relaxed mt-3">
-              Dengan pengalaman {SITE.stats.yearsExperience}+ tahun di bidang advertising dan manufaktur signage, kami mengembangkan divisi khusus laser cutting untuk menjawab kebutuhan pasar akan pagar, kanopi, partisi, railing, dan fasad berkualitas tinggi dengan presisi maksimal.
+            <p class="text-zinc-400 leading-relaxed mt-4">
+              Owner kami, <span class="text-white font-medium">{SITE.owner}</span>, membangun bisnis ini dari nol sebagai percetakan biasa hingga berkembang menjadi vendor advertising kelas kakap di Palembang. Pengalaman belasan tahun mengajarkan kami bahwa kualitas adalah mata uang utama.
             </p>
           </section>
 
           <section>
-            <h2 class="text-xl font-bold text-brand-dark mb-3">Visi & Misi</h2>
-            <div class="space-y-4">
-              <div class="bg-zinc-50 rounded-xl p-5 border border-zinc-100">
-                <h3 class="font-semibold text-brand-dark text-sm mb-1">Visi</h3>
-                <p class="text-sm text-zinc-600">Menjadi penyedia jasa laser cutting terdepan di Sumatera Selatan dengan standar kualitas internasional.</p>
-              </div>
-              <div class="bg-zinc-50 rounded-xl p-5 border border-zinc-100">
-                <h3 class="font-semibold text-brand-dark text-sm mb-1">Misi</h3>
-                <ul class="text-sm text-zinc-600 space-y-1">
-                  <li>• Memberikan hasil cutting presisi tinggi dengan teknologi modern</li>
-                  <li>• Mewujudkan desain custom setiap klien tanpa batasan kreativitas</li>
-                  <li>• Menjaga kualitas dengan garansi penuh 1 tahun</li>
-                  <li>• Mendukung ekonomi lokal Palembang dan Sumatera Selatan</li>
-                </ul>
-              </div>
+            <h2 class="text-xl font-bold text-white mb-4">Komitmen Sosial</h2>
+            <div class="bg-brand-primary/5 border-l-4 border-brand-primary p-6 rounded-r-xl">
+                <p class="text-zinc-300 italic leading-relaxed">
+                    "{SITE.brandNarrative.commitment}"
+                </p>
+            </div>
+            <p class="text-sm text-zinc-500 mt-3">
+              Kami percaya bahwa bisnis yang baik bukan hanya tentang profit, tapi juga memberikan manfaat nyata bagi masyarakat sekitar workshop kami di Talang Jambe.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white mb-4">Klien Korporat</h2>
+            <div class="flex flex-wrap gap-2">
+                {SITE.majorClients.map((client) => (
+                    <span class="px-3 py-1.5 bg-brand-surface-alt border border-zinc-800 rounded-lg text-xs text-zinc-400">
+                        {client}
+                    </span>
+                ))}
             </div>
           </section>
-        </div>
 
         <div class="space-y-6">
           <div class="bg-brand-dark text-white rounded-xl p-8">
@@ -67,15 +70,15 @@ import { SITE } from '../config/site';
                 <div class="text-sm text-zinc-300">Proyek selesai untuk berbagai klien</div>
               </div>
               <div class="flex items-center gap-4">
-                <div class="text-3xl font-bold text-brand-accent">{SITE.stats.warrantyYear}</div>
+                <div class="text-3xl font-bold text-brand-accent">{SITE.stats.warrantyYears}</div>
                 <div class="text-sm text-zinc-300">Tahun garansi penuh untuk setiap pekerjaan</div>
               </div>
             </div>
           </div>
 
-          <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-100">
-            <h3 class="font-semibold text-brand-dark mb-3">Lokasi Workshop</h3>
-            <p class="text-sm text-zinc-600 leading-relaxed">{SITE.address.full}</p>
+          <div class="bg-brand-surface-alt rounded-xl p-6 border border-zinc-800">
+            <h3 class="font-semibold text-white mb-3">Lokasi Workshop</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">{SITE.address.full}</p>
             <a href={SITE.address.mapsUrl} target="_blank" rel="noopener" class="inline-block mt-3 text-brand-primary font-medium text-sm hover:underline">
               Lihat di Google Maps →
             </a>

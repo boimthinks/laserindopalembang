@@ -229,7 +229,7 @@ function getMotifContent(type: string, variant: number): string {
     case 'Floral Modern':       return floralVariant(variant)
     case 'Kaligrafi / Islami':  return islamicVariant(variant)
     case 'Hexagon / Sarang Lebah': return hexagonVariant(variant)
-    case 'Pohon Gundul / Ranting': return treeVariant(variant)
+    case 'Pohon Ranting': return treeVariant(variant)
     case 'Moroccan Pattern':    return moroccanVariant(variant)
     case 'Daun Tropis Lebar':   return tropicalVariant(variant)
     case 'Garis Vertikal Miring': return lineVariant(variant)
@@ -260,7 +260,7 @@ export { getMotifContent, VW, VH }
 
 export const motifCategoryList = [
   { id: 'geometris', label: 'Geometris', types: ['Geometris Minimalis', 'Hexagon / Sarang Lebah', 'Star Diamond', 'Garis Vertikal Miring'] },
-  { id: 'natural', label: 'Natural', types: ['Floral Modern', 'Daun Tropis Lebar', 'Pohon Gundul / Ranting'] },
+  { id: 'natural', label: 'Natural', types: ['Floral Modern', 'Daun Tropis Lebar', 'Pohon Ranting'] },
   { id: 'etnik', label: 'Etnik', types: ['Batik Nusantara', 'Songket Palembang', 'Anyaman Tradisional', 'Mandala Geometris'] },
   { id: 'mewah', label: 'Mewah', types: ['Kaligrafi / Islami', 'Moroccan Pattern', 'Mozaik Lingkaran', 'Naga & Burung Merak'] },
 ]

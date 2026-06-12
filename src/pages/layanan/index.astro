@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/CTABanner.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import { SITE } from '../../config/site';
+import { waUrl } from '../../lib/utils';
+import { services } from '../../data/services';
+---
+
+
+<BaseLayout
+  title="Layanan Laser Cutting Palembang"
+  description="Jasa laser cutting Palembang untuk pagar, kanopi, partisi, railing tangga, dan fasad bangunan. Konsultasi gratis, desain custom, harga bersaing."
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Layanan', slug: '/layanan' }]}
+>
+  <div class="pt-36 pb-20 bg-brand-surface-alt border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-bold text-white">Layanan Laser Cutting Palembang</h1>
+        <p class="text-zinc-400 mt-3 leading-relaxed">Kami melayani berbagai kebutuhan laser cutting untuk rumah, kantor, dan bangunan komersial di Palembang dan sekitarnya. Semua produk dikerjakan dengan mesin CNC laser presisi tinggi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-stagger">
+        {services.map((s) => <ServiceCard service={s} />)}
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="bg-brand-surface-alt rounded-2xl p-8 md:p-12 border border-zinc-800">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-bold text-white">Tidak menemukan yang Anda cari?</h2>
+          <p class="text-zinc-400 mt-2 leading-relaxed">Kami juga menerima jasa laser cutting custom sesuai desain Anda. Konsultasi gratis, tim kami siap membantu.</p>
+          <a href={waUrl(SITE.contact.whatsapp)} target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
+            Konsultasi Gratis via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

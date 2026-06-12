@@ -1,0 +1,20 @@
+---
+import type { ServiceItem } from '../data/services';
+
+interface Props {
+  service: ServiceItem;
+}
+
+const { service: s } = Astro.props;
+---
+
+<a href={`/layanan/${s.slug}`} class="group bg-brand-surface rounded-xl border border-zinc-800 overflow-hidden hover:border-brand-primary/30 hover:shadow-lg hover:shadow-brand-primary/5 transition-all no-underline">
+  <div class="aspect-[4/3] overflow-hidden bg-brand-surface-alt">
+    <img src={s.image} alt={s.titleSeo} title={s.titleSeo} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+  </div>
+  <div class="p-6">
+    <h3 class="text-lg font-semibold text-white group-hover:text-brand-primary transition-colors">{s.title}</h3>
+    <p class="text-sm text-zinc-400 mt-2 leading-relaxed">{s.description}</p>
+    <div class="mt-4 text-brand-accent text-sm font-medium">{s.priceRange}</div>
+  </div>
+</a>

@@ -14,7 +14,7 @@ export const motifs: Motif[] = [
   { id: 2, name: 'Floral Modern', icon: '🌿', description: 'Daun tropis, monstera, dan palem. Memberi kesan natural dan segar.', category: 'Natural', suitableFor: ['Pagar', 'Partisi', 'Kanopi'] },
   { id: 3, name: 'Kaligrafi / Islami', icon: '🕌', description: 'Arabesque dan geometri Islam. Cocok untuk tampilan religius dan mewah.', category: 'Religius', suitableFor: ['Pagar Depan', 'Fasad', 'Partisi'] },
   { id: 4, name: 'Hexagon / Sarang Lebah', icon: '⬡', description: 'Pola hexagon berulang yang industrial dan modern.', category: 'Industrial', suitableFor: ['Fasad', 'Kanopi', 'Partisi'] },
-  { id: 5, name: 'Pohon Gundul / Ranting', icon: '🌳', description: 'Batang dan ranting artistik. Cocok untuk tampilan natural-elegant.', category: 'Artistik', suitableFor: ['Fasad', 'Pagar', 'Railing'] },
+  { id: 5, name: 'Pohon Ranting', icon: '🌳', description: 'Batang dan ranting artistik. Cocok untuk tampilan natural-elegant.', category: 'Artistik', suitableFor: ['Fasad', 'Pagar', 'Railing'] },
   { id: 6, name: 'Moroccan Pattern', icon: '🔶', description: 'Pola Maroko geometris yang rumit dan mewah.', category: 'Mewah', suitableFor: ['Fasad', 'Partisi', 'Pagar'] },
   { id: 7, name: 'Daun Tropis Lebar', icon: '🌴', description: 'Monstera, palem, dan daun pisang. Tren 2026 untuk tampilan tropical.', category: 'Tropical', suitableFor: ['Pagar', 'Partisi', 'Kanopi'], isTrending: true },
   { id: 8, name: 'Garis Vertikal Miring', icon: '📏', description: 'Garis tipis sejajar. Minimalis, hemat biaya, dan tetap elegan.', category: 'Minimalis', suitableFor: ['Railing', 'Pagar', 'Kanopi'] },

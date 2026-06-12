@@ -2,15 +2,17 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-brand-primary: #224da8;
-  --color-brand-primary-light: #3366cc;
-  --color-brand-accent: #ff6634;
-  --color-brand-accent-light: #ff8844;
-  --color-brand-dark: #0f1d3d;
-  --color-brand-gray: #64748b;
-  --color-brand-light: #f8fafc;
-  --font-family-display: 'Outfit', sans-serif;
-  --font-family-body: 'Satoshi', sans-serif;
+  --color-brand-primary: #f97316;
+  --color-brand-primary-light: #fb923c;
+  --color-brand-accent: #f97316;
+  --color-brand-accent-light: #fb923c;
+  --color-brand-dark: #0a0a0f;
+  --color-brand-gray: #a1a1aa;
+  --color-brand-light: #12121a;
+  --color-brand-surface: #12121a;
+  --color-brand-surface-alt: #1a1a24;
+  --font-family-display: 'Oxanium', sans-serif;
+  --font-family-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 @layer base {
@@ -19,9 +21,24 @@
   }
   body {
     font-family: var(--font-family-body);
-    color: #27272a;
+    background-color: var(--color-brand-surface);
+    color: #d4d4d8;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  h1 {
+    font-family: var(--font-family-display);
+    text-transform: uppercase;
+  }
+  a {
+    color: var(--color-brand-primary);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--color-brand-primary-light);
+  }
+  ::selection {
+    background-color: rgba(249, 115, 22, 0.3);
   }
 }
 
@@ -50,3 +67,23 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+.animate-fade-in.visible {
+  opacity: 1;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.animate-scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+

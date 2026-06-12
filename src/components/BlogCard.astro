@@ -1,0 +1,36 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  excerpt: string;
+  imgurl: string;
+  imgalt: string;
+  topik: string;
+  date: string;
+}
+
+const { id, title, excerpt, imgurl, imgalt, topik, date } = Astro.props;
+---
+
+<a href={`/blog/${id}`} class="blog-card bg-brand-surface-alt rounded-xl border border-zinc-800 overflow-hidden hover:shadow-lg hover:shadow-brand-primary/5 transition-all no-underline group" data-cat={topik}>
+  <div class="aspect-[4/3] overflow-hidden">
+    <img 
+      src={imgurl} 
+      alt={imgalt} 
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      loading="lazy"
+    />
+  </div>
+  <div class="p-6">
+    <div class="flex items-center gap-2 text-xs text-zinc-500 mb-3">
+      <span class="font-medium uppercase text-brand-primary bg-brand-primary/10 px-4 py-1 rounded-full">{topik}</span>
+      <span>{date}</span>
+    </div>
+    <h2 class="text-base font-semibold text-white group-hover:text-brand-primary transition-colors leading-snug">{title}</h2>
+    <p class="text-sm text-zinc-400 mt-2 leading-relaxed line-clamp-2">{excerpt}</p>
+    <span class="inline-flex items-center gap-1 text-sm text-brand-accent font-medium mt-4 group-hover:gap-2 transition-all">
+      Baca Selengkapnya
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </span>
+  </div>
+</a>

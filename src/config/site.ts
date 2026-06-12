@@ -1,16 +1,33 @@
 export const SITE = {
-  name: 'Cutting Laser Palembang',
-  shortName: 'CLP',
-  tagline: 'Presisi Tanpa Kompromi — Laser Cutting untuk Rumah, Kantor & Bangunan Anda',
-  domain: 'cutting.sriwijayagrafika.com',
+  name: 'Laserindo Palembang',
+  shortName: 'Laserindo',
   parentBrand: 'Sriwijaya Grafika',
+  owner: 'M. Edy Munandar',
+  tagline: 'Presisi Tanpa Kompromi — Jasa Laser Cutting Palembang Terpercaya Sejak 2008',
+  domain: 'laserindopalembang.com',
+
+  brandNarrative: {
+    history: 'Didirikan oleh M. Edy Munandar, Sriwijaya Grafika telah melayani Palembang selama lebih dari 16 tahun. Melewati pasang surut industri, kami kini hadir lebih kuat melalui Laserindo Palembang sebagai spesialisasi laser cutting presisi tinggi.',
+    commitment: 'Kami bangga memberdayakan tenaga kerja lokal, termasuk rekan-rekan Tuna Rungu yang handal dan kreatif di workshop kami di Talang Jambe.',
+    usp: 'Bukan sekadar memotong, kami membangun kedekatan emosional dengan klien melalui garansi 1 tahun penuh dan konsultasi desain gratis.'
+  },
+
+  majorClients: [
+    'Gedung Walikota Palembang',
+    'Kejati Sumsel (Kejaksaan Tinggi Sumatera Selatan)',
+    'SPBU Pertamina',
+    'Super Indo',
+    'DPRD Ogan Komering Ilir (OKI)',
+    'SMP Islam Bina Insani',
+    'Kedai Pempek Maris'
+  ],
 
   contact: {
-    phone: '0812-3456-7890',
-    phoneRaw: '6281234567890',
-    whatsapp: '6281234567890',
-    whatsappText: 'Halo%20Cutting%20Laser%20Palembang%2C%20saya%20mau%20tanya%20tentang...',
-    email: 'cutting@sriwijayagrafika.com',
+    phone: '0852-1511-1125',
+    phoneRaw: '6285215111125',
+    whatsapp: '6285215111125',
+    whatsappText: 'Halo%20Laserindo%20Palembang%2C%20saya%20mau%20tanya%20tentang...',
+    email: 'info@laserindopalembang.com',
   },
 
   address: {
@@ -32,10 +49,10 @@ export const SITE = {
   },
 
   colors: {
-    primary: '#224da8',
-    accent: '#ff6634',
-    primaryLight: '#3366cc',
-    accentLight: '#ff8844',
+    primary: '#f97316',
+    accent: '#f97316',
+    primaryLight: '#fb923c',
+    accentLight: '#fb923c',
   },
 
   stats: {

@@ -2,9 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTABanner from '../../components/CTABanner.astro';
 import Schema from '../../components/Schema.astro';
+import { SITE } from '../../config/site';
+import { waUrl } from '../../lib/utils';
 import { services } from '../../data/services';
+import { serviceMotifs } from '../../data/serviceMotifs';
 import { faqGeneral } from '../../data/faq';
 import { formatPrice } from '../../lib/utils';
+
+function motifSlug(name: string): string {
+  return name.toLowerCase().replace(/&/g, 'dan').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
 
 export async function getStaticPaths() {
   return services.map((s) => ({
@@ -14,6 +21,8 @@ export async function getStaticPaths() {
 }
 
 const { service } = Astro.props;
+const siteUrl = Astro.site?.toString() || `https://laserindopalembang.com`;
+const ogImage = `${siteUrl}${service.image}`;
 const faqFiltered = faqGeneral.filter((f) =>
   f.question.toLowerCase().includes('harga') ||
   f.question.toLowerCase().includes(service.shortTitle.toLowerCase())
@@ -21,23 +30,29 @@ const faqFiltered = faqGeneral.filter((f) =>
 ---
 
 <BaseLayout
-  title={`${service.title} Palembang`}
+  title={`${service.titleSeo}`}
   description={service.description}
+  ogImage={ogImage}
   schemaType="Service"
   schemaData={{ name: service.title, description: service.description }}
-  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Layanan', slug: '/layanan/pagar' }, { name: service.title, slug: `/layanan/${service.slug}` }]}
+  showLocalBusiness={true}
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Index Layanan', slug: '/layanan' }, { name: service.title, slug: `/layanan/${service.slug}` }]}
 >
-  <div class="pt-24 pb-12 bg-zinc-50 border-b border-zinc-100">
-    <div class="max-w-7xl mx-auto px-4">
+  <div class="pt-36 pb-20 bg-brand-surface-alt border-b border-zinc-800 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src={service.image} alt={service.titleSeo} title={service.titleSeo} class="w-full h-full object-cover opacity-20" aria-hidden="true" />
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-surface-alt via-brand-surface-alt/95 to-brand-surface-alt/80"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
       <div class="max-w-2xl">
         <span class="text-xs font-semibold text-brand-accent uppercase tracking-widest">Layanan</span>
-        <h1 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">{service.title} Palembang</h1>
-        <p class="text-zinc-600 mt-3 leading-relaxed">{service.intro}</p>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mt-2">{service.title} Palembang</h1>
+        <p class="text-zinc-400 mt-3 leading-relaxed">{service.intro}</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href={`https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20tanya%20tentang%20${encodeURIComponent(service.title)}`} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
+          <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20mau%20tanya%20tentang%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
             Tanya via WhatsApp
           </a>
-          <span class="inline-flex items-center px-5 py-2.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 text-sm font-medium">
+          <span class="inline-flex items-center px-5 py-2.5 rounded-lg bg-brand-surface border border-zinc-700 text-zinc-300 text-sm font-medium">
             {service.priceRange}
           </span>
         </div>
@@ -50,10 +65,16 @@ const faqFiltered = faqGeneral.filter((f) =>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="md:col-span-2 space-y-10">
           <section>
-            <h2 class="text-xl font-bold text-brand-dark mb-4">Keunggulan {service.title}</h2>
+            <div class="rounded-xl overflow-hidden border border-zinc-800 mb-8">
+              <img src={service.image} alt={service.titleSeo} title={service.titleSeo} class="w-full aspect-[4/3] object-cover" loading="eager" />
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-white mb-4">Keunggulan {service.title}</h2>
             <ul class="space-y-3">
               {service.benefits.map((b) => (
-                <li class="flex items-start gap-3 text-sm text-zinc-600">
+                <li class="flex items-start gap-3 text-sm text-zinc-400">
                   <svg class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                   {b}
                 </li>
@@ -62,37 +83,46 @@ const faqFiltered = faqGeneral.filter((f) =>
           </section>
 
           <section>
-            <h2 class="text-xl font-bold text-brand-dark mb-4">Motif Populer untuk {service.title}</h2>
+            <h2 class="text-xl font-bold text-white mb-4">Motif Populer untuk {service.title}</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {service.motifs.map((m) => (
-                <div class="bg-zinc-50 rounded-lg px-4 py-3 text-sm text-zinc-700 border border-zinc-100">
-                  {m}
-                </div>
-              ))}
+              {service.motifs.map((m) => {
+                const ms = motifSlug(m);
+                const sm = serviceMotifs.find((x) => x.serviceSlug === service.slug && x.slug === ms);
+                return (
+                  <a href={`/layanan/${service.slug}/motif/${ms}`} class="group block bg-brand-surface rounded-xl border border-zinc-800 overflow-hidden hover:border-brand-primary/50 transition-all no-underline">
+                    <div class="aspect-[4/3] overflow-hidden bg-brand-surface-alt">
+                      <img src={sm ? sm.image : service.image} alt={m} title={m} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-3">
+                      <span class="text-sm text-zinc-300 group-hover:text-brand-primary transition-colors">{m}</span>
+                    </div>
+                  </a>
+                );
+              })}
             </div>
           </section>
 
           <section>
-            <h2 class="text-xl font-bold text-brand-dark mb-4">Harga {service.title}</h2>
-            <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-100">
-              <p class="text-sm text-zinc-600">Kisaran harga untuk {service.title.toLowerCase()} di Palembang:</p>
+            <h2 class="text-xl font-bold text-white mb-4">Harga {service.title}</h2>
+            <div class="bg-brand-surface-alt rounded-xl p-6 border border-zinc-800">
+              <p class="text-sm text-zinc-400">Kisaran harga untuk {service.title.toLowerCase()} di Palembang:</p>
               <div class="mt-3 text-2xl font-bold text-brand-primary">{formatPrice(service.priceMin)} - {formatPrice(service.priceMax)}</div>
-              <p class="text-xs text-zinc-400 mt-1">Harga tergantung ukuran, material, dan kerumitan motif</p>
+              <p class="text-xs text-zinc-500 mt-1">Harga tergantung ukuran, material, dan kerumitan motif</p>
             </div>
           </section>
 
           {faqFiltered.length > 0 && (
             <section>
-              <h2 class="text-xl font-bold text-brand-dark mb-4">FAQ {service.title}</h2>
+              <h2 class="text-xl font-bold text-white mb-4">FAQ {service.title}</h2>
               <div class="space-y-3">
                 {faqFiltered.slice(0, 4).map((f) => (
-                  <details class="group bg-white rounded-xl border border-zinc-200 open:border-brand-primary/30 transition-all">
+                  <details class="group bg-brand-surface-alt rounded-xl border border-zinc-800 open:border-brand-primary/30 transition-all">
                     <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
-                      <span class="text-sm font-medium text-brand-dark">{f.question}</span>
-                      <svg class="w-4 h-4 text-zinc-400 shrink-0 group-open:rotate-180 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                      <span class="text-sm font-medium text-white">{f.question}</span>
+                      <svg class="w-4 h-4 text-zinc-500 shrink-0 group-open:rotate-180 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
                     </summary>
                     <div class="px-5 pb-4">
-                      <p class="text-sm text-zinc-600 leading-relaxed">{f.answer}</p>
+                      <p class="text-sm text-zinc-400 leading-relaxed">{f.answer}</p>
                     </div>
                   </details>
                 ))}
@@ -102,17 +132,17 @@ const faqFiltered = faqGeneral.filter((f) =>
         </div>
 
         <div class="space-y-4">
-          <div class="bg-white rounded-xl border border-zinc-100 p-6 sticky top-24">
-            <h3 class="font-semibold text-brand-dark mb-3">Layanan Lainnya</h3>
+          <div class="bg-brand-surface-alt rounded-xl border border-zinc-800 p-6 sticky top-24">
+            <h3 class="font-semibold text-white mb-3">Layanan Lainnya</h3>
             <div class="space-y-2">
               {services.filter((s) => s.slug !== service.slug).map((s) => (
-                <a href={`/layanan/${s.slug}`} class="block px-3 py-2 rounded-lg text-sm text-zinc-600 hover:bg-zinc-50 hover:text-brand-primary transition-colors no-underline">
+                <a href={`/layanan/${s.slug}`} class="block px-3 py-2 rounded-lg text-sm text-zinc-400 hover:bg-zinc-800/50 hover:text-brand-primary transition-colors no-underline">
                   {s.title}
                 </a>
               ))}
             </div>
-            <div class="mt-6 pt-4 border-t border-zinc-100">
-              <a href={`https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20konsultasi%20${encodeURIComponent(service.title)}`} target="_blank" rel="noopener" class="block w-full text-center px-4 py-3 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
+            <div class="mt-6 pt-4 border-t border-zinc-800">
+              <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20mau%20konsultasi%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="block w-full text-center px-4 py-3 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
                 Konsultasi Gratis
               </a>
             </div>

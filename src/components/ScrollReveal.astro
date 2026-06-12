@@ -1,0 +1,30 @@
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+  );
+
+  function observeElements() {
+    document.querySelectorAll('.animate-fade-up, .animate-stagger, .animate-fade-in, .animate-scale-in').forEach((el) => {
+      observer.observe(el);
+    });
+  }
+
+  document.addEventListener('astro:page-load', observeElements);
+  document.addEventListener('DOMContentLoaded', observeElements);
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    observeElements();
+    document.body.classList.add('page-loaded');
+  } else {
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('page-loaded');
+    });
+  }
+</script>
