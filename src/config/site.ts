@@ -27,7 +27,7 @@ export const SITE = {
     phoneRaw: '6285215111125',
     whatsapp: '6285215111125',
     whatsappText: 'Halo%20Laserindo%20Palembang%2C%20saya%20mau%20tanya%20tentang...',
-    email: 'info@laserindopalembang.com',
+    email: 'sriwijayagrafika@gmail.com',
   },
 
   address: {
