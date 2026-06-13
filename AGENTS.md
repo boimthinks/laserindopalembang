@@ -41,6 +41,7 @@ Single source of truth for all contact, social, address & brand data.
 - `/kontak` — Kontak
 - `/tentang` — Tentang Kami
 - `/builder` — Interactive SVG Builder
+- `/katalog` — Katalog Desain (with password protection)
 
 ### Dynamic Routes
 - `/layanan/[slug]` — 6 layanan (pagar, kanopi, partisi, railing, fasad, plat-nama)
@@ -76,6 +77,7 @@ Single source of truth for all contact, social, address & brand data.
 | `ScrollReveal.astro` | Intersection Observer + page enter animations |
 | `ServiceCard.astro` | Reusable card: image + title + description + price range |
 | `BlogCard.astro` | Card for blog index and homepage snippets |
+| `KatalogGallery.tsx` | React — Katalog grid with lightbox and password protection |
 | `MotifPicker.tsx` | React — motif category/type selector |
 | `Controls.tsx` | React — material, variant, size, repeat, price estimate |
 | `SVGWorkspace.tsx` | React — main builder with single + 2×2 tiled preview |
@@ -149,6 +151,10 @@ No external image file for logo.
 - [x] Penambahan section "Update Terbaru" (Blog) di Homepage
 - [x] .gitignore initialized
 - [x] Git repo initialized
+- [x] Implementasi halaman `/katalog` dengan filter, lightbox, dan proteksi password
+- [x] Integrasi `@astrojs/react` untuk komponen interaktif
+- [x] Optimasi Hero Image (mobile specific background via `<picture>`)
+- [x] Perbaikan Blog Grid (visibility di mobile & penghapusan animasi penghambat)
 - [x] AGENTS.md updated
 
 ### 🔜 Before Launch

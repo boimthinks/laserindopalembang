@@ -20,6 +20,23 @@ export function slugifyMotif(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
+export const KATALOG_SUFFIX: Record<string, string> = {
+  'pagar': 'PG',
+  'kanopi': 'KP',
+  'partisi': 'PT',
+  'railing': 'RT',
+  'fasad': 'FS',
+  'plat-nama': 'PN',
+};
+
+export function getKatalogDetails(id: string, service: string) {
+  const suffix = KATALOG_SUFFIX[service] || '';
+  const code = `${id}${suffix}`;
+  const serviceTitle = service.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const title = `${serviceTitle} Motif ${code}`;
+  return { code, title, serviceLabel: serviceTitle };
+}
+
 const serviceSlugMap: Record<string, string> = {
   pagar: 'pagar', 'pagar depan': 'pagar',
   fasad: 'fasad',

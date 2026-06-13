@@ -18,4 +18,16 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const katalog = defineCollection({
+  loader: glob({ pattern: "**/data.md", base: "./src/content/katalog" }),
+  schema: z.object({
+    downloadPassword: z.string(),
+    items: z.array(z.object({
+      id: z.string(),
+      service: z.enum(['pagar', 'kanopi', 'partisi', 'railing', 'fasad', 'plat-nama']),
+      ext: z.string().default('jpg'),
+    })),
+  }),
+});
+
+export const collections = { blog, katalog };
