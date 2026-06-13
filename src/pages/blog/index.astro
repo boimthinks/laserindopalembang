@@ -32,7 +32,7 @@ const categories = [...new Set(posts.map((p) => p.data.topik))];
         ))}
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-stagger" id="blog-grid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="blog-grid">
         {posts.map((post) => (
           <BlogCard 
             id={post.id}

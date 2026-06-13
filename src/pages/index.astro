@@ -57,7 +57,10 @@ const topMotifs = motifs.slice(0, 10).map((m) => ({
   <!-- Hero -->
   <section class="relative pt-28 pb-36 md:pt-60 md:pb-48 overflow-hidden">
     <div class="absolute inset-0 -z-10">
-      <img src="/hero_laserindo_palembang.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+      <picture>
+        <source srcset="/hero_laserindo_palembang_mobile.webp" media="(max-width: 768px)" />
+        <img src="/hero_laserindo_palembang.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+      </picture>
     </div>
     <div class="absolute inset-0 -z-10 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
     <div class="max-w-7xl mx-auto px-4 relative">
