@@ -2,7 +2,7 @@
 title: "Izin Reklame Palembang"
 titleSeo: "Panduan Izin Reklame Palembang — Syarat Dokumen dan Biaya Pajak 2026"
 excerpt: "Jangan sampai kena segel Satpol PP! Simak panduan lengkap cara mengurus izin reklame dan hitung pajak di Palembang."
-date: "23 Juni 2026"
+date: "23 Mei 2026"
 topik: "panduan"
 imgurl: "/img/blog/panduan-izin-reklame-palembang.webp"
 imgalt: "Proses Pengurusan Izin Reklame di DPMPTSP Palembang untuk Signage Toko"

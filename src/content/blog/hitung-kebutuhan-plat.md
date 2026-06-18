@@ -2,7 +2,7 @@
 title: "Hitung Kebutuhan Plat"
 titleSeo: "Panduan Cara Menghitung Kebutuhan Plat Besi untuk Pagar Laser Cutting"
 excerpt: "Jangan salah beli material! Simak panduan teknis menghitung kebutuhan plat besi agar anggaran Anda tetap efisien."
-date: "22 Juni 2026"
+date: "22 Mei 2026"
 topik: "panduan"
 imgurl: "/img/blog/panduan-hitung-plat-laser-cutting.webp"
 imgalt: "Teknik Pengukuran Plat Besi untuk Produksi Laser Cutting di Palembang"

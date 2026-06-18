@@ -75,9 +75,7 @@ if (faqFiltered.length > 0) {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
             Konsultasi Gratis
           </a>
-          <div class="inline-flex items-center px-6 py-3 rounded-xl bg-brand-surface-alt border border-zinc-800 text-zinc-300 font-medium">
-            {service.priceRange}
-          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -192,16 +190,13 @@ if (faqFiltered.length > 0) {
           <section id="harga" class="scroll-mt-32">
             <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase" style="font-family: 'Oxanium', sans-serif">
                 <span class="w-8 h-1 bg-brand-primary"></span>
-                Estimasi Biaya
+                Konsultasi Biaya
             </h2>
             <div class="bg-gradient-to-br from-brand-surface-alt to-zinc-900 rounded-3xl p-8 md:p-10 border border-zinc-800 relative overflow-hidden group">
               <div class="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-full blur-3xl -z-10 group-hover:bg-brand-primary/10 transition-colors"></div>
-              <p class="text-zinc-400 text-sm mb-4">Mulai dari harga pasar Palembang 2026:</p>
-              <div class="text-3xl md:text-5xl font-bold text-brand-primary tracking-tighter">
-                {formatPrice(service.priceMin)} - {formatPrice(service.priceMax)}
-              </div>
-              <p class="text-zinc-500 text-xs mt-6 border-t border-zinc-800 pt-4">
-                * Harga sudah termasuk material standar, jasa cutting laser, dan finishing cat. Harga final ditentukan setelah survey lokasi dan pemilihan motif.
+              <p class="text-zinc-400 text-sm mb-4">Harga menyesuaikan material, ukuran, tingkat kerumitan motif, dan kebutuhan survey lokasi.</p>
+              <p class="text-zinc-400 text-sm mt-6 border-t border-zinc-800 pt-4">
+                Konsultasikan kebutuhan Anda untuk mendapatkan estimasi biaya yang lebih akurat.
               </p>
               <div class="mt-8">
                 <a href={waUrl(SITE.contact.whatsapp, `Halo%2C%20saya%20ingin%20estimasi%20biaya%20${encodeURIComponent(service.title)}`)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-white bg-brand-primary px-6 py-3 rounded-xl font-bold hover:bg-brand-primary-light transition-all">

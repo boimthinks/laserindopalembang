@@ -2,7 +2,7 @@
 title: "Fasad Ruko Basuki Rahmat"
 titleSeo: "Studi Kasus Transformasi Fasad Ruko Modern di Basuki Rahmat Palembang"
 excerpt: "Simak bagaimana ruko lama di jalan protokol Basuki Rahmat berubah menjadi ikonik dengan fasad laser cutting."
-date: "19 Juni 2026"
+date: "12 Juni 2026"
 topik: "studi kasus"
 imgurl: "/img/blog/fasad-ruko-basuki-rahmat-palembang.webp"
 imgalt: "Transformasi Fasad Ruko di Jalan Basuki Rahmat Palembang Menggunakan Laser Cutting"

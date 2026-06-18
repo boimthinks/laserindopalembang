@@ -104,6 +104,7 @@ kesimpulan: "Penutup + CTA WhatsApp 1 paragraf"
 ### 3.3 Gaya Penulisan & Larangan
 - **TANPA EMOJI:** Dilarang menggunakan emoji di dalam artikel.
 - **TANPA TITIK DUA DI HEADING:** Gunakan koma atau dash (—) di H1/H2.
+- **Tanggal Artikel:** Selalu gunakan tanggal hari ini saat menulis artikel baru. Jangan membuat tanggal fiktif di masa depan. Contoh hari ini tanggal 19 Juni 2026, maka gunakan `date: "19 Juni 2026"`.
 - **BODY H2-ONLY:** Di dalam file markdown, jangan tulis ulang H1 (titleSeo) atau pengantar. Langsung mulai dengan `## Section Pertama`.
 - **Aksara:** Hanya gunakan aksara Latin (Bahasa Indonesia & Istilah Teknis Inggris). **DILARANG KERAS** menggunakan aksara China (Hanzi), Jepang, Korea, atau aksara non-Latin lainnya.
 
@@ -157,6 +158,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `signage-gedung-walikota` | Studi Kasus Signage Huruf Timbul LED Gedung Walikota Palembang | 18 Juni 2026 | studi kasus | Penggunaan stainless 304 dan LED waterproof IP68 adalah standar wajib untuk signage gedung publik. |
 | `fasad-ruko-basuki-rahmat` | Studi Kasus Transformasi Fasad Ruko Modern di Basuki Rahmat Palembang | 19 Juni 2026 | studi kasus | Second skin facade meningkatkan privasi dan efisiensi energi ruko tanpa merusak struktur asli. |
 | `kanopi-citra-grand-city` | Studi Kasus Kanopi Mewah Motif Floral di Citra Grand City Palembang | 20 Juni 2026 | studi kasus | Finishing cat otomotif PU sangat penting untuk menjaga estetika kanopi di perumahan elit yang terpapar matahari. |
+| `pagar-cluster-the-pavillion` | Pagar Laser Cutting CitraGrand City The Pavillion Estetika Rumah Tanpa Kehilangan Privasi | 20 Juni 2026 | studi kasus | Motif semi-opaque (40-60% area solid) sangat efektif menjaga privasi hunian cluster tanpa mengorbankan sirkulasi udara dan cahaya alami. |
 | `cara-pilih-motif` | Panduan Memilih Motif Laser Cutting yang Tepat untuk Pagar dan Partisi | 21 Juni 2026 | panduan | Pemilihan motif harus menyelaraskan antara gaya arsitektur rumah dan tingkat privasi yang diinginkan. |
 | `hitung-kebutuhan-plat` | Panduan Cara Menghitung Kebutuhan Plat Besi untuk Pagar Laser Cutting | 22 Juni 2026 | panduan | Ukuran plat standar (122x244) harus menjadi acuan desain untuk meminimalkan sisa material (scrap). |
 | `perizinan-reklame-palembang` | Panduan Izin Reklame Palembang — Syarat Dokumen dan Biaya Pajak 2026 | 23 Juni 2026 | panduan | Kelengkapan legalitas (IPR) melindungi investasi signage dari pembongkaran paksa oleh pihak berwenang. |

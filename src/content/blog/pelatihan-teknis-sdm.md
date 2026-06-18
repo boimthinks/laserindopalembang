@@ -2,7 +2,7 @@
 title: "Pelatihan Teknis SDM"
 titleSeo: "Investasi Manusia — Tim Laserindo Palembang Ikuti Sertifikasi Operasional CNC Laser"
 excerpt: "Bukan hanya mesin yang baru, tim kami juga baru saja menyelesaikan sertifikasi teknis untuk menjamin kualitas produksi Anda."
-date: "25 Juni 2026"
+date: "25 Mei 2026"
 topik: "kabar"
 imgurl: "/img/blog/pelatihan-teknis-sdm-laserindo-palembang.webp"
 imgalt: "Suasana Pelatihan Teknis Operasional Mesin CNC Laser untuk Tim Produksi"

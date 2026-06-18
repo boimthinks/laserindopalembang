@@ -2,7 +2,7 @@
 title: "Pencahayaan LED Signage"
 titleSeo: "Tips Pencahayaan — Cara Mengatur Lampu LED untuk Signage Laser Cutting"
 excerpt: "Signage cantik tapi tidak terlihat di malam hari? Simak tips mengatur pencahayaan LED agar brand Anda bersinar maksimal."
-date: "28 Juni 2026"
+date: "28 Mei 2026"
 topik: "tips"
 imgurl: "/img/blog/tips-pencahayaan-led-signage-laser-cutting.webp"
 imgalt: "Teknik Instalasi Lampu LED Backlit untuk Signage Huruf Timbul"

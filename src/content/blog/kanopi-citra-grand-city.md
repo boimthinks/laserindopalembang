@@ -2,7 +2,7 @@
 title: "Kanopi Citra Grand City"
 titleSeo: "Studi Kasus Kanopi Mewah Motif Floral di Citra Grand City Palembang"
 excerpt: "Lihat bagaimana kanopi laser cutting mempercantik rumah mewah di Citra Grand City dengan motif floral yang elegan."
-date: "20 Juni 2026"
+date: "20 Mei 2026"
 topik: "studi kasus"
 imgurl: "/img/blog/kanopi-citra-grand-city-palembang.webp"
 imgalt: "Kanopi Besi Motif Floral Laser Cutting di Perumahan Citra Grand City Palembang"

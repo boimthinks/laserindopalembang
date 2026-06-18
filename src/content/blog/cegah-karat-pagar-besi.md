@@ -2,7 +2,7 @@
 title: "Cegah Karat Pagar Besi"
 titleSeo: "Tips Teknis — Cara Mencegah Karat pada Pagar Besi Laser Cutting di Palembang"
 excerpt: "Iklim Palembang yang lembap sangat menantang bagi logam. Simak tips ahli kami untuk menjaga pagar Anda tetap baru selama bertahun-tahun."
-date: "27 Juni 2026"
+date: "27 Mei 2026"
 topik: "tips"
 imgurl: "/img/blog/tips-cegah-karat-pagar-besi-palembang.webp"
 imgalt: "Panduan Perawatan Logam Anti Karat untuk Eksterior Rumah"

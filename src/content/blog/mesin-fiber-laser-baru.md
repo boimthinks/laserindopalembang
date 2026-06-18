@@ -2,7 +2,7 @@
 title: "Mesin Fiber Laser Baru"
 titleSeo: "Upgrade Teknologi — Laserindo Palembang Hadirkan Mesin Fiber Laser Berkapasitas Besar"
 excerpt: "Kabar gembira! Kami baru saja mendatangkan mesin fiber laser cutting terbaru untuk meningkatkan kecepatan produksi proyek Anda."
-date: "24 Juni 2026"
+date: "24 Mei 2026"
 topik: "kabar"
 imgurl: "/img/blog/mesin-fiber-laser-baru-laserindo-palembang.webp"
 imgalt: "Instalasi Mesin Fiber Laser Cutting Generasi Terbaru di Workshop Laserindo Palembang"

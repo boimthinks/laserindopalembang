@@ -2,7 +2,7 @@
 title: "Pameran Properti Palembang"
 titleSeo: "Eksistensi Lokal — Laserindo Palembang Hadir di Pameran Properti Terbesar Sumsel"
 excerpt: "Jangan lewatkan booth kami di Palembang Trade Center (PTC)! Lihat langsung sampel produk laser cutting terbaru kami."
-date: "26 Juni 2026"
+date: "26 Mei 2026"
 topik: "kabar"
 imgurl: "/img/blog/pameran-properti-ptc-laserindo-palembang.webp"
 imgalt: "Booth Laserindo Palembang di Pameran Properti Mall PTC"

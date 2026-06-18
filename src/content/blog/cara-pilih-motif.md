@@ -2,7 +2,7 @@
 title: "Cara Pilih Motif"
 titleSeo: "Panduan Memilih Motif Laser Cutting yang Tepat untuk Pagar dan Partisi"
 excerpt: "Jangan asal pilih! Simak panduan lengkap cara memilih motif laser cutting agar sesuai dengan gaya arsitektur rumah Anda."
-date: "21 Juni 2026"
+date: "21 Mei 2026"
 topik: "panduan"
 imgurl: "/img/blog/panduan-memilih-motif-laser-cutting.webp"
 imgalt: "Koleksi Motif Laser Cutting Palembang Terbaru 2026"
