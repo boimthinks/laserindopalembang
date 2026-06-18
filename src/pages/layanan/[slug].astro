@@ -50,7 +50,12 @@ if (faqFiltered.length > 0) {
   description={service.description}
   ogImage={ogImage}
   schemaType="Service"
-  schemaData={{ name: service.title, description: service.description }}
+  schemaData={{ 
+    name: service.title, 
+    description: service.description, 
+    price: service.priceMin, 
+    currency: 'IDR' 
+  }}
   showLocalBusiness={true}
   breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Index Layanan', slug: '/layanan' }, { name: service.title, slug: `/layanan/${service.slug}` }]}
 >

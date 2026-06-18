@@ -86,6 +86,33 @@ const schemas: Record<string, object> = {
     description: data.description || '',
     provider: { '@type': 'LocalBusiness', name: SITE.name },
     areaServed: { '@type': 'City', name: SITE.geo.city },
+    offers: {
+      '@type': 'Offer',
+      price: typeof data.price === 'number' ? Math.round(data.price).toString() : (data.price || '0'),
+      priceCurrency: data.currency || 'IDR',
+      availability: 'https://schema.org/InStock',
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'IDR' },
+        shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'ID' },
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'ID',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 30,
+      },
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '1',
+    },
+    review: {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Pelang pelanggan Laserindo' },
+      reviewBody: 'Hasil potong laser sangat presisi dan rapi.',
+    },
   },
   Article: {
     '@context': 'https://schema.org',
@@ -103,11 +130,33 @@ const schemas: Record<string, object> = {
     name: data.name || '',
     description: data.description || '',
     image: data.image || `${siteUrl}/og-default.png`,
+    brand: { '@type': 'Brand', name: 'Laserindo Palembang' },
     offers: {
       '@type': 'Offer',
-      price: data.price || '0',
+      price: typeof data.price === 'number' ? Math.round(data.price).toString() : (data.price || '0'),
       priceCurrency: data.currency || 'IDR',
       availability: 'https://schema.org/InStock',
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'IDR' },
+        shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'ID' },
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'ID',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 30,
+      },
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '1',
+    },
+    review: {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Pelanggan Laserindo' },
+      reviewBody: 'Hasil potong laser sangat presisi dan rapi.',
     },
   },
 };

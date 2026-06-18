@@ -26,7 +26,13 @@ const waText = `Halo%2C%20saya%20tertarik%20dengan%20motif%20${encodeURIComponen
   description={motif.description}
   ogImage={ogImage}
   schemaType="Product"
-  schemaData={{ name: `Motif ${motif.name} untuk ${service.title}`, description: motif.description, image: `${siteUrl}${motif.image}`, price: formatPrice(service.priceMin), currency: 'IDR' }}
+  schemaData={{ 
+    name: `Motif ${motif.name} untuk ${service.title}`, 
+    description: motif.description, 
+    image: `${siteUrl}${motif.image}`, 
+    price: service.priceMin, 
+    currency: 'IDR' 
+  }}
   showLocalBusiness={true}
   breadcrumbs={[
     { name: 'Beranda', slug: '/' },
