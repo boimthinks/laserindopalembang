@@ -167,6 +167,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `pameran-properti-palembang` | Eksistensi Lokal — Laserindo Palembang Hadir di Pameran Properti Terbesar Sumsel | 26 Juni 2026 | kabar | Edukasi pasar mengenai produk laser cutting lokal berkualitas internasional meningkatkan kepercayaan UMKM. |
 | `cegah-karat-pagar-besi` | Tips Teknis — Cara Mencegah Karat pada Pagar Besi Laser Cutting di Palembang | 27 Juni 2026 | tips | Penggunaan Epoxy Zinc-Rich Primer dan Powder Coating adalah proteksi terbaik melawan korosi di Palembang. |
 | `pencahayaan-led-signage` | Tips Pencahayaan — Cara Mengatur Lampu LED untuk Signage Laser Cutting | 28 Juni 2026 | tips | Suhu warna LED (Kelvin) harus disesuaikan dengan psikologi brand dan material signage yang digunakan. |
+| `kelebihan-fasad-ruko` | Kelebihan Fasad Laser Cutting untuk Ruko Modern di Palembang | 20 Juni 2026 | tips | Penggunaan second skin facade sangat efektif mereduksi panas (3-5°C), menghemat listrik, dan menaikkan nilai properti secara instan. |
 
 ### 4.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
