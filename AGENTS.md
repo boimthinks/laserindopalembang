@@ -1,5 +1,7 @@
 # Laserindo Palembang — Project Context
 
+> **Komunikasi:** Selalu balas instruksi pengguna dengan Bahasa Indonesia yang singkat, padat, dan tidak bertele-tele.
+
 ## Overview
 Astro 5 SSG website for Laserindo Palembang (laserindopalembang.com). SEO/GEO optimized for Palembang market with motif detail pages for long-tail keyword coverage.
 
@@ -32,22 +34,21 @@ Single source of truth for all contact, social, address & brand data.
 
 ---
 
-## Site Structure (60 pages)
+## Site Structure (65 pages)
 
-### Static Pages (7)
+### Static Pages (6)
 - `/` — Beranda (hero image + dark overlay)
 - `/harga` — Harga & Biaya
 - `/faq` — FAQ
 - `/kontak` — Kontak
 - `/tentang` — Tentang Kami
-- `/builder` — Interactive SVG Builder
-- `/katalog` — Katalog Desain (with password protection)
+- `/katalog` — Katalog Desain (KatalogGallery React component with filtering and password protection)
 
 ### Dynamic Routes
 - `/layanan/[slug]` — 6 layanan (pagar, kanopi, partisi, railing, fasad, plat-nama)
 - `/layanan/[service]/motif/[motif]` — 28 motif detail pages (auto-generated from service data, unlimited)
 - `/material/[slug]` — 5 material (besi, stainless, akrilik, kayu-mdf, acp-pvc)
-- `/blog/[id]` — Blog articles via Content Collections
+- `/blog/[id]` — 18 blog articles via Content Collections (Markdown)
 
 ---
 
@@ -77,10 +78,9 @@ Single source of truth for all contact, social, address & brand data.
 | `ScrollReveal.astro` | Intersection Observer + page enter animations |
 | `ServiceCard.astro` | Reusable card: image + title + description + price range |
 | `BlogCard.astro` | Card for blog index and homepage snippets |
+| `TableOfContents.astro` | Sticky TOC nav for service/blog detail pages |
+| `SidebarCTA.astro` | WhatsApp CTA box in content sidebar |
 | `KatalogGallery.tsx` | React — Katalog grid with lightbox and password protection |
-| `MotifPicker.tsx` | React — motif category/type selector |
-| `Controls.tsx` | React — material, variant, size, repeat, price estimate |
-| `SVGWorkspace.tsx` | React — main builder with single + 2×2 tiled preview |
 
 ### Animations
 - Page enter: fade-in + translateY via `body.page-loaded`
@@ -135,7 +135,7 @@ No external image file for logo.
 - [x] Footer: semua teks zinc-400, h4 white
 - [x] Page enter + scroll reveal animations
 - [x] Data files: services, serviceMotifs, motifs, faq, pricing, materials, blog
-- [x] 60 pages generated
+- [x] 65 pages generated
 - [x] 6 layanan detail pages with images (4:3 crop)
 - [x] 28 motif detail pages (`/layanan/[service]/motif/[motif]`)
 - [x] Motif cards with images on service detail page
@@ -156,6 +156,8 @@ No external image file for logo.
 - [x] Optimasi Hero Image (mobile specific background via `<picture>`)
 - [x] Perbaikan Blog Grid (visibility di mobile & penghapusan animasi penghambat)
 - [x] AGENTS.md updated
+- [x] All 18 blog articles humanized via `humanizer` skill
+- [x] Fix compilation errors ([slug].astro and tentang.astro)
 
 ### 🔜 Before Launch
 - [ ] Tulis ulang artikel blog pertama berdasarkan standar Knowledge Base
@@ -184,3 +186,4 @@ No external image file for logo.
 - Portfolio page was removed — all motif link references redirect to `/layanan` instead
 - AI Writing: Rujuk `src/data/laserindo-knowledge-base.md` sebelum menulis blog. Dilarang Hanzi/Emoji.
 - Blog images: Gunakan `imgPrompt` dari frontmatter untuk generate cover di AI Image Generator.
+- Blog humanizing: Gunakan `humanizer` skill untuk menulis ulang artikel blog agar terdengar alami (hapus pola AI, em dash, bahasa promosi).

@@ -11,13 +11,13 @@ pengantar: "Teknologi canggih tanpa operator yang handal hanyalah sekumpulan bes
 kesimpulan: "Kualitas hasil pengerjaan kami adalah refleksi dari keahlian tim di belakangnya. Ingin proyek Anda dikerjakan oleh tenaga ahli bersertifikat? Hubungi Laserindo Palembang sekarang di 0852-1511-1125 untuk hasil laser cutting yang presisi dan bergaransi penuh."
 ---
 
-## Pentingnya Kompetensi Operator di Era Digital
+## Pentingnya kompetensi operator di era digital
 
 Industri laser cutting saat ini telah bertransformasi sepenuhnya menjadi industri berbasis data (CAD/CAM). Seorang operator mesin kini tidak hanya dituntut untuk memiliki kekuatan fisik, tetapi juga kecerdasan digital dalam menerjemahkan gambar arsitektural menjadi perintah kerja mesin yang efisien.
 
 Selama satu minggu penuh, kami mendatangkan instruktur ahli dari distributor mesin laser internasional untuk membekali tim kami dengan teknik-teknik terbaru dalam optimasi pemotongan logam. Pelatihan ini diikuti oleh seluruh jajaran tim, mulai dari desainer komputer hingga operator lapangan.
 
-## Materi Pelatihan: Dari Efisiensi Hingga K3
+## Materi pelatihan: dari efisiensi hingga K3
 
 Program pelatihan kami dirancang secara komprehensif mencakup aspek teknis maupun manajerial:
 
@@ -26,18 +26,19 @@ Program pelatihan kami dirancang secara komprehensif mencakup aspek teknis maupu
 3. **Penyelesaian Masalah (Troubleshooting):** Melatih kecepatan respon tim saat menghadapi material dengan karakteristik sulit agar tidak terjadi kesalahan potong yang merugikan klien.
 4. **Standar Keselamatan Kerja (K3):** Memperketat penggunaan Alat Pelindung Diri (APD) dan prosedur evakuasi darurat sesuai standar industri modern.
 
-## Fokus Khusus pada Rekan Tuna Rungu
+## Fokus khusus pada rekan Tuna Rungu
 
 Sebagaimana komitmen sosial Sriwijaya Grafika sejak 2008, kami sangat bangga memiliki beberapa rekan penyandang **Tuna Rungu** di tim operasional mesin. Dalam pelatihan kali ini, kami menyediakan penerjemah bahasa isyarat khusus teknis agar mereka tetap mendapatkan materi yang sama mendalamnya dengan rekan lainnya.
 
 Menariknya, para instruktur memberikan pujian khusus bagi rekan-rekan Tuna Rungu kami karena mereka menunjukkan tingkat fokus dan ketelitian visual yang lebih tajam saat melakukan pengecekan detail motif laser cutting yang rumit. Ini membuktikan bahwa keterbatasan fisik bukanlah penghalang untuk mencapai standar profesionalisme tertinggi.
 
-## Dampak Langsung Bagi Klien Laserindo Palembang
+## Dampak langsung bagi klien Laserindo Palembang
 
 Apa artinya tim yang bersertifikat bagi Anda sebagai pelanggan?
-*   **Kesalahan Produksi Nihil (Zero Error):** Dengan teknik kalibrasi yang lebih baik, risiko salah ukuran atau motif melenceng bisa ditekan hingga mendekati nol.
-*   **Waktu Tunggu Lebih Singkat:** Tim yang terlatih bekerja lebih sistematis dan cepat, mempercepat penyelesaian pagar atau kanopi rumah Anda.
-*   **Konsultasi Teknis yang Akurat:** Tim desain kami kini lebih paham material mana yang paling stabil untuk motif pilihan Anda, memberikan saran yang lebih berwibawa berdasarkan data teknis.
+
+- **Kesalahan Produksi Nihil (Zero Error):** Dengan teknik kalibrasi yang lebih baik, risiko salah ukuran atau motif melenceng bisa ditekan hingga mendekati nol.
+- **Waktu Tunggu Lebih Singkat:** Tim yang terlatih bekerja lebih sistematis dan cepat, mempercepat penyelesaian pagar atau kanopi rumah Anda.
+- **Konsultasi Teknis yang Akurat:** Tim desain kami kini lebih paham material mana yang paling stabil untuk motif pilihan Anda, memberikan saran yang lebih berwibawa berdasarkan data teknis.
 
 | Manfaat Pelatihan | Sebelum Pelatihan | Setelah Pelatihan |
 |---|---|---|
@@ -45,8 +46,8 @@ Apa artinya tim yang bersertifikat bagi Anda sebagai pelanggan?
 | Lead Time Pagar | 7 - 10 Hari Kerja | 5 - 7 Hari Kerja |
 | Efisiensi Material | Scrap 10-15% | Scrap < 5% |
 
-## Membangun Masa Depan Industri Manufaktur Palembang
+## Membangun masa depan industri manufaktur Palembang
 
-Owner kami, M. Edy Munandar, selalu menekankan bahwa "Karyawan adalah aset perusahaan yang paling berharga." Investasi pada pendidikan dan peningkatan skill tim adalah investasi jangka panjang untuk menjaga nama baik Sriwijaya Grafika yang telah dipercaya warga Palembang selama 16 tahun.
+Pemilik kami, M. Edy Munandar, selalu menekankan bahwa "Karyawan adalah aset perusahaan yang paling berharga." Investasi pada pendidikan dan peningkatan skill tim adalah investasi jangka panjang untuk menjaga nama baik Sriwijaya Grafika yang telah dipercaya warga Palembang selama 16 tahun.
 
 Kami ingin setiap pelanggan yang datang ke workshop kami di Sukarami merasa tenang karena proyeknya berada di tangan para ahli. Kami terus belajar dan berinovasi karena kami paham bahwa standar kualitas "bagus" bagi kami tidaklah cukup — kami mengejar standar "presisi sempurna" di setiap milimeter potongan laser kami.

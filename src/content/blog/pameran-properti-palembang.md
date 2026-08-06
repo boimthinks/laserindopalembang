@@ -11,35 +11,39 @@ pengantar: "Melihat foto di internet memang menarik, namun merasakan tekstur log
 kesimpulan: "Pameran ini adalah kesempatan terbaik untuk mewujudkan rumah impian Anda dengan harga yang lebih terjangkau. Tidak sempat mampir ke mall? Anda tetap bisa mendapatkan konsultasi gratis melalui WhatsApp kami di 0852-1511-1125. Mari rencanakan desain pagar mewah Anda hari ini!"
 ---
 
-## Menyapa Pelanggan di Palembang Trade Center (PTC)
+## Menyapa pelanggan di Palembang Trade Center (PTC)
 
 Palembang Trade Center (PTC) menjadi saksi antusiasme luar biasa warga Palembang terhadap teknologi laser cutting. Selama pameran berlangsung, booth Laserindo Palembang menjadi salah satu titik yang paling ramai dikunjungi oleh para calon pemilik rumah yang sedang merencanakan renovasi eksterior maupun interior.
 
 Sebagai unit spesialisasi dari Sriwijaya Grafika, keikutsertaan kami dalam ajang ini bertujuan untuk memperkenalkan bahwa produk laser cutting kelas dunia kini bisa diproduksi secara lokal di Palembang dengan harga yang sangat bersaing. Anda tidak perlu lagi memesan dari luar kota untuk mendapatkan kualitas gerbang atau fasad yang mewah.
 
-## Demo Sampel Produk: Pagar, Partisi, dan Signage
+## Demo sampel produk: pagar, partisi, dan signage
 
 Di area pameran, kami membawa beberapa unit peraga (display units) skala penuh agar pengunjung bisa melihat sendiri standar kualitas yang kami hasilkan:
 
-1. **Pagar Motif Songket Emas:** Sampel plat besi 2.0 mm dengan motif songket khas Palembang yang dicoating warna emas metalik. Produk ini menjadi favorit pengunjung karena tampilannya yang sangat megah.
-2. **Partisi Interior Minimalis:** Contoh sekat ruang tamu dari bahan akrilik bening dengan gravir logo kustom, menunjukkan betapa halus tepian potongan mesin fiber laser kami.
-3. **Signage Huruf Timbul LED:** Huruf timbul stainless steel dengan cahaya *backlit* yang elegan, sangat cocok untuk toko atau kantor modern.
+- **Pagar Motif Songket Emas:** Sampel plat besi 2.0 mm dengan motif songket khas Palembang yang dicoating warna emas metalik. Produk ini menjadi favorit pengunjung karena tampilannya yang sangat megah.
 
-## Penawaran Spesial Selama Pameran
+- **Partisi Interior Minimalis:** Contoh sekat ruang tamu dari bahan akrilik bening dengan gravir logo kustom, menunjukkan betapa halus tepian potongan mesin fiber laser kami.
+
+- **Signage Huruf Timbul LED:** Huruf timbul stainless steel dengan cahaya *backlit* yang elegan, sangat cocok untuk toko atau kantor modern.
+
+## Penawaran spesial selama pameran
 
 Bagi pengunjung yang melakukan pemesanan (DP) atau menjadwalkan survey lokasi selama pameran berlangsung, kami memberikan beberapa keuntungan eksklusif yang sayang untuk dilewatkan:
 
-*   **Diskon Jasa Potong 15%:** Berlaku untuk semua jenis material logam maupun non-logam.
-*   **Prioritas Lead Time:** Pesanan dari pameran akan masuk ke jalur produksi prioritas agar pagar Anda terpasang lebih cepat.
-*   **Souvenir Kustom:** Setiap pengunjung yang berkonsultasi berhak mendapatkan gantungan kunci hasil laser cutting unik dengan desain ikon Palembang.
+- **Diskon Jasa Potong 15%:** Berlaku untuk semua jenis material logam maupun non-logam.
 
-## Konsultasi Desain On-The-Spot
+- **Prioritas Lead Time:** Pesanan dari pameran akan masuk ke jalur produksi prioritas agar pagar Anda terpasang lebih cepat.
+
+- **Souvenir Kustom:** Setiap pengunjung yang berkonsultasi berhak mendapatkan gantungan kunci hasil laser cutting unik dengan desain ikon Palembang.
+
+## Konsultasi desain on-the-spot
 
 Yang membuat booth kami berbeda adalah kehadiran tim desain teknis kami secara langsung. Banyak pengunjung yang membawa foto rumah mereka dan langsung berkonsultasi mengenai motif mana yang paling pas untuk dipasang.
 
 Tim kami menggunakan tablet untuk mendemonstrasikan katalog digital ribuan motif kami dan memberikan simulasi harga secara instan. Transparansi ini sangat dihargai oleh pengunjung karena mereka bisa langsung menyesuaikan keinginan desain dengan anggaran yang tersedia.
 
-## Testimoni dan Networking dengan Kontraktor
+## Testimoni dan networking dengan kontraktor
 
 Pameran ini juga menjadi ajang temu kangen dengan para kontraktor dan arsitek di Palembang yang telah menjadi mitra setia Sriwijaya Grafika sejak 2008. Kami berdiskusi banyak mengenai tren arsitektur "Modern-Industrial" yang saat ini sedang mewabah di perumahan-perumahan elit Palembang.
 
@@ -49,7 +53,7 @@ Pameran ini juga menjadi ajang temu kangen dengan para kontraktor dan arsitek di
 | Arsitek & Kontraktor | Fasad gedung & Spesifikasi material teknis |
 | Pemilik Usaha / UMKM | Plang nama toko & Signage LED |
 
-## Komitmen Kami untuk Palembang
+## Komitmen kami untuk Palembang
 
 Melihat respon positif dari pasar, kami semakin termotivasi untuk terus menghadirkan inovasi di industri manufaktur signage dan elemen arsitektural. Workshop kami di Talang Jambe siap menindaklanjuti ratusan jadwal survey lokasi yang telah masuk selama pameran ini.
 

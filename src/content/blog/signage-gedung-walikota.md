@@ -7,38 +7,39 @@ topik: "studi kasus"
 imgurl: "/img/blog/signage-gedung-walikota-palembang.webp"
 imgalt: "Pengerjaan Huruf Timbul LED Gedung Walikota Palembang oleh Laserindo"
 imgPrompt: "A professional cinematic shot of large stainless steel LED channel letters forming 'WALIKOTA PALEMBANG' mounted on a government building facade, blue hour lighting, sharp focus, 8k resolution."
-pengantar: "Mengerjakan proyek untuk instansi pemerintah seperti Gedung Walikota Palembang menuntut standar presisi dan daya tahan yang sangat ketat. Sebagai bagian dari Sriwijaya Grafika, Laserindo Palembang dipercaya untuk memproduksi signage huruf timbul LED yang kini menjadi ikon visual di pusat kota Palembang."
-kesimpulan: "Kepercayaan instansi pemerintah adalah bukti nyata kualitas pengerjaan kami. Ingin gedung kantor Anda memiliki signage berkualitas sekelas Gedung Walikota? Hubungi tim teknis Laserindo Palembang di 0852-1511-1125 untuk penawaran profesional dan mockup desain gratis."
+pengantar: "Mengerjakan proyek untuk instansi pemerintah seperti Gedung Walikota Palembang menuntut standar presisi dan daya tahan yang ketat. Sebagai bagian dari Sriwijaya Grafika, Laserindo Palembang dipercaya memproduksi signage huruf timbul LED yang kini menjadi ikon visual di pusat kota Palembang."
+kesimpulan: "Kepercayaan instansi pemerintah adalah bukti kualitas pengerjaan kami. Ingin gedung kantor Anda memiliki signage berkualitas sekelas Gedung Walikota? Hubungi tim teknis Laserindo Palembang di 0852-1511-1125 untuk penawaran profesional dan mockup desain gratis."
 ---
 
-## Tantangan Proyek Ikonik di Pusat Kota
+## Tantangan proyek di pusat kota
 
-Menangani signage untuk gedung pemerintah bukan sekadar soal memotong besi. Ada tanggung jawab moral untuk memastikan produk tersebut mewakili wibawa instansi terkait. Lokasi Gedung Walikota yang berada di area terbuka menuntut material yang mampu menghadapi cuaca ekstrem Palembang, mulai dari terik matahari menyengat hingga hujan badai.
+Membuat signage untuk gedung pemerintah bukan sekadar memotong besi. Ada tanggung jawab untuk memastikan produk tersebut mewakili wibawa instansi terkait. Lokasi Gedung Walikota yang berada di area terbuka menuntut material yang mampu menghadapi cuaca Palembang, mulai dari terik matahari hingga hujan badai.
 
-Tantangan utamanya adalah ukuran huruf yang cukup besar dan harus tetap stabil secara struktur saat terkena angin kencang di ketinggian gedung. Selain itu, sistem pencahayaan harus merata sempurna tanpa ada titik gelap (hotspots) agar terbaca jelas dari jarak jauh pada malam hari.
+Tantangan utamanya adalah ukuran huruf yang cukup besar namun tetap stabil secara struktur saat terkena angin kencang di ketinggian gedung. Sistem pencahayaan juga harus merata tanpa ada titik gelap (hotspots) agar terbaca jelas dari jarak jauh pada malam hari.
 
-## Pemilihan Material Grade Premium
+## Pemilihan material grade premium
 
-Untuk memastikan daya tahan hingga belasan tahun, kami merekomendasikan penggunaan material stainless steel grade 304. Berbeda dengan grade 201, stainless 304 memiliki kandungan kromium dan nikel yang lebih tinggi, membuatnya sangat tahan terhadap korosi meskipun terpapar polusi udara perkotaan yang tinggi.
+Untuk memastikan daya tahan hingga belasan tahun, kami menggunakan stainless steel grade 304. Berbeda dengan grade 201, stainless 304 memiliki kandungan kromium dan nikel yang lebih tinggi, sehingga tahan korosi meskipun terpapar polusi udara perkotaan.
 
-Berikut adalah spesifikasi teknis yang kami gunakan:
+Spesifikasi teknis yang kami gunakan:
+
 - **Tebal Plat:** Stainless Steel 1.2 mm untuk face dan side return.
-- **Sistem Pencahayaan:** Samsung LED Module dengan rating IP68 (Waterproof).
-- **Power Supply:** Rainproof Industrial Grade untuk menjamin kestabilan arus listrik.
+- **Sistem Pencahayaan:** Samsung LED Module dengan rating IP68 (waterproof).
+- **Power Supply:** Rainproof Industrial Grade untuk kestabilan arus listrik.
 - **Struktur Rangka:** Besi siku galvanis yang tersembunyi rapi di balik huruf.
 
-## Proses Produksi Presisi di Workshop Talang Jambe
+## Proses produksi presisi di workshop Talang Jambe
 
-Setiap huruf dipotong menggunakan mesin fiber laser cutting terbaru kami. Teknologi ini memastikan setiap lengkungan huruf memiliki tingkat akurasi 100% sesuai dengan standar branding pemerintah daerah. Proses pengelasan menggunakan teknik TIG (Tungsten Inert Gas) yang menghasilkan sambungan sangat halus dan kuat.
+Setiap huruf dipotong menggunakan mesin fiber laser cutting terbaru kami. Teknologi ini memastikan setiap lengkungan huruf akurat sesuai standar branding pemerintah daerah. Proses pengelasan menggunakan teknik TIG (Tungsten Inert Gas) yang menghasilkan sambungan halus dan kuat.
 
-Salah satu momen krusial adalah instalasi modul LED di dalam rongga huruf. Tim kami memastikan jarak antar modul diatur secara presisi menggunakan perhitungan lumen agar cahaya yang keluar dari balik akrilik diffuser terlihat solid dan elegan.
+Salah satu momen penting adalah pemasangan modul LED di dalam rongga huruf. Tim kami mengatur jarak antar modul dengan perhitungan lumen agar cahaya yang keluar dari balik akrilik diffuser terlihat solid dan elegan.
 
-## Hasil Akhir dan Dampak Visual
+## Hasil akhir dan dampak visual
 
-Setelah instalasi selesai, signage Gedung Walikota tampil sangat mencolok dan profesional. Warna cahaya putih bersih memberikan kesan modern, sementara kilauan stainless steel di siang hari memberikan kesan mewah yang berwibawa.
+Setelah instalasi selesai, signage Gedung Walikota tampil mencolok dan profesional. Warna cahaya putih bersih memberikan kesan modern, sementara kilauan stainless steel di siang hari memberikan kesan mewah yang berwibawa.
 
-Kualitas pengerjaan ini menjadi standar baru bagi proyek-proyek signage korporat dan pemerintahan lainnya di Sumatera Selatan. Daya tahan cat dan cahaya LED tetap terjaga optimal bahkan setelah bertahun-tahun terpasang, membuktikan bahwa investasi pada material premium selalu membuahkan hasil yang setimpal.
+Kualitas pengerjaan ini menjadi standar baru bagi proyek signage korporat dan pemerintahan lain di Sumatera Selatan. Daya tahan cat dan cahaya LED tetap terjaga bahkan setelah bertahun-tahun terpasang, membuktikan bahwa investasi pada material premium sepadan dengan hasilnya.
 
-## Komitmen Garansi dari Sriwijaya Grafika
+## Komitmen garansi dari Sriwijaya Grafika
 
-Sebagaimana kebijakan kami sejak 2008, setiap proyek besar seperti ini mendapatkan jaminan pemeliharaan penuh selama 1 tahun. Kami rutin melakukan pengecekan berkala untuk memastikan tidak ada baut yang longgar atau sistem kelistrikan yang terganggu. Bagi kami, kesuksesan sebuah proyek diukur dari ketahanannya dalam jangka panjang, bukan hanya saat serah terima kunci.
+Seperti kebijakan kami sejak 2008, setiap proyek besar ini mendapat jaminan pemeliharaan penuh selama 1 tahun. Kami rutin melakukan pengecekan berkala untuk memastikan tidak ada baut yang longgar atau sistem kelistrikan yang terganggu. Bagi kami, kesuksesan sebuah proyek diukur dari ketahanannya dalam jangka panjang, bukan hanya saat serah terima.
