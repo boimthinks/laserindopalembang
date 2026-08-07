@@ -168,6 +168,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `cegah-karat-pagar-besi` | Tips Teknis — Cara Mencegah Karat pada Pagar Besi Laser Cutting di Palembang | 27 Juni 2026 | tips | Penggunaan Epoxy Zinc-Rich Primer dan Powder Coating adalah proteksi terbaik melawan korosi di Palembang. |
 | `pencahayaan-led-signage` | Tips Pencahayaan — Cara Mengatur Lampu LED untuk Signage Laser Cutting | 28 Juni 2026 | tips | Suhu warna LED (Kelvin) harus disesuaikan dengan psikologi brand dan material signage yang digunakan. |
 | `kelebihan-fasad-ruko` | Kelebihan Fasad Laser Cutting untuk Ruko Modern di Palembang | 20 Juni 2026 | tips | Penggunaan second skin facade sangat efektif mereduksi panas (3-5°C), menghemat listrik, dan menaikkan nilai properti secara instan. |
+| `kanopi-carport-panduan-material` | Kanopi Laser Cutting untuk Carport — Panduan Memilih Motif dan Material di Palembang | 8 Agustus 2026 | panduan | Pemilihan material (plat 1.2-1.5mm, rangka hollow galvanis) dan jenis atap pelindung (polycarbonate/kaca/spandek) menentukan daya tahan kanopi carport di iklim Palembang. |
 
 ### 4.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
