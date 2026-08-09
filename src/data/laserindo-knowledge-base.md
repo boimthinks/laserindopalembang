@@ -169,6 +169,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `pencahayaan-led-signage` | Tips Pencahayaan — Cara Mengatur Lampu LED untuk Signage Laser Cutting | 28 Juni 2026 | tips | Suhu warna LED (Kelvin) harus disesuaikan dengan psikologi brand dan material signage yang digunakan. |
 | `kelebihan-fasad-ruko` | Kelebihan Fasad Laser Cutting untuk Ruko Modern di Palembang | 20 Juni 2026 | tips | Penggunaan second skin facade sangat efektif mereduksi panas (3-5°C), menghemat listrik, dan menaikkan nilai properti secara instan. |
 | `kanopi-carport-panduan-material` | Kanopi Laser Cutting untuk Carport — Panduan Memilih Motif dan Material di Palembang | 8 Agustus 2026 | panduan | Pemilihan material (plat 1.2-1.5mm, rangka hollow galvanis) dan jenis atap pelindung (polycarbonate/kaca/spandek) menentukan daya tahan kanopi carport di iklim Palembang. |
+| `pagar-kaligrafi-laser-cutting` | Pagar Kaligrafi Laser Cutting — Nuansa Islami Modern untuk Hunian Palembang | 9 Agustus 2026 | tips | Motif kaligrafi menjadi tren bagi pemilik rumah Muslim yang ingin nilai religius di eksterior. Pilihan teks (ayat Al Quran, Asmaul Husna, Bismillah) memengaruhi ukuran panel dan ketebalan plat yang dibutuhkan. |
 
 ### 4.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
