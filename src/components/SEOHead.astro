@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 
 const fullTitle = `${title} | ${SITE.name}`;
-const siteUrl = Astro.site?.toString() || `https://${SITE.domain}`;
+const siteUrl = (Astro.site?.toString() || `https://${SITE.domain}`).replace(/\/$/, '');
 const url = canonicalUrl || siteUrl + Astro.url.pathname;
 const fullOgImage = ogImage.startsWith('http') ? ogImage : siteUrl + ogImage;
 ---

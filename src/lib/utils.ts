@@ -1,3 +1,5 @@
+import { internalLinksMap } from '../data/internalLinks';
+
 export function waUrl(phone: string, text?: string): string {
   const msg = text || 'Halo%20Laserindo%20Palembang%2C%20saya%20mau%20tanya%20tentang...';
   return `https://wa.me/${phone}?text=${msg}`;
@@ -50,4 +52,34 @@ export function motifImagePath(motifName: string, suitableFor: string[]): string
   const raw = suitableFor[0]?.toLowerCase() || 'pagar';
   const serviceSlug = serviceSlugMap[raw] || 'pagar';
   return `/img/motif/${serviceSlug}-${slugifyMotif(motifName)}.webp`;
+}
+
+export function applyInternalLinks(body: string, usedLinks: Set<string>): string {
+  const keywords = Object.keys(internalLinksMap).sort((a, b) => b.length - a.length);
+
+  return body
+    .split('\n')
+    .map((line) => {
+      if (/^#{1,6}\s/.test(line)) return line;
+
+      let result = line;
+      for (const kw of keywords) {
+        if (usedLinks.has(kw)) continue;
+        const url = internalLinksMap[kw];
+        if (!url) continue;
+
+        const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const re = new RegExp(`(?<!\\[)\\b(${escaped})\\b(?![^\\[\\]]*])`, 'i');
+        const match = re.exec(result);
+
+        if (match) {
+          const link = `[${match[0]}](${url})`;
+          result = result.slice(0, match.index) + link + result.slice(match.index + match[0].length);
+          usedLinks.add(kw);
+        }
+      }
+
+      return result;
+    })
+    .join('\n');
 }

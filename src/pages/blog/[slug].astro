@@ -4,7 +4,9 @@ import CTABanner from '../../components/CTABanner.astro';
 import SidebarCTA from '../../components/SidebarCTA.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import BlogCard from '../../components/BlogCard.astro';
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
+import { renderBlogMarkdown } from '../../lib/renderBlogMarkdown';
+import { applyInternalLinks } from '../../lib/utils';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('blog');
@@ -15,7 +17,10 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content, headings } = await render(entry);
+const usedLinks = new Set<string>();
+const processedBody = applyInternalLinks(entry.body, usedLinks);
+const { code: renderedBody, metadata } = await renderBlogMarkdown(processedBody);
+const headings = metadata.headings;
 
 // Related articles logic: same topic only, exclude current
 const allEntries = await getCollection('blog');
@@ -95,7 +100,7 @@ const relatedPosts = allEntries
 
            <!-- Article Body -->
            <div class="prose-blog">
-             <Content />
+             <Fragment set:html={renderedBody} />
            </div>
 
           <!-- Conclusion / Kesimpulan -->

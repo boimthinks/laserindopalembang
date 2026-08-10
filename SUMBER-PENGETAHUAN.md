@@ -1,4 +1,4 @@
-# Laserindo Palembang — Knowledge Base
+# SUMBER-PENGETAHUAN — Laserindo Palembang
 
 > File ini adalah **sumber kebenaran tunggal** untuk semua informasi tentang Laserindo Palembang. Digunakan oleh AI Agent untuk menulis artikel blog, materi marketing, dan konten SEO. **Semakin banyak artikel yang terbit, semakin banyak insight baru ditambahkan ke file ini.**
 
@@ -170,12 +170,29 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `kelebihan-fasad-ruko` | Kelebihan Fasad Laser Cutting untuk Ruko Modern di Palembang | 20 Juni 2026 | tips | Penggunaan second skin facade sangat efektif mereduksi panas (3-5°C), menghemat listrik, dan menaikkan nilai properti secara instan. |
 | `kanopi-carport-panduan-material` | Kanopi Laser Cutting untuk Carport — Panduan Memilih Motif dan Material di Palembang | 8 Agustus 2026 | panduan | Pemilihan material (plat 1.2-1.5mm, rangka hollow galvanis) dan jenis atap pelindung (polycarbonate/kaca/spandek) menentukan daya tahan kanopi carport di iklim Palembang. |
 | `pagar-kaligrafi-laser-cutting` | Pagar Kaligrafi Laser Cutting — Nuansa Islami Modern untuk Hunian Palembang | 9 Agustus 2026 | tips | Motif kaligrafi menjadi tren bagi pemilik rumah Muslim yang ingin nilai religius di eksterior. Pilihan teks (ayat Al Quran, Asmaul Husna, Bismillah) memengaruhi ukuran panel dan ketebalan plat yang dibutuhkan. |
+| `partisi-laser-cutting-cafe-palembang` | Studi Kasus Partisi Laser Cutting Cafe Kecil di Palembang — Sekat Ruang Tanpa Merasa Sesak | 10 Agustus 2026 | studi kasus | Partisi laser cutting (plat besi 1.2mm + akrilik) dengan motif geometris terbuka membagi zona cafe kecil tanpa menghambat sirkulasi AC dan tetap menjaga koneksi visual antar area. |
+| `partisi-laser-cutting-cafe-palembang` | Studi Kasus Partisi Laser Cutting Cafe Kecil di Palembang — Sekat Ruang Tanpa Merasa Sesak | 10 Agustus 2026 | studi kasus | Partisi laser cutting berbahan plat 1.2mm/akrilik dengan motif geometris terbuka memberi pembagian zona di cafe kecil Palembang tanpa menghambat sirkulasi AC dan estetika visual. |
 
 ### 4.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
 2. "Motif Songket Palembang pada Pagar Laser Cutting — Modernisasi Budaya Lokal"
 3. "Kenapa Akrilik Lebih Baik dari Kaca untuk Partisi Kantor — Analisis Ketahanan"
 4. "Studi Kasus Pagar Laser Cutting Minimalis untuk Rumah Type 36 di Sukarami"
+
+---
+
+## 7. Branding & Karakter (Srifika)
+
+**Base Character Srifika (Wajib digunakan di semua prompt):**
+> "A friendly young Indonesian woman named Srifika, confident and smiling, wearing a professional charcoal-black work polo shirt with the brand's vibrant orange (#f97316) accents and collar, sleeves slightly rolled, black slim-fit work pants, subtle work ID lanyard, neat ponytail hair. Consistent face and appearance across every scene. Photorealistic, 8k resolution, cinematic lighting."
+
+### 7.1 Img Prompts Halaman Harga (Contoh Penggunaan)
+
+| Area | Img Prompt |
+|---|---|
+| **Hero /harga** | `[Base Character]. Srilas standing confidently in a clean, well-lit industrial laser cutting workshop in Palembang, one hand gesturing toward a large glowing digital price display board showing Rupiah pricing numbers, a modern fiber laser cutting machine with subtle orange sparks working behind her, dark industrial walls, dramatic rim lighting, color palette of orange (#f97316) and dark charcoal (#12121a), professional atmosphere, sharp details, 8k resolution, cinematic depth of field.` |
+| **Section Faktor** | `[Base Character]. Srilas holding and presenting three laser-cut metal sample panels of different thicknesses to the camera, stacks of steel sheets visible on the workbench beside her, metal material samples clearly showing precise cut edges, clean workshop background softly blurred, warm directional lighting, orange and dark charcoal color palette, photorealistic, sharp focus, 8k resolution.` |
+| **CTA / Harga** | `[Base Character]. Srilas smiling while handing over a freshly finished laser-cut steel panel with an intricate geometric pattern to a customer, both shaking hands, workshop environment in Palembang in the background, positive and trustworthy mood, natural window light mixed with warm orange accent lighting, photorealistic, 8k resolution.` |
 
 ---
 

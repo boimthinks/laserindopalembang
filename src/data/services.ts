@@ -50,7 +50,7 @@ export const services: ServiceItem[] = [
     priceMin: 800000,
     priceMax: 3000000,
     keywords: ['pagar laser cutting palembang', 'pagar besi cutting laser', 'motif pagar laser', 'pagar rumah cutting laser'],
-    motifs: ['Geometris Minimalis', 'Floral Modern', 'Kaligrafi Islami', 'Songket Palembang', 'Pohon Ranting'],
+    motifs: ['Geometris Minimalis', 'Floral Modern', 'Daun Tropis Lebar', 'Kaligrafi Islami', 'Songket Palembang', 'Pohon Ranting'],
   },
   {
     slug: 'kanopi',

@@ -2,58 +2,79 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CTABanner from '../components/CTABanner.astro';
 import Schema from '../components/Schema.astro';
+import { existsSync } from 'node:fs';
 import { pricingServices, pricingMaterials } from '../data/pricing';
 import { formatPrice } from '../lib/utils';
+
+const hasHeroImage = existsSync('public/img/harga-srifika-hero.webp');
 ---
 
 <BaseLayout
-  title="Harga Jasa Cutting Laser Palembang"
-  description="Daftar harga laser cutting Palembang terbaru 2026. Jasa potong plat, pagar, kanopi, partisi, railing, dan fasad. Transparan dan terpercaya."
+  title="Daftar Harga Jasa Cutting Laser Palembang Terbaru 2026"
+  description="Daftar harga jasa cutting laser Palembang terbaru 2026. Kisaran biaya jasa potong plat, pagar, kanopi, partisi, railing, fasad, dan akrilik. Transparan, garansi 1 tahun."
+  ogImage="/img/harga-srifika-hero.webp"
   schemaType="LocalBusiness"
   breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Harga', slug: '/harga' }]}
 >
-  <div class="pt-36 pb-20 bg-brand-surface-alt border-b border-zinc-800">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="max-w-2xl">
-        <h1 class="text-3xl md:text-4xl font-bold text-white mt-2">Harga Jasa Cutting Laser Palembang</h1>
-        <p class="text-zinc-400 mt-3 leading-relaxed">
-          Butuh tahu berapa biaya bikin pagar atau kanopi laser cutting? Berikut perkiraan harga pasar Palembang. 
-          <strong class="text-white">Harga bisa berbeda tergantung kerumitan motif, material, dan ukuran.</strong> Hubungi kami untuk estimasi akurat!
+  <section class="relative pt-36 pb-20 border-b border-zinc-800 overflow-hidden">
+    {hasHeroImage && (
+      <div class="absolute inset-0">
+        <img
+          src="/img/harga-srifika-hero.webp"
+          alt="Srifika menunjukkan daftar harga jasa laser cutting di workshop Laserindo Palembang"
+          class="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-surface via-brand-surface/80 to-brand-surface/10"></div>
+      </div>
+    )}
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl md:text-5xl font-bold text-white mt-2 leading-tight">Daftar Harga Jasa Cutting Laser Palembang Terbaru & Terlengkap</h1>
+        <p class="text-zinc-400 mt-6 leading-relaxed text-lg">
+          Selamat datang di halaman resmi tarif dan daftar harga <strong>Laserindo Palembang</strong>. Kami adalah penyedia layanan pemotongan (laser cutting), pengukiran (engraving), dan fabrikasi presisi tinggi untuk berbagai kebutuhan arsitektur, interior, konstruksi, hingga media promosi visual di wilayah Palembang dan sekitarnya.
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="py-16">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-xl font-bold text-white mb-6">Kisaran Harga Layanan</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">Faktor-Faktor yang Mempengaruhi Harga</h2>
+      <div class="prose prose-invert max-w-none mb-12">
+        <p>Biaya pengerjaan laser cutting di tempat kami ditentukan berdasarkan matriks teknis yang adil dan terukur. Beberapa faktor utama yang memengaruhi total biaya meliputi:</p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>Jenis & Kualifikasi Material:</strong> Karakteristik material seperti Plat Besi, Stainless Steel, Aluminium, Akrilik, hingga MDF menentukan jenis mesin dan daya laser yang digunakan.</li>
+          <li><strong>Ketebalan Material:</strong> Semakin tebal material, semakin lambat laju pemotongan mesin dan semakin besar konsumsi gas bantu (seperti Nitrogen).</li>
+          <li><strong>Kerapatan Motif & Tingkat Kerumitan:</strong> Motif renggang, sedang, hingga padat (seperti ukiran Songket Palembang) membutuhkan <em>machine runtime</em> yang berbeda.</li>
+          <li><strong>Volume Pekerjaan:</strong> Kami memberikan penawaran harga khusus (diskon volume) untuk produksi massal.</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">Daftar Harga Jasa Cutting & Fabrikasi</h2>
       <div class="overflow-x-auto rounded-xl border border-zinc-800 mb-12">
         <table class="w-full text-sm">
           <thead>
             <tr class="bg-brand-surface-alt">
-              <th class="text-left px-5 py-3 font-semibold text-zinc-300">Layanan</th>
-              <th class="text-left px-5 py-3 font-semibold text-zinc-300">Harga Terendah</th>
-              <th class="text-left px-5 py-3 font-semibold text-zinc-300">Harga Tertinggi</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-300">Produk/Layanan</th>
+              <th class="text-left px-5 py-3 font-semibold text-zinc-300">Estimasi Harga</th>
               <th class="text-left px-5 py-3 font-semibold text-zinc-300">Satuan</th>
-              <th class="text-left px-5 py-3 font-semibold text-zinc-300">Catatan</th>
             </tr>
           </thead>
           <tbody>
             {pricingServices.map((p) => (
               <tr class="border-t border-zinc-800 hover:bg-zinc-800/30 transition-colors">
                 <td class="px-5 py-4 font-medium text-white">{p.item}</td>
-                <td class="px-5 py-4 text-zinc-300">{formatPrice(p.lowest)}</td>
-                <td class="px-5 py-4 text-zinc-300">{formatPrice(p.highest)}</td>
+                <td class="px-5 py-4 text-zinc-300 font-semibold">{formatPrice(p.lowest)} - {formatPrice(p.highest)}</td>
                 <td class="px-5 py-4 text-zinc-500">/ {p.unit}</td>
-                <td class="px-5 py-4 text-zinc-500 text-xs">{p.note}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <h2 class="text-xl font-bold text-white mb-6">Harga Jasa Potong per Material</h2>
-      <div class="overflow-x-auto rounded-xl border border-zinc-800">
+      <h2 class="text-2xl font-bold text-white mb-6">Estimasi Jasa Potong per Material</h2>
+      <div class="overflow-x-auto rounded-xl border border-zinc-800 mb-16">
         <table class="w-full text-sm">
           <thead>
             <tr class="bg-brand-surface-alt">
@@ -74,15 +95,25 @@ import { formatPrice } from '../lib/utils';
         </table>
       </div>
 
-      <div class="mt-12">
-        <div class="bg-brand-surface-alt rounded-xl p-6 border border-zinc-800">
-          <h3 class="text-sm font-semibold text-white mb-3">💡 Contoh Estimasi</h3>
-          <ul class="space-y-2 text-sm text-zinc-400">
-            <li>• <strong>Pagar 3m × 2m</strong> model geometris sederhana = Rp. 4.800.000 - Rp. 9.000.000</li>
-            <li>• <strong>Kanopi 4m × 1.5m</strong> motif hexagon = Rp. 5.400.000 - Rp. 14.000.000</li>
-            <li>• <strong>Partisi 2m × 2m</strong> motif floral = Rp. 2.400.000 - Rp. 8.000.000</li>
-            <li>• <strong>Railing tangga 4 meter lari</strong> motif garis = Rp. 3.000.000 - Rp. 10.000.000</li>
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-brand-surface-alt rounded-xl p-8 border border-zinc-800">
+          <h3 class="text-xl font-bold text-white mb-4">Mengapa Laserindo Palembang?</h3>
+          <ul class="space-y-3 text-zinc-400">
+            <li>✅ <strong>Presisi Tinggi:</strong> Toleransi hingga 0.1mm dengan mesin fiber laser terbaru.</li>
+            <li>✅ <strong>Workshop Lokal:</strong> Berlokasi di Talang Jambe, Sukarami, Palembang.</li>
+            <li>✅ <strong>Garansi 1 Tahun:</strong> Jaminan kualitas untuk instalasi outdoor.</li>
+            <li>✅ <strong>Bisa Material Sendiri:</strong> Terima jasa potong saja atau paket all-in.</li>
+            <li>✅ <strong>Konsultasi Gratis:</strong> Review file CAD/Vector (DWG/DXF/CDR/AI).</li>
           </ul>
+        </div>
+        <div class="bg-brand-surface-alt rounded-xl p-8 border border-zinc-800">
+          <h3 class="text-xl font-bold text-white mb-4">Alur Pemesanan</h3>
+          <ol class="space-y-3 text-zinc-400 list-decimal pl-5">
+            <li>Kirimkan file desain (vector .DXF/.DWG/.CDR/.AI) via WhatsApp.</li>
+            <li>Tim kami menghitung estimasi biaya sesuai material dan kerumitan.</li>
+            <li>Proses produksi menggunakan mesin fiber laser.</li>
+            <li>Produk siap diambil di workshop atau dikirim ke lokasi Anda.</li>
+          </ol>
         </div>
       </div>
 

@@ -146,7 +146,7 @@ No external image file for logo.
 - [x] SVG Builder data layer (15 motifs x 5 variants)
 - [x] Migrasi Blog ke Astro Content Collections (Markdown)
 - [x] Implementasi skema blog ketat (titleSeo, excerpt, pengantar, kesimpulan, imgPrompt)
-- [x] Pembuatan Laserindo Knowledge Base (`src/data/laserindo-knowledge-base.md`)
+- [x] Pembuatan SUMBER-PENGETAHUAN.md (root project)
 - [x] Integrasi narasi brand Sriwijaya Grafika ke `src/config/site.ts`
 - [x] Penambahan section "Update Terbaru" (Blog) di Homepage
 - [x] .gitignore initialized
@@ -156,11 +156,11 @@ No external image file for logo.
 - [x] Optimasi Hero Image (mobile specific background via `<picture>`)
 - [x] Perbaikan Blog Grid (visibility di mobile & penghapusan animasi penghambat)
 - [x] AGENTS.md updated
-- [x] All 18 blog articles humanized via `humanizer` skill
+- [x] All 18 blog articles humanized via `penulis-ahli` skill
 - [x] Fix compilation errors ([slug].astro and tentang.astro)
 
 ### 🔜 Before Launch
-- [ ] Tulis ulang artikel blog pertama berdasarkan standar Knowledge Base
+- [ ] Tulis ulang artikel blog pertama berdasarkan standar SUMBER-PENGETAHUAN
 - [ ] Upload remaining motif images (Daun Tropis Lebar, dll) to `public/img/motif/`
 - [ ] Verify all JSON-LD schemas render correctly
 - [ ] Test deploy on Netlify/Vercel
@@ -184,6 +184,6 @@ No external image file for logo.
 - Motif slug format: `&` → `dan`, remove `()`, spaces → hyphens
 - Motif section on homepage uses explicit `motifImageMap` in `index.astro` frontmatter — update when adding new motif images
 - Portfolio page was removed — all motif link references redirect to `/layanan` instead
-- AI Writing: Rujuk `src/data/laserindo-knowledge-base.md` sebelum menulis blog. Dilarang Hanzi/Emoji.
+- AI Writing: Rujuk `SUMBER-PENGETAHUAN.md` di root sebelum menulis blog. Dilarang Hanzi/Emoji.
 - Blog images: Gunakan `imgPrompt` dari frontmatter untuk generate cover di AI Image Generator.
-- Blog humanizing: Gunakan `humanizer` skill untuk menulis ulang artikel blog agar terdengar alami (hapus pola AI, em dash, bahasa promosi).
+- Blog writing/humanizing: Gunakan `penulis-ahli` skill untuk menulis atau menulis ulang artikel blog (SEO/GEO + non-komoditas + hapus pola AI, em dash, bahasa promosi) dalam satu pass.
