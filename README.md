@@ -1,43 +1,44 @@
-# Astro Starter Kit: Minimal
+# Laserindo Palembang
 
-```sh
-npm create astro@latest -- --template minimal
-```
+<img align="right" width="160" height="160" src="https://laserindopalembang.com/latest/icon-192x192.webp">
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Website resmi **Laserindo Palembang** — divisi spesialisasi laser cutting dari **Sriwijaya Grafika** (berdiri sejak 2008) di Palembang.
 
-## 🚀 Project Structure
+### Tentang Kami
 
-Inside of your Astro project, you'll see the following folders and files:
+Laserindo Palembang melayani pengerjaan elemen arsitektural logam dan non-logam dengan presisi tinggi (toleransi 0.1mm) menggunakan mesin fiber laser modern.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+**Layanan Utama:**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- 🌿 Pagar Laser Cutting — motif minimar, floral, geometris, dan kaligrafi
+- ☁️ Kanopi Laser Cutting — peneras teduh dengan estetika eksklusif
+- 🧱 Partisi & Dinding Dekoratif — sekat ruangan tanpa kesan sempit
+- 🪜 Railing Tangga — pengganti railing tangga konvensional dengan motif presisi
+- 🏢 Fasad Bangunan — tampilan depan bangunan ikonik
+- 📛 Plat Nama & Trofi Custom — signage ruangan dan hadiah
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+**Kualitas:**
+- Garansi 1 tahun penuh untuk instalasi outdoor dan indoor
+- Workshop di Talang Jambe, Sukarami, Palembang
+- Mockup 3D gratis untuk visualisasi desain sebelum produksi
+- Material besi 0.8 - 2mm, stainless 0.6 - 1.5mm, akrilik 2 - 10mm
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+### 🌐 Kunjungi Website Resmi
 
-All commands are run from the root of the project, from a terminal:
+Alihkan ke halaman resmi kami untuk melihat katalog motif, estimasi harga, contoh proyek, dan blog touring informasi:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+[**laserindopalembang.com**](https://laserindopalembang.com)
 
-## 👀 Want to learn more?
+Temukan pagar kustom, kanopi dekoratif, partisi interior, dan solusi fasad dengan tampilan modern, langsung dari workshop di Palembang.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+### 🔧 Teknologi Web
+
+- Framework: Astro 5 (Static Site Generator)
+- Styling: Tailwind CSS v4 + Typography
+- Sitemap & SEO Content Collections
+
+Dikembangkan dengan presisi tinggi sejajar dengan layanan laser cutting kami.
