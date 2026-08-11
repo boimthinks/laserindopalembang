@@ -1,6 +1,6 @@
 # Laserindo Palembang
 
-<img align="right" width="160" height="160" src="https://laserindopalembang.com/latest/icon-192x192.webp">
+<img align="right" width="160" height="160" src="https://laserindopalembang.com/favicon.png">
 
 Website resmi **Laserindo Palembang** — divisi spesialisasi laser cutting dari **Sriwijaya Grafika** (berdiri sejak 2008) di Palembang.
 
@@ -10,7 +10,7 @@ Laserindo Palembang melayani pengerjaan elemen arsitektural logam dan non-logam 
 
 **Layanan Utama:**
 
-- 🌿 Pagar Laser Cutting — motif minimar, floral, geometris, dan kaligrafi
+- 🌿 Pagar Laser Cutting — motif minimalis, floral, geometris, dan kaligrafi
 - ☁️ Kanopi Laser Cutting — peneras teduh dengan estetika eksklusif
 - 🧱 Partisi & Dinding Dekoratif — sekat ruangan tanpa kesan sempit
 - 🪜 Railing Tangga — pengganti railing tangga konvensional dengan motif presisi
