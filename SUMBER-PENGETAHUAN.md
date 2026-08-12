@@ -173,6 +173,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `partisi-laser-cutting-cafe-palembang` | Studi Kasus Partisi Laser Cutting Cafe Kecil di Palembang — Sekat Ruang Tanpa Merasa Sesak | 10 Agustus 2026 | studi kasus | Partisi laser cutting (plat besi 1.2mm + akrilik) dengan motif geometris terbuka membagi zona cafe kecil tanpa menghambat sirkulasi AC dan tetap menjaga koneksi visual antar area. |
 | `partisi-laser-cutting-cafe-palembang` | Studi Kasus Partisi Laser Cutting Cafe Kecil di Palembang — Sekat Ruang Tanpa Merasa Sesak | 10 Agustus 2026 | studi kasus | Partisi laser cutting berbahan plat 1.2mm/akrilik dengan motif geometris terbuka memberi pembagian zona di cafe kecil Palembang tanpa menghambat sirkulasi AC dan estetika visual. |
 | `hitung-nesting-plat-besi` | Cara Menekan Pemborosan Plat Besi dengan Teknik Nesting Laser Cutting | 11 Agustus 2026 | panduan | Teknik nesting (rotasi sudut bebas, common line cutting, scrap filling) bisa meningkatkan efisiensi material dari 65-70% menjadi 88-95% dengan algoritma auto-nesting CAD/CAM. |
+| `waktu-pengerjaan-pagar-laser-cut` | Berapa Lama Pengerjaan Pagar Laser Cutting di Palembang, Simak Tahapannya | 12 Agustus 2026 | panduan | Durasi pengerjaan tidak bisa dihitung dari luas saja, tapi dari tahapan (survey, desain mockup 3D, produksi, finishing, instalasi). Tahap desain/revisi mockup justru paling lama; pagar standar selesai 7-14 hari. |
 
 ### 4.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
