@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 import SEOHead from '../components/SEOHead.astro';
 import Schema from '../components/Schema.astro';
 import Header from '../components/Header.astro';
@@ -32,6 +33,7 @@ const { title, description, ogImage, noindex, schemaType, schemaData, breadcrumb
     <meta name="ICBM" content="-2.9761, 104.7754" />
 
     <SEOHead title={title} description={description} ogImage={ogImage} noindex={noindex} />
+    <ClientRouter />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
