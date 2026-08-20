@@ -4,6 +4,7 @@ import CTABanner from '../../components/CTABanner.astro';
 import SidebarCTA from '../../components/SidebarCTA.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import BlogCard from '../../components/BlogCard.astro';
+import Schema from '../../components/Schema.astro';
 import { getCollection } from 'astro:content';
 import { renderBlogMarkdown } from '../../lib/renderBlogMarkdown';
 import { applyInternalLinks } from '../../lib/utils';
@@ -114,6 +115,27 @@ const relatedPosts = allEntries
               {entry.data.kesimpulan}
             </p>
           </div>
+
+          {/* FAQ Section */}
+          {entry.data.faq && entry.data.faq.length > 0 && (
+            <div class="mt-16">
+              <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Pertanyaan Umum (FAQ)</h2>
+              <div class="space-y-4">
+                {entry.data.faq.map((item: any, index: number) => (
+                  <details class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden group">
+                    <summary class="p-6 text-white font-semibold cursor-pointer list-none flex justify-between items-center group-open:text-brand-primary">
+                      {item.question}
+                      <svg class="w-5 h-5 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-zinc-400 leading-relaxed border-t border-zinc-800 pt-4">
+                      {item.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
+              <Schema type="FAQPage" data={{ questions: entry.data.faq }} />
+            </div>
+          )}
         </main>
 
         <!-- Sidebar -->

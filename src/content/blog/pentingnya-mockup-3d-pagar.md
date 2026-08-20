@@ -9,6 +9,20 @@ imgalt: "Mockup 3D Pagar Laser Cutting Ditampilkan pada Foto Rumah Klien di Pale
 imgPrompt: "Photorealistic architectural visualization of a modern Palembang house with a computer monitor or laptop in the foreground displaying a 3D mockup of a laser-cut steel gate overlaid on the house photo, a designer's hand pointing at the screen, clean modern home exterior visible beyond, warm daylight, subtle orange accents, sharp details, 8k resolution."
 pengantar: "Pagar rumah adalah investasi yang terpasang permanen dan langsung terlihat dari jalan. Memilih motif bukan cuma soal menyukai gambar, tapi membayangkan wujud akhirnya di rumah sendiri. Mockup 3D menjembatani jurang antara keinginan dan kenyataan sebelum plat besi dipotong."
 kesimpulan: "Mockup 3D memastikan pagar yang terpasang persis seperti yang Anda bayangkan, bukan hasil tebak-tebakan. Untuk proyek pagar di Palembang, kirim foto rumah dan referensi motif ke WhatsApp 0852-1511-1125, dan kami siapkan visualisasi 3D gratis sebelum produksi dimulai."
+published: true
+faq:
+  - question: "Apa itu mockup 3D pagar laser cutting?"
+    answer: "Mockup 3D pagar adalah visualisasi digital bentuk pagar yang ditampilkan di atas foto rumah Anda. Hasil akhirnya menyerupai pagar asli yang sudah terpasang, lengkap dengan motif, warna, proporsi, dan bayangan. Ini membantu Anda melihat wujud pagar sebelum satu kilogram plat besi pun dipotong."
+  - question: "Apakah pembuatan mockup 3D pagar dikenakan biaya?"
+    answer: "Tidak. Mockup 3D pagar di Laserindo Palembang gratis dan menjadi bagian bawaan dari setiap proyek pagar. Anda bisa melihat dan merevisi desain tanpa biaya tambahan selama belum ada material yang terpotong."
+  - question: "Berapa lama pembuatan mockup 3D pagar?"
+    answer: "Durasi tergantung tingkat kerumitan motif dan jumlah sesi revisi. Desain sederhana bisa selesai dalam satu hingga dua hari, sementara motif rapat atau desain spesifik yang perlu penyesuaian berkali-kali memakan waktu lebih lama. Waktu terbesar memang terletak di tahap desain dan revisi, sebelum produksi dimulai."
+  - question: "Bahan apa saja yang dibutuhkan untuk membuat mockup 3D?"
+    answer: "Cukup kirim foto pagar depan rumah dari beberapa sudut dan contoh motif yang disukai, walau hanya berupa screenshot. Anda juga bisa datang ke workshop dengan membawa sketsa tangan atau foto pagar idaman. Bila belum punya ide, kami sediakan katalog desain yang bisa dipilih."
+  - question: "Apa saja yang bisa saya periksa dari mockup 3D pagar?"
+    answer: "Anda bisa memeriksa proporsi dan skala motif terhadap bentang pagar, perpaduan warna cat doff atau bronze, posisi pintu gerbang dan lubang kunci, tingkat privasi dari kerapatan motif, serta kesan keseluruhan pagar di foto rumah Anda."
+  - question: "Apa bedanya mockup 3D dengan sketsa atau gambar 2D?"
+    answer: "Sketsa atau gambar 2D hanya menampilkan motif dari satu sisi tanpa memperlihatkan konteks rumah Anda. Mockup 3D menempatkan pagar langsung di lokasi aslinya dengan skala dan bayangan yang realistis, sehingga risiko salah ekspektasi antara pemilik rumah dan tim produksi jauh lebih kecil."
 ---
 
 ## Kenapa klien sering kaget melihat hasil jadi pagar

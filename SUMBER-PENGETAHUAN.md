@@ -99,6 +99,18 @@ imgalt: "Deskripsi gambar untuk SEO"
 imgPrompt: "Prompt detail untuk AI Image Generator (DALL-E/Midjourney)"
 pengantar: "Hook pembuka 1 paragraf"
 kesimpulan: "Penutup + CTA WhatsApp 1 paragraf"
+published: true
+faq:
+  - question: "Pertanyaan potensial 1?"
+    answer: "Jawaban mendalam mengandung keyword semantis..."
+  - question: "Pertanyaan potensial 2?"
+    answer: "Jawaban mendalam mengandung keyword semantis..."
+  - question: "Pertanyaan potensial 3?"
+    answer: "Jawaban mendalam mengandung keyword semantis..."
+  - question: "Pertanyaan potensial 4?"
+    answer: "Jawaban mendalam mengandung keyword semantis..."
+  - question: "Pertanyaan potensial 5?"
+    answer: "Jawaban mendalam mengandung keyword semantis..."
 ```
 
 ### 3.3 Gaya Penulisan & Larangan
@@ -156,7 +168,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `workshop-talang-jambe` | Behind The Scene Workshop Talang Jambe — Proses Produksi Laser Cutting | 16 Juni 2026 | kabar | Inklusivitas tenaga kerja (Tuna Rungu) dan teknologi fiber laser presisi 0.1mm adalah kekuatan utama kami. |
 | `pagar-motif-songket-palembang` | Motif Songket Palembang pada Pagar Laser Cutting — Modernisasi Budaya Lokal | 17 Juni 2026 | tips | Pembuatan motif rumit seperti Songket memerlukan plat minimal 1.4mm dan mesin fiber laser untuk hasil maksimal. |
 | `signage-gedung-walikota` | Studi Kasus Signage Huruf Timbul LED Gedung Walikota Palembang | 18 Juni 2026 | studi kasus | Penggunaan stainless 304 dan LED waterproof IP68 adalah standar wajib untuk signage gedung publik. |
-| `fasad-ruko-basuki-rahmat` | Studi Kasus Transformasi Fasad Ruko Modern di Basuki Rahmat Palembang | 19 Juni 2026 | studi kasus | Second skin facade meningkatkan privasi dan efisiensi energi ruko tanpa merusak struktur asli. |
+| `harga-laser-cutting-plat-besi` | Harga Laser Cutting Plat Besi Per Meter dan Per Lembar Terbaru 2026 | 20 Agustus 2026 | panduan | Perhitungan harga laser cutting plat besi harus memperhitungkan ketebalan, kerapatan motif, dan apakah harga sudah termasuk bahan atau jasa potong saja. |
 | `kanopi-citra-grand-city` | Studi Kasus Kanopi Mewah Motif Floral di Citra Grand City Palembang | 20 Juni 2026 | studi kasus | Finishing cat otomotif PU sangat penting untuk menjaga estetika kanopi di perumahan elit yang terpapar matahari. |
 | `pagar-cluster-the-pavillion` | Pagar Laser Cutting CitraGrand City The Pavillion Estetika Rumah Tanpa Kehilangan Privasi | 20 Juni 2026 | studi kasus | Motif semi-opaque (40-60% area solid) sangat efektif menjaga privasi hunian cluster tanpa mengorbankan sirkulasi udara dan cahaya alami. |
 | `cara-pilih-motif` | Panduan Memilih Motif Laser Cutting yang Tepat untuk Pagar dan Partisi | 21 Juni 2026 | panduan | Pemilihan motif harus menyelaraskan antara gaya arsitektur rumah dan tingkat privasi yang diinginkan. |

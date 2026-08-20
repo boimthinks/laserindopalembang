@@ -164,4 +164,4 @@ const schemas: Record<string, object> = {
 const schema = schemas[type];
 ---
 
-{type !== 'FAQPage' && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+{<script type="application/ld+json" set:html={JSON.stringify(schema)} />}
