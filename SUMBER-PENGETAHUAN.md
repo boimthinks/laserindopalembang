@@ -189,6 +189,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `waktu-pengerjaan-pagar-laser-cut` | Berapa Lama Pengerjaan Pagar Laser Cutting di Palembang, Simak Tahapannya | 12 Agustus 2026 | panduan | Durasi pengerjaan tidak bisa dihitung dari luas saja, tapi dari tahapan (survey, desain mockup 3D, produksi, finishing, instalasi). Tahap desain/revisi mockup justru paling lama; pagar standar selesai 7-14 hari. |
 | `pagar-besi-kayu` | Kombinasi Plat Besi dan Kayu Solid untuk Pagar Rumah Modern Palembang | 13 Agustus 2026 | tips | Kombinasi material besi laser cutting dan kayu solid membutuhkan teknik sambungan berjarak 2-3mm untuk mencegah pembusukan kayu akibat kelembapan di Palembang. |
 | `cara-kenali-bengkel-laser-cutting-presisi-palembang` | Cara Kenali Bengkel Laser Cutting yang Benar-Benar Presisi di Palembang | 15 Agustus 2026 | tips | Presisi bisa diverifikasi pembeli lewat tanda yang bisa dicek sendiri di lapangan: toleransi 0.1mm, tepi potong tanpa gerinda, konsistensi antar panel, rincian biaya tertulis, mockup 3D gratis, dan garansi tertulis minimal 1 tahun. |
+| `pagar-klasik-geometris-palembang` | Pagar Motif Klasik Geometris untuk Perumahan Mewah di Palembang | 24 Agustus 2026 | tips | Perpaduan garis tegas dan simetris gaya art deco dengan pelapis dasar Epoxy Zinc-Rich Primer dan cat PU agar tahan cuaca Palembang. |
 
 ### 4.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
