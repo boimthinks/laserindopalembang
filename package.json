@@ -9,6 +9,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "build:microsite": "node microsite/generator/build.js",
+    "preview:microsite": "node microsite/preview.js",
     "astro": "astro"
   },
   "dependencies": {
