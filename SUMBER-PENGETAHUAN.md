@@ -5,8 +5,13 @@
 **Cara baca untuk AI Agent:**
 1. Mulai dari `## 1. Identitas Bisnis` untuk data diri singkat.
 2. Lanjut `## 2. Tentang Kami` untuk narasi brand dan keterkaitan dengan Sriwijaya Grafika.
-3. `## 3. Aturan Menulis Judul & Artikel` (Google AI Guide 2026) — **WAJIB** dipatuhi.
-4. `## 4. Insight & Lessons Learned` — diupdate setelah setiap publikasi artikel.
+3. `## 3. Mesin Workshop & Kapabilitas Material` untuk 3 lini mesin dan spesialisasi bahan.
+4. `## 4. Daftar Harga Resmi Jasa Cutting Sriwijaya Grafika` untuk tarif jasa potong per m², keping, dan menit.
+5. `## 5. Estimasi Produk Jadi Arsitektural` untuk acuan fabrikasi + pasang.
+6. `## 6. Aturan Menulis Judul & Artikel` (Google AI Guide 2026) — **WAJIB** dipatuhi.
+7. `## 7. Insight & Lessons Learned` — diupdate setelah setiap publikasi artikel.
+8. `## 8. Branding & Karakter (Srifika)`
+9. `## 9. Referensi Cepat (Trust Signals)`
 
 ---
 
@@ -29,45 +34,104 @@
 ## 2. Tentang Kami
 
 ### Deskripsi Singkat
-Laserindo Palembang adalah divisi spesialisasi laser cutting dari Sriwijaya Grafika. Kami fokus pada pengerjaan elemen arsitektural logam dan non-logam dengan tingkat presisi tinggi (toleransi 0.1mm) menggunakan mesin fiber laser modern.
+Laserindo Palembang adalah divisi spesialisasi laser cutting dari Sriwijaya Grafika. Kami fokus pada pengerjaan elemen arsitektural logam dan non-logam dengan tingkat presisi tinggi (toleransi 0.1mm) serta jasa cutting lembaran material industri menggunakan tiga lini mesin cutting modern.
 
 ### Narasi Brand & Diferensiasi
-- **Warisan Sriwijaya Grafika:** Membawa pengalaman 16+ tahun dalam industri advertising dan manufaktur signage.
-- **Teknologi Modern:** Menggunakan mesin cutting terbaru yang menghasilkan potongan rapi tanpa gerinda (burr-free).
+- **Warisan Sriwijaya Grafika:** Membawa pengalaman 16+ tahun dalam industri advertising dan manufaktur signage sejak 2008.
+- **Tiga Mesin Spesialis:** Workshop Sriwijaya Grafika diperkuat oleh 3 jenis mesin cutting dengan peruntukan material berbeda: Mesin Laser Fiber (khusus plat logam), Mesin CNC Router (khusus material non-logam lembaran & komposit), dan Mesin Laser CO2 (khusus akrilik presisi).
+- **Teknologi Modern:** Menghasilkan potongan rapi tanpa gerinda (burr-free) dan toleransi presisi tinggi.
 - **Garansi 1 Tahun:** Komitmen kualitas untuk semua instalasi outdoor dan indoor.
 - **Pemberdayaan Sosial:** Memberdayakan tenaga kerja lokal, termasuk rekan-rekan penyandang **Tuna Rungu** sebagai bagian dari misi sosial owner.
 - **Mockup 3D Gratis:** Membantu visualisasi desain klien sebelum proses produksi dimulai.
 
 ---
 
-## 3. Layanan & Produk Utama
+## 3. Mesin Workshop & Kapabilitas Material
 
-### 3.1 Daftar Layanan (6 Kategori)
-Laserindo Palembang menyediakan 6 kategori layanan utama yang mencakup kebutuhan arsitektural dan promosi:
+Sriwijaya Grafika mengoperasikan **3 jenis mesin cutting** di workshop Talang Jambe, di mana tiap mesin memiliki spesialisasi bahan yang berbeda:
 
-1. **Pagar Laser Cutting** — Motif modern, floral, geometris, dan kaligrafi. Paling laris untuk hunian pribadi.
-2. **Kanopi Laser Cutting** — Memberikan fungsi teduh sekaligus estetika eksklusif pada teras atau carport.
-3. **Partisi & Dinding Dekoratif** — Sekat ruangan (interior) untuk rumah, kantor, atau cafe tanpa kesan sempit.
-4. **Railing Tangga Laser Cutting** — Pengganti railing tangga konvensional dengan motif presisi dan rapi.
-5. **Fasad Bangunan (Facade)** — Tampak depan bangunan ikonik untuk rumah mewah, ruko, atau gedung kantor.
-6. **Plat Nama & Trofi Custom** — Signage ruangan, plakat, dan trofi akrilik/logam untuk instansi dan hadiah.
+1. **Mesin Laser Fiber (Plat Logam / Metal Sheet):**
+   - **Karakteristik:** Menggunakan sinar laser serat optik terfokus dengan gas pendukung, menghasilkan potongan sangat presisi, minim panas menyebar, dan bebas gerinda.
+   - **Bahan yang Ditangani:**
+     - Plat Besi (Mild Steel) & Galvanis: tebal 0,6 mm s/d 12 mm.
+     - Plat Stainless Steel: tebal 0,6 mm s/d 3 mm.
+     - Plat Aluminium: tebal 0,6 mm s/d 3 mm.
+   - **Aplikasi:** Pagar laser cutting, kanopi, fasad, railing, ornamen plat arsitektural.
 
-### 3.2 Material yang Dilayani
-- **Besi Plat (Mild Steel):** 0.8mm - 2mm (Terpopuler untuk pagar & fasad).
-- **Stainless Steel:** 0.6mm - 1.5mm (Premium, anti karat).
-- **Akrilik:** 2mm - 10mm (Signage, trofi, partisi interior).
-- **Kayu / MDF:** 3mm - 12mm (Dekorasi interior).
-- **ACP / PVC:** 3mm - 6mm (Fasad ringan & plang nama).
+2. **Mesin CNC Router:**
+   - **Karakteristik:** Menggunakan mata spindle router/milling putaran tinggi berbasis komputer, ideal untuk material lembaran kayu, komposit, dan plastik padat per keping (lembar utuh 122 x 244 cm).
+   - **Bahan yang Ditangani:**
+     - Plywood (Multiplek): tebal 3 mm s/d 20 mm.
+     - MDF / MHR & PVC Board: tebal 3 mm s/d 20 mm.
+     - ACP (Aluminium Composite Panel): tebal 3 mm s/d 4 mm.
+   - **Aplikasi:** Partisi interior berlubang (MDF/PVC), fasad komposit gedung (ACP), furniture arsitektural, wall paneling.
+
+3. **Mesin Laser CO2:**
+   - **Karakteristik:** Menggunakan tabung laser gas CO2 untuk pemotongan non-logam akrilik dengan hasil tepi bening, halus, dan mengkilap (*flame-polished edge*).
+   - **Bahan yang Ditangani:**
+     - Akrilik (Acrylic bening, warna, susu): tebal 2 mm s/d 10 mm.
+     - Sistem hitung jasa: Berbasis durasi waktu pengerjaan (per menit).
+   - **Aplikasi:** Signage logo kantor, huruf timbul akrilik, plakat, trofi, display merchandise.
 
 ---
 
-## 4. Panduan Harga (Estimasi 2026)
+## 4. Daftar Harga Resmi Jasa Cutting Sriwijaya Grafika
 
-> **Catatan:** Harga di bawah adalah estimasi "Mulai Dari" per m² atau pcs. Harga final tergantung pada material, ketebalan, dan kerumitan motif.
+> **Catatan Penting:** 
+> - Harga di bawah berlaku untuk **desain standar** jasa potong (*cutting only*).
+> - Seluruh konsultasi dan pemesanan tetap menggunakan kontak resmi project ini: **0852-1511-1125** (WhatsApp / Telepon).
 
-| Item Layanan | Harga Terendah | Harga Tertinggi | Satuan |
+### 4.1 Jasa Potong Laser Fiber (Plat Logam) — Satuan per m²
+
+| Material Plat | Ketebalan Plat | Tarif Jasa (per m²) |
+|---|---|---|
+| **Stainless Steel** | 0,6 – 1,2 mm | Rp 200.000 |
+| | 1,5 – 2 mm | Rp 300.000 |
+| | 2,1 – 3 mm | Rp 350.000 |
+| **Aluminium** | 0,6 – 1,2 mm | Rp 250.000 |
+| | 1,5 – 2 mm | Rp 300.000 |
+| | 2,1 – 3 mm | Rp 350.000 |
+| **Plat Besi & Galvanis** | 0,6 – 1,1 mm | Rp 200.000 |
+| | 1,4 – 2 mm | Rp 250.000 |
+| | 2,4 – 3,4 mm | Rp 300.000 |
+| | 3,8 – 5 mm | Rp 400.000 |
+| | 6 – 8 mm | Rp 500.000 |
+| | 8,1 – 9 mm | Rp 600.000 |
+| | 9,1 – 10 mm | Rp 700.000 |
+| | 10,1 – 11 mm | Rp 800.000 |
+| | 11,1 – 12 mm | Rp 850.000 |
+
+### 4.2 Jasa Potong CNC Router — Satuan per Keping (Lembar)
+
+| Material | Ketebalan | Tarif Jasa (per Keping) |
+|---|---|---|
+| **Plywood** | 3 mm | Rp 200.000 |
+| | 4 – 6 mm | Rp 270.000 |
+| | 7 – 9 mm | Rp 320.000 |
+| | 10 – 12 mm | Rp 370.000 |
+| | 13 – 20 mm | Rp 420.000 |
+| **MDF / MHR & PVC** | 3 mm | Rp 200.000 |
+| | 4 – 6 mm | Rp 250.000 |
+| | 7 – 9 mm | Rp 300.000 |
+| | 10 – 12 mm | Rp 350.000 |
+| | 13 – 20 mm | Rp 400.000 |
+| **ACP (Aluminium Composite Panel)** | 3 mm | Rp 200.000 |
+| | 4 mm | Rp 250.000 |
+
+### 4.3 Jasa Potong Laser CO2 — Satuan per Menit
+
+| Material | Ketebalan | Tarif Jasa (per Menit) |
+|---|---|---|
+| **Akrilik (Acrylic)** | 2 – 10 mm | Rp 4.000 / menit |
+
+---
+
+## 5. Estimasi Produk Jadi Arsitektural (Produksi + Pasang)
+
+> Estimasi harga unit jadi lengkap dengan rangka, cat finishing, dan instalasi:
+
+| Item Layanan Jadi | Harga Terendah | Harga Tertinggi | Satuan |
 |---|---|---|---|
-| Jasa potong plat saja | Rp 100.000 | Rp 750.000 | m² |
 | Pagar jadi + pasang | Rp 800.000 | Rp 3.000.000 | m² |
 | Kanopi jadi + pasang | Rp 900.000 | Rp 3.500.000 | m² |
 | Partisi interior | Rp 600.000 | Rp 2.000.000 | m² |
@@ -77,17 +141,17 @@ Laserindo Palembang menyediakan 6 kategori layanan utama yang mencakup kebutuhan
 
 ---
 
-## 5. Aturan Menulis Judul & Artikel (Google AI Optimization 2026)
+## 6. Aturan Menulis Judul & Artikel (Google AI Optimization 2026)
 
 **WAJIB diikuti oleh AI Agent saat menulis artikel baru.**
 
-### 3.1 Prinsip Non-Komoditas
+### 6.1 Prinsip Non-Komoditas
 Google AI Overviews mencari konten yang memiliki **"Experience, Expertise, Authoritativeness, and Trustworthiness" (E-E-A-T)**.
 - **Sudut Pandang Unik:** Jangan menulis tips generik. Tulislah berdasarkan pengalaman workshop, misal: "Mengapa Laser Cutting Besi di Palembang sering berkarat di sambungan las?"
 - **Data Spesifik:** Gunakan detail teknis (grade stainless 304 vs 201, tebal plat mm, teknik TIG welding).
 - **Human-Centric:** Tulis untuk manusia dengan variasi panjang kalimat dan nada yang hangat namun profesional.
 
-### 3.2 Struktur Frontmatter (src/content/blog/*.md)
+### 6.2 Struktur Frontmatter (src/content/blog/*.md)
 ```yaml
 title: "Judul Pendek Maks 5 Kata"
 titleSeo: "Judul SEO Maks 12 Kata Tanpa Titik Dua"
@@ -113,20 +177,20 @@ faq:
     answer: "Jawaban mendalam mengandung keyword semantis..."
 ```
 
-### 3.3 Gaya Penulisan & Larangan
+### 6.3 Gaya Penulisan & Larangan
 - **TANPA EMOJI:** Dilarang menggunakan emoji di dalam artikel.
 - **TANPA TITIK DUA DI HEADING:** Gunakan koma atau dash (—) di H1/H2.
 - **Tanggal Artikel:** Selalu gunakan tanggal hari ini saat menulis artikel baru. Jangan membuat tanggal fiktif di masa depan. Contoh hari ini tanggal 19 Juni 2026, maka gunakan `date: "19 Juni 2026"`.
 - **BODY H2-ONLY:** Di dalam file markdown, jangan tulis ulang H1 (titleSeo) atau pengantar. Langsung mulai dengan `## Section Pertama`.
 - **Aksara:** Hanya gunakan aksara Latin (Bahasa Indonesia & Istilah Teknis Inggris). **DILARANG KERAS** menggunakan aksara China (Hanzi), Jepang, Korea, atau aksara non-Latin lainnya.
 
-### 3.4 Pengecekan Keamanan Konten (Self-Audit)
+### 6.4 Pengecekan Keamanan Konten (Self-Audit)
 Sebelum menyimpan file artikel, AI Agent wajib melakukan audit mandiri terhadap hal-hal berikut:
 1. **Deteksi Aksara Asing:** Lakukan pemindaian teks untuk memastikan tidak ada karakter Hanzi (misal: 激光, 切割) atau aksara non-Latin yang terselip secara tidak sengaja di dalam body, frontmatter, atau alt text.
 2. **Verifikasi Bahasa:** Pastikan seluruh istilah teknis yang tidak memiliki padanan Bahasa Indonesia yang pas tetap menggunakan Bahasa Inggris profesional (misal: *fiber laser cutting*, bukan diterjemahkan paksa atau dicampur aksara lain).
 3. **Pembersihan Metadata:** Periksa kembali `imgPrompt` dan `imgalt` agar bebas dari aksara non-Latin.
 
-### 3.5 Panjang & Struktur Konten
+### 6.5 Panjang & Struktur Konten
 1. **Panjang Artikel:**
    - **Artikel Standar:** 800 – 1.200 kata.
    - **Panduan Mendalam / Pillar Page:** 1.500 – 2.500 kata.
@@ -136,7 +200,7 @@ Sebelum menyimpan file artikel, AI Agent wajib melakukan audit mandiri terhadap 
    - **Tabel:** Gunakan tabel untuk perbandingan material, daftar harga, atau spesifikasi teknis.
    - **Paragraf:** Maksimal 3-4 kalimat per paragraf untuk kenyamanan membaca di perangkat mobile.
 
-### 3.5 Aturan imgPrompt (AI Image Generator)
+### 6.6 Aturan imgPrompt (AI Image Generator)
 Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan gambar photorealistic, profesional, dan relevan dengan industri laser cutting.
 
 **Panduan Struktur Prompt:**
@@ -154,11 +218,11 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 
 ---
 
-## 6. Insight & Lessons Learned (Update Setelah Publish)
+## 7. Insight & Lessons Learned (Update Setelah Publish)
 
 > **Section ini wajib diupdate setelah setiap artikel baru terbit.**
 
-### 4.1 Topik yang Sudah Ditulis
+### 7.1 Topik yang Sudah Ditulis
 
 | Slug | Judul SEO | Tanggal | Topik | Insight Utama |
 | --- | --- | --- | --- | --- |
@@ -190,8 +254,9 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `pagar-besi-kayu` | Kombinasi Plat Besi dan Kayu Solid untuk Pagar Rumah Modern Palembang | 13 Agustus 2026 | tips | Kombinasi material besi laser cutting dan kayu solid membutuhkan teknik sambungan berjarak 2-3mm untuk mencegah pembusukan kayu akibat kelembapan di Palembang. |
 | `cara-kenali-bengkel-laser-cutting-presisi-palembang` | Cara Kenali Bengkel Laser Cutting yang Benar-Benar Presisi di Palembang | 15 Agustus 2026 | tips | Presisi bisa diverifikasi pembeli lewat tanda yang bisa dicek sendiri di lapangan: toleransi 0.1mm, tepi potong tanpa gerinda, konsistensi antar panel, rincian biaya tertulis, mockup 3D gratis, dan garansi tertulis minimal 1 tahun. |
 | `pagar-klasik-geometris-palembang` | Pagar Motif Klasik Geometris untuk Perumahan Mewah di Palembang | 24 Agustus 2026 | tips | Perpaduan garis tegas dan simetris gaya art deco dengan pelapis dasar Epoxy Zinc-Rich Primer dan cat PU agar tahan cuaca Palembang. |
+| `panduan-material-laser-cutting-palembang` | Panduan Lengkap Memilih Material Jasa Laser Cutting di Palembang | 13 Oktober 2026 | panduan | Pemilihan material harus cocok dengan 3 mesin spesialis di workshop Sriwijaya Grafika (Fiber Laser untuk logam, CNC Router untuk ACP/kayu, Laser CO2 untuk akrilik) disertai rincian tarif resmi 2026. |
 
-### 4.2 Topik Rekomendasi (Open)
+### 7.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
 2. "Motif Songket Palembang pada Pagar Laser Cutting — Modernisasi Budaya Lokal"
 3. "Kenapa Akrilik Lebih Baik dari Kaca untuk Partisi Kantor — Analisis Ketahanan"
@@ -199,12 +264,12 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 
 ---
 
-## 7. Branding & Karakter (Srifika)
+## 8. Branding & Karakter (Srifika)
 
 **Base Character Srifika (Wajib digunakan di semua prompt):**
 > "A friendly young Indonesian woman named Srifika, confident and smiling, wearing a professional charcoal-black work polo shirt with the brand's vibrant orange (#f97316) accents and collar, sleeves slightly rolled, black slim-fit work pants, subtle work ID lanyard, neat ponytail hair. Consistent face and appearance across every scene. Photorealistic, 8k resolution, cinematic lighting."
 
-### 7.1 Img Prompts Halaman Harga (Contoh Penggunaan)
+### 8.1 Img Prompts Halaman Harga (Contoh Penggunaan)
 
 | Area | Img Prompt |
 |---|---|
@@ -214,7 +279,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 
 ---
 
-## 5. Referensi Cepat (Trust Signals)
+## 9. Referensi Cepat (Trust Signals)
 - "Sejak 2008 melalui Sriwijaya Grafika"
 - "Garansi 1 tahun penuh"
 - "Workshop Talang Jambe (Kunjungi Langsung)"
