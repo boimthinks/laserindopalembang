@@ -37,9 +37,9 @@ Berbeda dengan sistem laser yang mengandalkan lelehan panas, mesin router mengan
 
 Material lembaran yang rutin kami proses meliputi:
 
-* **Aluminium Composite Panel (ACP):** Terdiri dari inti polimer padat yang diapit dua lembar plat aluminium tipis. Karakter bahannya sangat tahan terhadap cuaca panas terik dan hujan lebat di Palembang, menjadikannya pilihan utama untuk fasad ruko, pembungkus tiang gedung, dan latar plang toko. Anda dapat melihat detail peruntukannya pada halaman [ACP dan PVC](/material/acp-pvc).
+* **Aluminium Composite Panel (ACP):** Terdiri dari inti polimer padat yang diapit dua lembar plat aluminium tipis. Karakter bahannya sangat tahan terhadap cuaca panas terik dan hujan lebat di Palembang, menjadikannya pilihan utama untuk fasad ruko, pembungkus tiang gedung, dan latar plang toko. Anda dapat melihat detail peruntukannya pada halaman [ACP dan PVC](/material/acp-pvc/).
 * **Plywood dan Multiplek Kayu:** Lembaran serat kayu berlapis silang mulai ketebalan 3 mm hingga 20 mm. Sering digunakan pengrajin mebel untuk pembuatan ambalan, modul kitchen set, dan partisi ruangan bermotif modern.
-* **MDF dan HMR Hijau:** Papan olahan serbuk kayu dengan kepadatan tinggi. Varian High Moisture Resistance (HMR) berwarna hijau sangat diminati karena tidak mudah lapuk di area ruangan berpendingin udara. Informasi mendalam seputar bahan ini tersedia di halaman [Kayu dan MDF](/material/kayu-mdf).
+* **MDF dan HMR Hijau:** Papan olahan serbuk kayu dengan kepadatan tinggi. Varian High Moisture Resistance (HMR) berwarna hijau sangat diminati karena tidak mudah lapuk di area ruangan berpendingin udara. Informasi mendalam seputar bahan ini tersedia di halaman [Kayu dan MDF](/material/kayu-mdf/).
 * **PVC Foam Board:** Lembaran papan plastik padat berwarna putih yang seratus persen kedap air serta bebas serangan rayap. Sangat cocok diaplikasikan pada sekat kamar mandi, dekorasi dinding cafe semi terbuka, dan ventilasi udara.
 
 ## Keunggulan Mekanis Pemotongan Komputerisasi Tiga Sumbu
@@ -74,7 +74,7 @@ Berikut adalah tabel tarif resmi jasa potong per keping di workshop Talang Jambe
 | Aluminium Composite Panel (ACP) | 3 mm | Rp 200.000 |
 | Aluminium Composite Panel (ACP) | 4 mm | Rp 250.000 |
 
-Tabel harga di atas berlaku untuk jasa pengerjaan tanpa bahan. Jika Anda ingin melihat tarif pemotongan plat besi fiber laser atau akrilik CO2, Anda dapat langsung memeriksa rincian lengkapnya di halaman [Daftar Harga Resmi](/harga).
+Tabel harga di atas berlaku untuk jasa pengerjaan tanpa bahan. Jika Anda ingin melihat tarif pemotongan plat besi fiber laser atau akrilik CO2, Anda dapat langsung memeriksa rincian lengkapnya di halaman [Daftar Harga Resmi](/harga/).
 
 ## Simulasi Perhitungan Anggaran Produksi Partisi Ruangan
 

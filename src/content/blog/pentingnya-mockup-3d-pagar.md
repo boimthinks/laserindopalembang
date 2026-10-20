@@ -41,7 +41,7 @@ Di Laserindo Palembang, mockup 3D dibuat dengan menggabungkan foto lokasi rumah 
 
 Proses ini mempersempit ruang salah paham antara Anda sebagai pemilik dan tim produksi. Yang Anda lihat adalah yang akan dipasang.
 
-Untuk melihat pilihan motif yang tersedia, buka [halaman pagar laser cutting](/layanan/pagar) di situs kami.
+Untuk melihat pilihan motif yang tersedia, buka [halaman pagar laser cutting](/layanan/pagar/) di situs kami.
 
 ## Apa yang bisa diperiksa dari mockup 3D
 
@@ -61,7 +61,7 @@ Mockup 3D tidak lahir dari nol. Bahan awalnya bisa apa saja.
 
 Anda bisa datang ke workshop Talang Jambe membawa sketsa tangan, screenshot motif dari internet, atau foto pagar idaman. Tim desain mengolahnya menjadi file digital dan menempatkannya di foto rumah Anda.
 
-Bahkan untuk klien yang belum punya ide sama sekali, tersedia [katalog desain](/katalog) yang bisa dipilih. Langkah ini membuat proses konsultasi terasa ringan bagi pemilik rumah yang tidak paham istilah teknik.
+Bahkan untuk klien yang belum punya ide sama sekali, tersedia [katalog desain](/katalog/) yang bisa dipilih. Langkah ini membuat proses konsultasi terasa ringan bagi pemilik rumah yang tidak paham istilah teknik.
 
 ## Mockup 3D menghemat biaya dan waktu
 
@@ -69,7 +69,7 @@ Kesalahan yang ditemukan setelah pemotongan adalah yang paling mahal. Plat besi 
 
 Sebagai gambaran, satu meter persegi pagar jadi di Palembang berkisar antara Rp 800.000 sampai Rp 3.000.000. Kesalahan desain pada bentang tiga meter artinya Anda membayar ulang material, waktu produksi, dan ongkos finishing.
 
-Justru karena itulah tahap desain dan revisi mockup kami anggap sebagai investasi. Sebagian besar waktu produksi yang panjang justru ada di tahap ini, seperti dibahas di [artikel soal lama pengerjaan pagar](/blog/waktu-pengerjaan-pagar-laser-cut).
+Justru karena itulah tahap desain dan revisi mockup kami anggap sebagai investasi. Sebagian besar waktu produksi yang panjang justru ada di tahap ini, seperti dibahas di [artikel soal lama pengerjaan pagar](/blog/waktu-pengerjaan-pagar-laser-cut/).
 
 ## Apa bedanya jika produksi tanpa mockup
 
@@ -100,4 +100,4 @@ Visualisasi ini bukan layanan premium opsional. Mockup 3D telah menjadi bagian b
 
 Anda tidak dipungut biaya untuk melihat desain sebelum produksi dimulai. Justru dari sinilah kami menghindari sisa material, mengurangi revisi, dan memastikan pagar yang terpasang persis seperti yang disetujui.
 
-Kunjungi langsung workshop kami di Jl. AMD Jl. Pertanian No.105, Talang Jambe, Sukarami, atau hubungi kami lewat [halaman kontak](/kontak) untuk mulai diskusi desain.
+Kunjungi langsung workshop kami di Jl. AMD Jl. Pertanian No.105, Talang Jambe, Sukarami, atau hubungi kami lewat [halaman kontak](/kontak/) untuk mulai diskusi desain.

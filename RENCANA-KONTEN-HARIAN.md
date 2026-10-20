@@ -18,7 +18,7 @@ Setiap kali menjalankan tugas penulisan harian:
    - Tulis artikel utuh dengan gaya natural, human-centric, tanpa klise AI, bebas em-dash (—) dan en-dash (–).
    - Frontmatter wajib lengkap (`title` maks 5 kata, `titleSeo` 50-60 karakter tanpa titik dua, `excerpt` 110-160 karakter, `date` hari ini, `topik`, `imgurl`, `imgalt`, `imgPrompt`, `pengantar`, `kesimpulan` + CTA WA, `published: true`, `faq` 5 item semantis).
    - Dilarang keras aksara Hanzi/non-Latin, dilarang emoji, dilarang titik dua atau penomoran angka pada heading (H1/H2).
-   - Minimal 2-3 internal links ke halaman layanan/material terkait dan `/harga`.
+   - Minimal 2-3 internal links (ke halaman layanan/material terkait dan `/harga/`). WAJIB menggunakan trailing slash `/` di setiap link internal (misal `/material/acp-pvc/`, `/harga/`, `/layanan/pagar/`) untuk menghindari 301 redirect.
 4. **Simpan File:** Tulis atau perbarui file markdown di `src/content/blog/<slug>.md`.
 5. **Update Tracker:** Ubah status `- [ ]` menjadi `- [x]` di file ini.
 6. **Update SUMBER-PENGETAHUAN:** Tambahkan baris baru pada tabel `## 7.1 Topik yang Sudah Ditulis` di `SUMBER-PENGETAHUAN.md`.

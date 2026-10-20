@@ -8,6 +8,7 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   site: 'https://laserindopalembang.com',
+  trailingSlash: 'always',
   prefetch: true,
   integrations: [sitemap(), mdx(), react()],
   vite: {

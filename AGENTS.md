@@ -191,4 +191,5 @@ No external image file for logo.
   1. Rujuk ke `RENCANA-KONTEN-HARIAN.md` dan ambil artikel pertama yang belum centang (`- [ ]`).
   2. Jalankan skill `pakar-entity-seo` terlebih dahulu: lakukan riset semantik, ekstraksi keyword (Langkah 1), pemetaan entitas Schema.org / Knowledge Graph (Langkah 2), dan perancangan outline E-E-A-T mendalam dengan simulasi biaya / RAB (Langkah 3).
   3. Setelah outline arsitektur selesai, eksekusi penulisan artikel lengkap menggunakan skill `penulis-ahli` mematuhi seluruh kaidah humanizer, non-komoditas, dan batasan `SUMBER-PENGETAHUAN.md` (bebas em-dash/en-dash, tanpa emoji, tanpa Hanzi, heading alami tanpa nomor).
-  4. Centang `- [x]` di `RENCANA-KONTEN-HARIAN.md` dan catat insight publikasi di tabel riwayat `SUMBER-PENGETAHUAN.md`.
+  4. WAJIB Trailing Slash: Semua link internal (anchor text) WAJIB berakhiran slash `/` (contoh: `/material/acp-pvc/`, `/harga/`, `/layanan/pagar/`) untuk menghindari 301 redirect.
+  5. Centang `- [x]` di `RENCANA-KONTEN-HARIAN.md` dan catat insight publikasi di tabel riwayat `SUMBER-PENGETAHUAN.md`.
