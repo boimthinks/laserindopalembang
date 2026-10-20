@@ -255,6 +255,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `cara-kenali-bengkel-laser-cutting-presisi-palembang` | Cara Kenali Bengkel Laser Cutting yang Benar-Benar Presisi di Palembang | 15 Agustus 2026 | tips | Presisi bisa diverifikasi pembeli lewat tanda yang bisa dicek sendiri di lapangan: toleransi 0.1mm, tepi potong tanpa gerinda, konsistensi antar panel, rincian biaya tertulis, mockup 3D gratis, dan garansi tertulis minimal 1 tahun. |
 | `pagar-klasik-geometris-palembang` | Pagar Motif Klasik Geometris untuk Perumahan Mewah di Palembang | 24 Agustus 2026 | tips | Perpaduan garis tegas dan simetris gaya art deco dengan pelapis dasar Epoxy Zinc-Rich Primer dan cat PU agar tahan cuaca Palembang. |
 | `panduan-material-laser-cutting-palembang` | Panduan Lengkap Memilih Material Jasa Laser Cutting di Palembang | 13 Oktober 2026 | panduan | Pemilihan material harus cocok dengan 3 mesin spesialis di workshop Sriwijaya Grafika (Fiber Laser untuk logam, CNC Router untuk ACP/kayu, Laser CO2 untuk akrilik) disertai rincian tarif resmi 2026. |
+| `jasa-cnc-router-palembang-acp-mdf-plywood` | Jasa CNC Router Palembang Potong ACP Plywood dan MDF Presisi | 20 Oktober 2026 | panduan | Mesin CNC router meja penuh 122x244 cm memproses lembaran non-logam (ACP, multiplek, MDF, PVC) secara otomatis dengan toleransi 0.1mm tanpa tepi hangus atau gompal, menggunakan tarif per keping lembaran resmi Sriwijaya Grafika. |
 
 ### 7.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"
