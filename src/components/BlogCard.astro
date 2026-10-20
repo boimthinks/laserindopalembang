@@ -12,7 +12,7 @@ interface Props {
 const { id, title, excerpt, imgurl, imgalt, topik, date } = Astro.props;
 ---
 
-<a href={`/blog/${id}`} class="blog-card bg-brand-surface-alt rounded-xl border border-zinc-800 overflow-hidden hover:shadow-lg hover:shadow-brand-primary/5 transition-all no-underline group" data-cat={topik}>
+<a href={`/blog/${id}/`} class="blog-card bg-brand-surface-alt rounded-xl border border-zinc-800 overflow-hidden hover:shadow-lg hover:shadow-brand-primary/5 transition-all no-underline group" data-cat={topik}>
   <div class="aspect-[4/3] overflow-hidden">
     <img 
       src={imgurl} 

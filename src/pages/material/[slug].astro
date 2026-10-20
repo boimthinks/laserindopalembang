@@ -18,7 +18,7 @@ const { material } = Astro.props;
 <BaseLayout
   title={material.title}
   description={material.description}
-  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Material', slug: '/material/besi' }, { name: material.shortTitle, slug: `/material/${material.slug}` }]}
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Material', slug: '/material/besi/' }, { name: material.shortTitle, slug: `/material/${material.slug}/` }]}
 >
   <div class="pt-36 pb-20 bg-brand-surface-alt border-b border-zinc-800">
     <div class="max-w-7xl mx-auto px-4">

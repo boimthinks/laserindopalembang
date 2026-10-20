@@ -57,7 +57,7 @@ if (faqFiltered.length > 0) {
     currency: 'IDR' 
   }}
   showLocalBusiness={true}
-  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Index Layanan', slug: '/layanan' }, { name: service.title, slug: `/layanan/${service.slug}` }]}
+  breadcrumbs={[{ name: 'Beranda', slug: '/' }, { name: 'Index Layanan', slug: '/layanan/' }, { name: service.title, slug: `/layanan/${service.slug}/` }]}
 >
   <!-- Hero Section -->
   <div class="relative pt-36 pb-20 bg-brand-surface border-b border-zinc-800 overflow-hidden">
@@ -157,7 +157,7 @@ if (faqFiltered.length > 0) {
                 const ms = motifSlug(m);
                 const sm = serviceMotifs.find((x) => x.serviceSlug === service.slug && x.slug === ms);
                 return (
-                  <a href={`/layanan/${service.slug}/motif/${ms}`} class="group block bg-brand-surface-alt rounded-2xl border border-zinc-800 overflow-hidden hover:border-brand-primary/50 transition-all no-underline">
+                  <a href={`/layanan/${service.slug}/motif/${ms}/`} class="group block bg-brand-surface-alt rounded-2xl border border-zinc-800 overflow-hidden hover:border-brand-primary/50 transition-all no-underline">
                     <div class="aspect-[4/3] overflow-hidden">
                       <img src={sm ? sm.image : service.image} alt={m} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                     </div>
@@ -244,7 +244,7 @@ if (faqFiltered.length > 0) {
             <h3 class="text-white font-bold text-sm uppercase tracking-widest mb-6">Layanan Lainnya</h3>
             <div class="space-y-3">
               {services.filter((s) => s.slug !== service.slug).map((s) => (
-                <a href={`/layanan/${s.slug}`} class="flex items-center justify-between p-3 rounded-xl bg-zinc-900/50 border border-zinc-800 hover:border-brand-primary/30 hover:bg-zinc-800/50 transition-all group no-underline text-zinc-400 hover:text-white">
+                <a href={`/layanan/${s.slug}/`} class="flex items-center justify-between p-3 rounded-xl bg-zinc-900/50 border border-zinc-800 hover:border-brand-primary/30 hover:bg-zinc-800/50 transition-all group no-underline text-zinc-400 hover:text-white">
                   <span class="text-sm font-medium">{s.title}</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-0 group-hover:opacity-100 transition-opacity"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
