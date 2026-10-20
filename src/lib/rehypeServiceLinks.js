@@ -1,13 +1,13 @@
 import { visit } from 'unist-util-visit';
 
 const KEYWORDS = [
-  { label: 'pagar', url: '/layanan/pagar' },
-  { label: 'kanopi', url: '/layanan/kanopi' },
-  { label: 'partisi', url: '/layanan/partisi' },
-  { label: 'railing tangga', url: '/layanan/railing' },
-  { label: 'fasad bangunan', url: '/layanan/fasad' },
-  { label: 'plat nama', url: '/layanan/plat-nama' },
-  { label: 'trofi', url: '/layanan/plat-nama' },
+  { label: 'pagar', url: '/layanan/pagar/' },
+  { label: 'kanopi', url: '/layanan/kanopi/' },
+  { label: 'partisi', url: '/layanan/partisi/' },
+  { label: 'railing tangga', url: '/layanan/railing/' },
+  { label: 'fasad bangunan', url: '/layanan/fasad/' },
+  { label: 'plat nama', url: '/layanan/plat-nama/' },
+  { label: 'trofi', url: '/layanan/plat-nama/' },
 ];
 
 export default function remarkServiceLinks() { console.error("[PLUGIN CALLED]");
