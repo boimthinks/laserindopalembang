@@ -256,6 +256,7 @@ Setiap artikel harus menyertakan `imgPrompt` yang dirancang untuk menghasilkan g
 | `pagar-klasik-geometris-palembang` | Pagar Motif Klasik Geometris untuk Perumahan Mewah di Palembang | 24 Agustus 2026 | tips | Perpaduan garis tegas dan simetris gaya art deco dengan pelapis dasar Epoxy Zinc-Rich Primer dan cat PU agar tahan cuaca Palembang. |
 | `panduan-material-laser-cutting-palembang` | Panduan Lengkap Memilih Material Jasa Laser Cutting di Palembang | 13 Oktober 2026 | panduan | Pemilihan material harus cocok dengan 3 mesin spesialis di workshop Sriwijaya Grafika (Fiber Laser untuk logam, CNC Router untuk ACP/kayu, Laser CO2 untuk akrilik) disertai rincian tarif resmi 2026. |
 | `jasa-cnc-router-palembang-acp-mdf-plywood` | Jasa CNC Router Palembang Potong ACP Plywood dan MDF Presisi | 20 Oktober 2026 | panduan | Mesin CNC router meja penuh 122x244 cm memproses lembaran non-logam (ACP, multiplek, MDF, PVC) secara otomatis dengan toleransi 0.1mm tanpa tepi hangus atau gompal, menggunakan tarif per keping lembaran resmi Sriwijaya Grafika. |
+| `jasa-cutting-acp-palembang-fasad-reklame` | Jasa Cutting ACP Palembang untuk Fasad Toko dan Reklame | 21 Oktober 2026 | panduan | Pemotongan lembaran ACP 3 mm (PE) dan 4 mm (PVDF) Seven/Marks menggunakan CNC router presisi untuk fasad ruko dan neon box reklame, dengan teknik v-grooving tekukan sudut rapi serta simulasi biaya jasa potong per keping lembaran. |
 
 ### 7.2 Topik Rekomendasi (Open)
 1. "Panduan Harga Laser Cutting Palembang 2026 — Cara Hitung Per Meter"

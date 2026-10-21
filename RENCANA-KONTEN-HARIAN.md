@@ -32,8 +32,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa CNC router Palembang, jasa CNC cutting, CNC router multiplek, jasa potong MDF
   - *Fokus:* Kapasitas mesin CNC router Talang Jambe (122x244 cm), ragam mata spindle router, hasil potong rapi tanpa gerigi, dan jenis material non-logam lembaran.
   
-- [ ] **Hari 02:** `Panduan Jasa Cutting ACP Palembang untuk Fasad Toko dan Reklame`
-  - *Slug Rencana:* `jasa-cutting-acp-palembang-fasad-reklame`
+- [x] **Hari 02:** `Panduan Jasa Cutting ACP Palembang untuk Fasad Toko dan Reklame` (Terbit: 21 Oktober 2026, Slug: `jasa-cutting-acp-palembang-fasad-reklame`)
   - *Target Keyword:* jasa cutting ACP Palembang, CNC cutting ACP, cutting ACP motif, jasa lubang ACP
   - *Fokus:* ACP Seven/Marks untuk fasad ruko dan neon box, ketebalan 3mm vs 4mm, motif perforated/ornamen, dan tarif potong per lembar.
 
