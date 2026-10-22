@@ -36,8 +36,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa cutting ACP Palembang, CNC cutting ACP, cutting ACP motif, jasa lubang ACP
   - *Fokus:* ACP Seven/Marks untuk fasad ruko dan neon box, ketebalan 3mm vs 4mm, motif perforated/ornamen, dan tarif potong per lembar.
 
-- [ ] **Hari 03:** `Partisi Ruangan Minimalis dari MDF dan PVC Board Menggunakan Mesin CNC Router`
-  - *Slug Rencana:* `partisi-ruangan-mdf-pvc-board-cnc-router`
+- [x] **Hari 03:** `Partisi Ruangan Minimalis dari MDF dan PVC Board Menggunakan Mesin CNC Router` (Terbit: 22 Oktober 2026, Slug: `partisi-ruangan-mdf-pvc-board-cnc-router`)
   - *Target Keyword:* CNC PVC board, jasa potong PVC board, cutting MDF, jasa cutting partisi ruangan
   - *Fokus:* Perbandingan PVC board (tahan air/lembab) vs MDF (ekonomis) untuk partisi interior rumah dan cafe di iklim lembap Palembang.
 
