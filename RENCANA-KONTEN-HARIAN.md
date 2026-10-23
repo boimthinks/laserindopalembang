@@ -40,8 +40,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* CNC PVC board, jasa potong PVC board, cutting MDF, jasa cutting partisi ruangan
   - *Fokus:* Perbandingan PVC board (tahan air/lembab) vs MDF (ekonomis) untuk partisi interior rumah dan cafe di iklim lembap Palembang.
 
-- [ ] **Hari 04:** `Jasa Potong Multiplek dan Plywood dengan CNC Router untuk Pengrajin Furniture`
-  - *Slug Rencana:* `jasa-potong-multiplek-plywood-cnc-router-furniture`
+- [x] **Hari 04:** `Jasa Potong Multiplek dan Plywood dengan CNC Router untuk Pengrajin Furniture` (Terbit: 23 Oktober 2026, Slug: `jasa-potong-multiplek-plywood-cnc-router-furniture`)
   - *Target Keyword:* CNC router multiplek, jasa potong multiplek CNC, jasa CNC router plywood, cutting panel dinding
   - *Fokus:* Solusi efisiensi waktu untuk workshop mebel & interior Palembang, pemotongan kisi-kisi kabinet, ambalan, dan wall panel dekoratif presisi.
 
