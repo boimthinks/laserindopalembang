@@ -44,8 +44,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* CNC router multiplek, jasa potong multiplek CNC, jasa CNC router plywood, cutting panel dinding
   - *Fokus:* Solusi efisiensi waktu untuk workshop mebel & interior Palembang, pemotongan kisi-kisi kabinet, ambalan, dan wall panel dekoratif presisi.
 
-- [ ] **Hari 05:** `Biaya Jasa CNC Router Per Lembar di Palembang — Rincian Bahan dan Tanpa Bahan`
-  - *Slug Rencana:* `biaya-jasa-cnc-router-per-lembar-palembang`
+- [x] **Hari 05:** `Biaya Jasa CNC Router Per Lembar di Palembang — Rincian Bahan dan Tanpa Bahan` (Terbit: 24 Oktober 2026, Slug: `biaya-jasa-cnc-router-per-lembar-palembang`)
   - *Target Keyword:* harga jasa CNC router per lembar, harga cutting ACP per lembar, jasa CNC router tanpa bahan
   - *Fokus:* Transparansi sistem harga jasa potong per keping lembaran utuh (122x244 cm) sesuai daftar harga resmi Sriwijaya Grafika.
 
