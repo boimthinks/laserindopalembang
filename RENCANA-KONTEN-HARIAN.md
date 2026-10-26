@@ -51,7 +51,7 @@ Setiap kali menjalankan tugas penulisan harian:
 ---
 
 ### Kluster B: Laser CO2 & Spesialis Akrilik / Advertising
-- [ ] **Hari 06:** `Jasa Laser Cutting Akrilik Presisi di Palembang dengan Mesin Laser CO2`
+- [x] **Hari 06:** `Jasa Laser Cutting Akrilik Presisi di Palembang dengan Mesin Laser CO2` (Terbit: 26 Oktober 2026, Slug: `jasa-laser-cutting-akrilik-palembang-laser-co2`)
   - *Slug Rencana:* `jasa-laser-cutting-akrilik-palembang-laser-co2`
   - *Target Keyword:* jasa laser cutting akrilik, jasa potong akrilik, jasa laser CO2, laser cutting akrilik Palembang
   - *Fokus:* Keunggulan tepi potongan bening mengkilap (*flame-polished*), beda hasil laser CO2 vs pisau cutter manual, toleransi detail rumit.
