@@ -56,7 +56,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa laser cutting akrilik, jasa potong akrilik, jasa laser CO2, laser cutting akrilik Palembang
   - *Fokus:* Keunggulan tepi potongan bening mengkilap (*flame-polished*), beda hasil laser CO2 vs pisau cutter manual, toleransi detail rumit.
 
-- [ ] **Hari 07:** `Pembuatan Huruf Timbul dan Logo Kantor Custom dari Akrilik Laser Cutting`
+- [x] **Hari 07:** `Pembuatan Huruf Timbul dan Logo Kantor Custom dari Akrilik Laser Cutting` (Terbit: 27 Oktober 2026, Slug: `huruf-timbul-logo-kantor-akrilik-laser-cutting`)
   - *Slug Rencana:* `huruf-timbul-logo-kantor-akrilik-laser-cutting`
   - *Target Keyword:* jasa cutting huruf akrilik, huruf timbul akrilik, potong huruf akrilik, cutting logo akrilik
   - *Fokus:* Standardisasi akurasi huruf kecil font lekuk, kombinasi akrilik solid dan spon eva untuk signage instansi/perusahaan di Palembang.
