@@ -17,6 +17,15 @@ Jaringan 8 microsite satelit untuk dominasi pencarian lokal (*Local & GEO SEO*) 
 | 7 | `cuttinglaserlinggau.com` | Kota Lubuklinggau | `microsite/sites/linggau` |
 | 8 | `cuttinglaserbetung.com` | Betung (Banyuasin) | `microsite/sites/betung` |
 
+
+PALI (Talang Ubi & Pendopo)
+Sekayu (Musi Banyuasin)
+Indralaya (Ogan Ilir)
+Kota Prabumulih
+Muara Enim & Tanjung Enim
+Kabupaten Lahat
+Kota Lubuklinggau
+Betung (Banyuasin)
 ---
 
 ## Cara Deploy ke Netlify

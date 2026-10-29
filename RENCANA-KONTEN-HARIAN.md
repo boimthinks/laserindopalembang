@@ -61,7 +61,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa cutting huruf akrilik, huruf timbul akrilik, potong huruf akrilik, cutting logo akrilik
   - *Fokus:* Standardisasi akurasi huruf kecil font lekuk, kombinasi akrilik solid dan spon eva untuk signage instansi/perusahaan di Palembang.
 
-- [ ] **Hari 08:** `Cara Hitung Tarif Jasa Potong Laser Akrilik Per Menit di Palembang`
+- [x] **Hari 08:** `Cara Hitung Tarif Jasa Potong Laser Akrilik Per Menit di Palembang` (Terbit: 29 Oktober 2026, Slug: `tarif-jasa-potong-laser-akrilik-per-menit-palembang`)
   - *Slug Rencana:* `tarif-jasa-potong-laser-akrilik-per-menit-palembang`
   - *Target Keyword:* harga cutting akrilik, tarif laser CO2 per menit, jasa cutting akrilik tanpa bahan
   - *Fokus:* Simulasi sistem hitung durasi kerja mesin (Rp 4.000/menit), tips optimasi alur vektor agar waktu potong efisien dan hemat biaya.

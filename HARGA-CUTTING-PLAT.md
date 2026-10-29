@@ -70,6 +70,3 @@
 | 2 - 10 mm | Rp 4.000,- / Menit |
 
 ---
-
-### Kontak / Informasi Lebih Lanjut
-* **Hubungi:** [085100888748](tel:085100888748)
