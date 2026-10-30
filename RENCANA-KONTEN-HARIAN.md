@@ -66,7 +66,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* harga cutting akrilik, tarif laser CO2 per menit, jasa cutting akrilik tanpa bahan
   - *Fokus:* Simulasi sistem hitung durasi kerja mesin (Rp 4.000/menit), tips optimasi alur vektor agar waktu potong efisien dan hemat biaya.
 
-- [ ] **Hari 09:** `Laser Cutting Akrilik untuk Neon Box dan Signage Usaha Kekinian`
+- [x] **Hari 09:** `Laser Cutting Akrilik untuk Neon Box dan Signage Usaha Kekinian` (Terbit: 30 Oktober 2026, Slug: `laser-cutting-akrilik-neon-box-signage`)
   - *Slug Rencana:* `laser-cutting-akrilik-neon-box-signage`
   - *Target Keyword:* laser cutting akrilik untuk neon box, akrilik signage, cutting akrilik susu, jasa cutting akrilik reklame
   - *Fokus:* Penggunaan akrilik susu sebagai diffuser lampu LED yang merata, teknik sambungan interlocking box akrilik tanpa paku.
