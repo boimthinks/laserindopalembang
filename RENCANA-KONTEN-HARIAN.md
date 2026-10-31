@@ -71,7 +71,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* laser cutting akrilik untuk neon box, akrilik signage, cutting akrilik susu, jasa cutting akrilik reklame
   - *Fokus:* Penggunaan akrilik susu sebagai diffuser lampu LED yang merata, teknik sambungan interlocking box akrilik tanpa paku.
 
-- [ ] **Hari 10:** `Jasa Pembuatan Nomor Rumah dan Plakat Akrilik Custom Laser Cutting`
+- [x] **Hari 10:** `Jasa Pembuatan Nomor Rumah dan Plakat Akrilik Custom Laser Cutting` (Terbit: 31 Oktober 2026, Slug: `nomor-rumah-plakat-akrilik-custom-laser-cutting`)
   - *Slug Rencana:* `nomor-rumah-plakat-akrilik-custom-laser-cutting`
   - *Target Keyword:* jasa cutting akrilik untuk nomor rumah, jasa laser cutting plakat akrilik, cutting akrilik custom satuan
   - *Fokus:* Permintaan pasar ritel cluster perumahan Palembang untuk plat nomor rumah estetik, souvenir, dan plakat wisuda/penghargaan.
