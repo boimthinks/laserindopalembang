@@ -79,7 +79,7 @@ Setiap kali menjalankan tugas penulisan harian:
 ---
 
 ### Kluster C: Fiber Laser Logam Khusus (Stainless, Galvanis, Aluminium & Plat Tebal)
-- [ ] **Hari 11:** `Jasa Laser Cutting Stainless Steel di Palembang — Pilih Grade 201 atau 304`
+- [x] **Hari 11:** `Jasa Laser Cutting Stainless Steel di Palembang — Pilih Grade 201 atau 304` (Terbit: 01 November 2026, Slug: `laser-cutting-stainless-steel-palembang-201-304`)
   - *Slug Rencana:* `laser-cutting-stainless-steel-palembang-201-304`
   - *Target Keyword:* jasa laser cutting stainless, laser cutting stainless steel, harga laser cutting stainless per meter
   - *Fokus:* Analisis ketahanan karat di Palembang, perbedaan potongan gas nitrogen (bersih) vs oksigen, ketebalan 0,8 – 3 mm.

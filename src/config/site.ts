@@ -26,7 +26,7 @@ export const SITE = {
     phone: '0852-1511-1125',
     phoneRaw: '6285215111125',
     whatsapp: '6285215111125',
-    whatsappText: 'Halo%20Laserindo%20Palembang%2C%20saya%20mau%20tanya%20tentang...',
+    whatsappText: 'Halo Admin laserindopalembang.com, saya tertarik dengan layanan laser cutting dan ingin konsultasi...',
     email: 'sriwijayagrafika@gmail.com',
   },
 

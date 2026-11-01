@@ -1,8 +1,15 @@
 import { internalLinksMap } from '../data/internalLinks';
 
 export function waUrl(phone: string, text?: string): string {
-  const msg = text || 'Halo%20Laserindo%20Palembang%2C%20saya%20mau%20tanya%20tentang...';
-  return `https://wa.me/${phone}?text=${msg}`;
+  const defaultMsg = 'Halo Admin laserindopalembang.com, saya tertarik dengan layanan laser cutting dan ingin konsultasi...';
+  const raw = text || defaultMsg;
+  let decoded = raw;
+  try {
+    decoded = decodeURIComponent(raw);
+  } catch (_) {
+    decoded = raw;
+  }
+  return `https://wa.me/${phone}?text=${encodeURIComponent(decoded)}`;
 }
 
 export function formatPrice(amount: number): string {

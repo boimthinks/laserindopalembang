@@ -4,7 +4,7 @@ import CTABanner from '../components/CTABanner.astro';
 import Schema from '../components/Schema.astro';
 import { existsSync } from 'node:fs';
 import { pricingFiberLaser, pricingCncRouter, pricingCo2Laser, pricingServices } from '../data/pricing';
-import { formatPrice } from '../lib/utils';
+import { formatPrice, waUrl } from '../lib/utils';
 import { SITE } from '../config/site';
 
 const hasHeroImage = existsSync('public/img/harga-srifika-hero.webp');
@@ -268,7 +268,7 @@ const hasHeroImage = existsSync('public/img/harga-srifika-hero.webp');
         <div class="bg-brand-surface-alt rounded-xl p-8 border border-zinc-800">
           <h3 class="text-xl font-bold text-white mb-4">Cara Pesan Jasa Potong</h3>
           <ol class="space-y-3 text-zinc-400 text-sm list-decimal pl-5">
-            <li>Kirim file gambar/vektor (.DXF/.DWG/.CDR/.AI) atau sketsa ke WhatsApp <strong>{SITE.contact.phone}</strong>.</li>
+            <li>Kirim file gambar/vektor (.DXF/.DWG/.CDR/.AI) atau sketsa ke WhatsApp <a href={waUrl(SITE.contact.whatsapp, 'Halo Admin laserindopalembang.com, saya ingin kirim file gambar/desain untuk hitung tarif laser cutting...')} target="_blank" rel="noopener" class="text-brand-primary font-bold hover:underline">{SITE.contact.phone}</a>.</li>
             <li>Sebutkan jenis material, ketebalan, dan ukuran lembaran yang akan dipotong.</li>
             <li>Tim teknis kami menghitung kebutuhan waktu dan memberikan penawaran harga resmi.</li>
             <li>Setelah konfirmasi, proses pemotongan dikerjakan presisi oleh operator berpengalaman.</li>

@@ -18,7 +18,7 @@ const service = services.find((s) => s.slug === motif.serviceSlug)!;
 const relatedMotifs = serviceMotifs.filter((m) => m.serviceSlug === motif.serviceSlug && m.slug !== motif.slug);
 const siteUrl = Astro.site?.toString() || `https://laserindopalembang.com`;
 const ogImage = `${siteUrl}${motif.image}`;
-const waText = `Halo%2C%20saya%20tertarik%20dengan%20motif%20${encodeURIComponent(motif.name)}%20untuk%20${encodeURIComponent(service.title)}`;
+const waText = `Halo Admin laserindopalembang.com, saya tertarik dengan motif ${motif.name} untuk ${service.title}...`;
 ---
 
 <BaseLayout

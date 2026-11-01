@@ -65,7 +65,7 @@ const { material } = Astro.props;
             <h3 class="font-semibold text-white mb-2">Harga Jasa Potong</h3>
             <p class="text-sm text-zinc-400">{material.priceRange}</p>
             <p class="text-xs text-zinc-500 mt-1">*Harga dapat berubah tergantung kerumitan dan quantity</p>
-            <a href={waUrl(SITE.contact.whatsapp)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
+            <a href={waUrl(SITE.contact.whatsapp, `Halo laserindopalembang.com, saya ingin tanya jasa potong material ${material.name}. Berapa estimasi biaya dan spesifikasinya?`)} target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-lg bg-brand-accent text-white font-medium text-sm hover:bg-brand-accent-light transition-colors">
               Tanya Harga
             </a>
           </div>
