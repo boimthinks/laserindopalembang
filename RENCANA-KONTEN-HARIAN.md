@@ -84,7 +84,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa laser cutting stainless, laser cutting stainless steel, harga laser cutting stainless per meter
   - *Fokus:* Analisis ketahanan karat di Palembang, perbedaan potongan gas nitrogen (bersih) vs oksigen, ketebalan 0,8 – 3 mm.
 
-- [ ] **Hari 12:** `Keunggulan Plat Galvanis dan Aluminium untuk Laser Cutting Eksterior`
+- [x] **Hari 12:** `Keunggulan Plat Galvanis dan Aluminium untuk Laser Cutting Eksterior` (Terbit: 02 November 2026, Slug: `plat-galvanis-aluminium-laser-cutting-eksterior`)
   - *Slug Rencana:* `plat-galvanis-aluminium-laser-cutting-eksterior`
   - *Target Keyword:* jasa laser cutting galvanis, jasa laser cutting aluminium, jasa cutting plat galvanis
   - *Fokus:* Plat galvanis anti karat hemat biaya vs plat aluminium bobot ringan, karakteristik pemotongan fiber laser berdaya tinggi.
