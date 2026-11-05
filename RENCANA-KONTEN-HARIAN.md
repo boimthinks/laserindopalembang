@@ -89,7 +89,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa laser cutting galvanis, jasa laser cutting aluminium, jasa cutting plat galvanis
   - *Fokus:* Plat galvanis anti karat hemat biaya vs plat aluminium bobot ringan, karakteristik pemotongan fiber laser berdaya tinggi.
 
-- [ ] **Hari 13:** `Jasa Potong Plat Besi Tebal hingga 12 mm dengan Mesin Fiber Laser`
+- [x] **Hari 13:** `Jasa Potong Plat Besi Tebal hingga 12 mm dengan Mesin Fiber Laser` (Terbit: 05 November 2026, Slug: `potong-plat-besi-tebal-12mm-fiber-laser-palembang`)
   - *Slug Rencana:* `potong-plat-besi-tebal-12mm-fiber-laser-palembang`
   - *Target Keyword:* laser cutting plat tebal, laser cutting plat tipis, jasa potong plat laser presisi
   - *Fokus:* Kemampuan potong plat mild steel tebal untuk base plate tiang gedung, flange pipa, komponen mesin, dan ornamen gerbang besar.
