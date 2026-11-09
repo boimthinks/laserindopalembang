@@ -94,7 +94,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* laser cutting plat tebal, laser cutting plat tipis, jasa potong plat laser presisi
   - *Fokus:* Kemampuan potong plat mild steel tebal untuk base plate tiang gedung, flange pipa, komponen mesin, dan ornamen gerbang besar.
 
-- [ ] **Hari 14:** `Jasa Laser Cutting Tanpa Bahan — Solusi Bawa Plat Sendiri di Palembang`
+- [x] **Hari 14:** `Jasa Laser Cutting Tanpa Bahan — Solusi Bawa Plat Sendiri di Palembang` (Terbit: 09 November 2026, Slug: `jasa-laser-cutting-tanpa-bahan-bawa-plat-sendiri`)
   - *Slug Rencana:* `jasa-laser-cutting-tanpa-bahan-bawa-plat-sendiri`
   - *Target Keyword:* jasa laser cutting tanpa bahan, jasa potong plat per meter, jasa potong plat bahan sendiri
   - *Fokus:* Syarat membawa material sendiri (bebas karat berlebih, plat tidak melengkung), verifikasi file, dan tarif murni jasa potong per m².
