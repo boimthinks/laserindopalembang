@@ -201,4 +201,5 @@ No external image file for logo.
 
 - **Platform:** Netlify (CI/CD via GitHub)
 - **Target Path:** `https://github.com/boimthinks/laserindopalembang`
-- **Catatan & Metode:** Deploy via git commit & push origin main. JANGAN gunakan skill cpanel-domainesia!
+- **Branch produksi:** `master` (bukan `main`). Remote HEAD mengarah ke `master`.
+- **Catatan & Metode:** Deploy via git commit & push origin master. JANGAN gunakan skill cpanel-domainesia!
