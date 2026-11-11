@@ -193,3 +193,12 @@ No external image file for logo.
   3. Setelah outline arsitektur selesai, eksekusi penulisan artikel lengkap menggunakan skill `penulis-ahli` mematuhi seluruh kaidah humanizer, non-komoditas, dan batasan `SUMBER-PENGETAHUAN.md` (bebas em-dash/en-dash, tanpa emoji, tanpa Hanzi, heading alami tanpa nomor).
   4. WAJIB Trailing Slash: Semua link internal (anchor text) WAJIB berakhiran slash `/` (contoh: `/material/acp-pvc/`, `/harga/`, `/layanan/pagar/`) untuk menghindari 301 redirect.
   5. Centang `- [x]` di `RENCANA-KONTEN-HARIAN.md` dan catat insight publikasi di tabel riwayat `SUMBER-PENGETAHUAN.md`.
+
+
+---
+
+## Deployment Target
+
+- **Platform:** Netlify (CI/CD via GitHub)
+- **Target Path:** `https://github.com/boimthinks/laserindopalembang`
+- **Catatan & Metode:** Deploy via git commit & push origin main. JANGAN gunakan skill cpanel-domainesia!

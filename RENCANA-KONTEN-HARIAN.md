@@ -102,7 +102,7 @@ Setiap kali menjalankan tugas penulisan harian:
 ---
 
 ### Kluster D: Elemen Arsitektural & Ornamen Bangunan
-- [ ] **Hari 15:** `Railing Tangga dan Balkon Laser Cutting — Inspirasi Desain dan Ketebalan Plat`
+- [x] **Hari 15:** `Railing Tangga dan Balkon Laser Cutting — Inspirasi Desain dan Ketebalan Plat` (Terbit: 11 November 2026, Slug: `railing-tangga-balkon-laser-cutting-palembang`)
   - *Slug Rencana:* `railing-tangga-balkon-laser-cutting-palembang`
   - *Target Keyword:* jasa cutting plat untuk railing tangga, ornamen plat besi, railing balkon laser cut
   - *Fokus:* Standar keamanan railing anak tangga (tebal plat minimal 1.5mm, kerapatan motif), finishing cat powder coating tahan gores.
