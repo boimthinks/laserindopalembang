@@ -107,7 +107,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa cutting plat untuk railing tangga, ornamen plat besi, railing balkon laser cut
   - *Fokus:* Standar keamanan railing anak tangga (tebal plat minimal 1.5mm, kerapatan motif), finishing cat powder coating tahan gores.
 
-- [ ] **Hari 16:** `Secondary Skin Fasad Laser Cutting untuk Meredam Panas Gedung dan Ruko`
+- [x] **Hari 16:** `Secondary Skin Fasad Laser Cutting untuk Meredam Panas Gedung dan Ruko` (Terbit: 14 November 2026, Slug: `secondary-skin-fasad-laser-cutting-gedung-ruko`)
   - *Slug Rencana:* `secondary-skin-fasad-laser-cutting-gedung-ruko`
   - *Target Keyword:* secondary skin motif, panel fasad bangunan, laser cutting fasad Palembang
   - *Fokus:* Efisiensi pendinginan ruangan (turun 3-5°C), pereduksi sinar matahari langsung ke kaca ruko di Palembang, tampilan futuristik.
