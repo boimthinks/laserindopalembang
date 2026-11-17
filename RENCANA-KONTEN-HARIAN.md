@@ -112,7 +112,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* secondary skin motif, panel fasad bangunan, laser cutting fasad Palembang
   - *Fokus:* Efisiensi pendinginan ruangan (turun 3-5°C), pereduksi sinar matahari langsung ke kaca ruko di Palembang, tampilan futuristik.
 
-- [ ] **Hari 17:** `Ornamen Plat Perforasi Custom untuk Dekorasi Dinding dan Plafon Modern`
+- [x] **Hari 17:** `Ornamen Plat Perforasi Custom untuk Dekorasi Dinding dan Plafon Modern` (Terbit: 17 November 2026, Slug: `ornamen-plat-perforasi-custom-dinding-plafon`)
   - *Slug Rencana:* `ornamen-plat-perforasi-custom-dinding-plafon`
   - *Target Keyword:* plat perforasi motif custom, ornamen besi custom, panel dekoratif besi
   - *Fokus:* Pola lubang bergradasi (perforated sheet) vs pola artistik bebas untuk ceiling hotel, partisi lobi kantor, dan fasad modern.
