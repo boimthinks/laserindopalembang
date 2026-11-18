@@ -117,7 +117,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* plat perforasi motif custom, ornamen besi custom, panel dekoratif besi
   - *Fokus:* Pola lubang bergradasi (perforated sheet) vs pola artistik bebas untuk ceiling hotel, partisi lobi kantor, dan fasad modern.
 
-- [ ] **Hari 18:** `Pagar dan Partisi Motif Islami untuk Masjid dan Mushola di Palembang`
+- [x] **Hari 18:** `Pagar dan Partisi Motif Islami untuk Masjid dan Mushola di Palembang` (Terbit: 18 November 2026, Slug: `pagar-partisi-motif-islami-masjid-palembang`)
   - *Slug Rencana:* `pagar-partisi-motif-islami-masjid-palembang`
   - *Target Keyword:* cutting plat motif Islami, cutting motif kaligrafi laser cutting, jasa laser cutting partisi masjid
   - *Fokus:* Kaidah pembuatan sambungan huruf kaligrafi Arab agar kokoh saat dipotong laser, pemilihan plat galvanis anti karat untuk area ibadah.
