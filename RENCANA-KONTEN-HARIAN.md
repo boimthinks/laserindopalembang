@@ -122,7 +122,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* cutting plat motif Islami, cutting motif kaligrafi laser cutting, jasa laser cutting partisi masjid
   - *Fokus:* Kaidah pembuatan sambungan huruf kaligrafi Arab agar kokoh saat dipotong laser, pemilihan plat galvanis anti karat untuk area ibadah.
 
-- [ ] **Hari 19:** `Plat Nama Usaha dan Logo Perusahaan Berbahan Plat Besi Finishing Doff`
+- [x] **Hari 19:** `Plat Nama Usaha dan Logo Perusahaan Berbahan Plat Besi Finishing Doff`
   - *Slug Rencana:* `plat-nama-usaha-logo-besi-finishing-doff`
   - *Target Keyword:* jasa potong plat nama, plat nama custom, logo plat besi
   - *Fokus:* Gaya industrial rustic vs modern minimalis, kombinasi plat potong laser dengan lampu warm white backlight.
