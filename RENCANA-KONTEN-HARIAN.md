@@ -130,7 +130,7 @@ Setiap kali menjalankan tugas penulisan harian:
 ---
 
 ### Kluster E: Kemitraan B2B & Kompatibilitas File Desain
-- [ ] **Hari 20:** `Kemitraan Jasa Potong Plat Laser Cutting untuk Bengkel Las se-Palembang`
+- [x] **Hari 20:** `Kemitraan Jasa Potong Plat Laser Cutting untuk Bengkel Las se-Palembang` (Terbit: 24 November 2026, Slug: `kemitraan-jasa-potong-plat-bengkel-las-palembang`)
   - *Slug Rencana:* `kemitraan-jasa-potong-plat-bengkel-las-palembang`
   - *Target Keyword:* jasa cutting plat untuk bengkel las, jasa potong besi custom, cutting plat per lembar
   - *Fokus:* Sinergi B2B: bengkel las tidak perlu investasi mesin mahal, cukup subkontrak motif ke Laserindo Palembang untuk menambah portofolio pagar mewah.
