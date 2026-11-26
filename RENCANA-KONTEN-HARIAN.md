@@ -140,17 +140,15 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa cutting ACP untuk kontraktor reklame, jasa potong akrilik huruf timbul, jasa cutting akrilik partai besar
   - *Fokus:* Kecepatan produksi deadline ketat tender advertising, toleransi presisi tinggi, dan skema harga khusus rekanan bisnis.
 
-- [ ] **Hari 22:** `Format File Terbaik untuk Laser Cutting — Panduan Menyiapkan File DXF dan DWG`
-  - *Slug Rencana:* `format-file-laser-cutting-panduan-dxf-dwg`
-  - *Target Keyword:* jasa laser cutting file DXF, potong plat sesuai desain, jasa potong plat dari gambar kerja
-  - *Fokus:* Cara membersihkan garis ganda (*duplicate lines*), memastikan *closed vector*, satuan milimeter skala 1:1, dan kompatibilitas software CAM.
+- [x] **Hari 22:** DIGANTI. Topik file DXF, DWG, dan CorelDRAW sudah ditulis lengkap di sriwijayagrafika.com (`standar-format-file-dxf-laser-cutting`). Menulis topik sama di sini akan membuat dua situs sendiri berebut kueri yang sama.
+  - *Pengganti:* `Pagar Geser Motif Laser Cutting dan Rel yang Kuat` (`pagar-geser-motif-laser-cutting-rel-palembang`)
+  - *Target Keyword:* pagar geser laser cutting, sliding gate besi motif, harga pagar geser besi
 
-- [ ] **Hari 23:** `Cara Siapkan File CorelDRAW (CDR) untuk Potong Laser dan CNC Router`
-  - *Slug Rencana:* `siapkan-file-coreldraw-cdr-laser-cutting-cnc`
-  - *Target Keyword:* jasa laser cutting file CDR, jasa laser cutting akrilik file CorelDRAW, jasa CNC cutting file CorelDRAW
-  - *Fokus:* Convert to curves (Ctrl+Q), hairline outline, pembedaan warna layer (merah untuk potong tembus, hitam untuk grafir / ukir).
+- [x] **Hari 23:** DIGANTI karena alasan yang sama dengan Hari 22.
+  - *Pengganti:* `Teralis Jendela Minimalis Laser Cutting` (`teralis-jendela-minimalis-laser-cutting-palembang`)
+  - *Target Keyword:* teralis jendela minimalis, teralis laser cutting, teralis besi motif
 
-- [ ] **Hari 24:** `Bisa Potong Plat dari Gambar Foto Sketsa — Layanan Redraw Desain Laserindo`
+- [x] **Hari 24:** `Potong Plat dari Foto dan Sketsa via Redraw Vektor` (Draft: 28 November 2026, Slug: `potong-plat-dari-foto-sketsa-redraw-desain`)
   - *Slug Rencana:* `potong-plat-dari-foto-sketsa-redraw-desain`
   - *Target Keyword:* jasa laser cutting desain dari foto, jasa cutting plat gambar sendiri, cutting plat sesuai desain
   - *Fokus:* Solusi bagi customer atau desainer yang hanya membawa foto contoh dari Pinterest/Instagram; proses konversi foto ke file vector siap potong.
@@ -158,17 +156,15 @@ Setiap kali menjalankan tugas penulisan harian:
 ---
 
 ### Kluster F: Transaksi, Estimasi Biaya & Geo-Targeting Sumsel
-- [ ] **Hari 25:** `Biaya Pembuatan Pagar Laser Cutting Per Meter Persegi di Palembang 2026`
-  - *Slug Rencana:* `biaya-pembuatan-pagar-laser-cutting-per-meter-palembang`
+- [x] **Hari 25:** `Biaya Pagar Laser Cutting Terima Jadi Per Meter` (Draft: 27 November 2026, Slug: `biaya-pagar-laser-cutting-terima-jadi-per-meter-palembang`)
   - *Target Keyword:* harga laser cutting motif per meter, harga laser cutting plat besi, biaya jasa cutting plat custom
   - *Fokus:* Rincian komponen harga terima jadi (plat besi motif + rangka pipa hollow galvanis + engsel/kunci + cat epoxy/PU + ongkos pasang).
 
-- [ ] **Hari 26:** `Rincian Biaya Potong Bahan Sendiri vs Terima Jadi di Laserindo Palembang`
-  - *Slug Rencana:* `biaya-potong-bahan-sendiri-vs-terima-jadi-palembang`
-  - *Target Keyword:* harga cutting tanpa bahan, biaya minimum jasa laser cutting, biaya produksi laser cutting
-  - *Fokus:* Analisis perbandingan untung rugi antara opsi membawa bahan mentah sendiri vs mempercayakan seluruh fabrikasi kepada Laserindo.
+- [x] **Hari 26:** DIGANTI. Topik bahan sendiri sudah ditulis di artikel `jasa-laser-cutting-tanpa-bahan-bawa-plat-sendiri`.
+  - *Pengganti:* `Grafir Akrilik Laser untuk Plakat dan Signage` (`grafir-akrilik-laser-plakat-souvenir-palembang`)
+  - *Target Keyword:* jasa grafir akrilik, ukir akrilik laser, plakat akrilik Palembang
 
-- [ ] **Hari 27:** `Jasa Laser Cutting dan CNC Router Sukarami Palembang — Dekat Bandara SMB II`
+- [x] **Hari 27:** `Jasa Laser Cutting Sukarami Palembang Dekat Talang Jambe` (Draft: 29 November 2026, Slug: `jasa-laser-cutting-cnc-router-sukarami-palembang`)
   - *Slug Rencana:* `jasa-laser-cutting-cnc-router-sukarami-palembang`
   - *Target Keyword:* jasa laser cutting Sukarami, jasa laser cutting Palembang, workshop laser cutting Talang Jambe
   - *Fokus:* Aksesibilitas workshop di Talang Jambe Sukarami, kemudahan bongkar muat plat lembaran besar tanpa hambatan jalan kota.
@@ -188,7 +184,7 @@ Setiap kali menjalankan tugas penulisan harian:
   - *Target Keyword:* jasa cutting plat Muara Enim, jasa laser cutting Sumatera Selatan
   - *Fokus:* Proteksi kemasan packing kayu khusus untuk ekspedisi plat logam jarak jauh ke kawasan industri/pertambangan Muara Enim & Lahat.
 
-- [ ] **Hari 31:** `Laser Cutting Plat Nama dan Nomor Rumah Akrilik untuk Perumahan Baru Palembang`
+- [x] **Hari 31:** `Plat Nama dan Nomor Rumah Akrilik untuk Cluster Perumahan` (Draft: 30 November 2026, Slug: `plat-nama-nomor-rumah-akrilik-cluster-perumahan-palembang`)
   - *Slug Rencana:* `laser-cutting-plat-nama-nomor-rumah-perumahan-palembang`
   - *Target Keyword:* jasa cutting plat nomor rumah, jasa potong akrilik untuk nomor rumah, ornamen pagar custom
   - *Fokus:* Paket pemesanan massal untuk developer cluster perumahan baru di Seberang Ulu, Jakabaring, Alang-Alang Lebar, dan Gandus.

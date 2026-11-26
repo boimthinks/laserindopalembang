@@ -7,7 +7,7 @@ import { SITE } from '../config/site';
 import { services } from '../data/services';
 import { motifs } from '../data/motifs';
 import { waUrl, slugifyMotif, motifImagePath } from '../lib/utils';
-import { getCollection } from 'astro:content';
+import { getPublishedArticles } from '../lib/articles';
 
 function parseIndoDate(dateStr: string): number {
   const months: Record<string, string> = {
@@ -22,10 +22,7 @@ function parseIndoDate(dateStr: string): number {
   return new Date(`${year}-${month}-${day}`).getTime();
 }
 
-const blogPosts = await getCollection('blog');
-const latestPosts = blogPosts
-  .sort((a, b) => parseIndoDate(b.data.date) - parseIndoDate(a.data.date))
-  .slice(0, 6);
+const latestPosts = (await getPublishedArticles()).slice(0, 6);
 
 const motifImageMap: Record<string, string> = {
   'Geometris Minimalis': '/img/motif/pagar-geometris-minimalis.webp',

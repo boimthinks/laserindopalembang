@@ -5,12 +5,14 @@ import SidebarCTA from '../../components/SidebarCTA.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import BlogCard from '../../components/BlogCard.astro';
 import Schema from '../../components/Schema.astro';
-import { getCollection } from 'astro:content';
 import { renderBlogMarkdown } from '../../lib/renderBlogMarkdown';
 import { applyInternalLinks } from '../../lib/utils';
+import { getPublishedArticles } from '../../lib/articles';
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
+  // Hanya artikel published yang dibangun. Artikel draft tidak menghasilkan
+  // halaman sama sekali, jadi tidak ikut terdeploy.
+  const blogEntries = await getPublishedArticles();
   return blogEntries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
@@ -24,10 +26,9 @@ const { code: renderedBody, metadata } = await renderBlogMarkdown(processedBody)
 const headings = metadata.headings;
 
 // Related articles logic: same topic only, exclude current
-const allEntries = await getCollection('blog');
+const allEntries = await getPublishedArticles();
 const relatedPosts = allEntries
   .filter((p) => p.id !== entry.id && p.data.topik === entry.data.topik)
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
 ---
 

@@ -98,6 +98,25 @@ Single source of truth for all contact, social, address & brand data.
 | `public/hero_laserindo_palembang.webp` | Homepage hero background / default OG image |
 | `public/favicon.svg` | SVG favicon |
 
+### Placeholder prompt gambar (wajib)
+
+Semua prompt gambar untuk project ini memakai placeholder, bukan deskripsi
+bebas. Karakter `@srifika` dan gambar referensi workshop sudah tersimpan di
+akun Google Flow, jadi prompt tidak boleh mendeskripsikan ulang identitas
+karakter maupun suasana workshop.
+
+| Placeholder | Diganti menjadi |
+| --- | --- |
+| `##srifika##` | `@srifika` |
+| `##workshop##` | gambar referensi workshop Sriwijaya Grafika |
+
+Contoh: `Photorealistic photo of ##srifika## inspecting a laser cut steel gate
+panel in ##workshop##, Palembang, holding a tape measure`.
+
+Placeholder dibiarkan apa adanya di frontmatter dan di
+`_workflow/inbox-gambar/ANTREAN.md`. Periksa dengan
+`python3 _workflow/gambar.py cek --site laserindopalembang.com`.
+
 ### Motif Image Naming
 Pattern: `{serviceSlug}-{motif-slug}.webp` where `motif-slug` is:
 - lowercase, `&` → `dan`, remove special chars, spaces → hyphens
