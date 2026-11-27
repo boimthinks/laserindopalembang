@@ -2,14 +2,14 @@
 title: "Potong Plat dari Foto Sketsa"
 titleSeo: "Jasa Potong Plat dari Foto dan Sketsa via Redraw Vektor"
 excerpt: "Punya contoh pagar dari Instagram atau sketsa tangan? Ini cara mengubah foto dan sketsa jadi file vektor siap potong laser, lengkap biayanya."
-date: "28 November 2026"
+date: "27 November 2026"
 topik: "panduan"
 imgurl: "/img/blog/potong-plat-dari-foto-sketsa-redraw-desain.webp"
 imgalt: "Desainer menelusuri foto referensi pagar menjadi garis vektor di layar komputer untuk dipotong laser"
 imgPrompt: "Photorealistic photo of ##srifika## sketching a gate design on paper next to a laptop screen showing vector tracing software, photo reference of an Instagram gate pinned on the wall, in ##workshop##, Palembang, warm desk lamp, documentary photography"
 pengantar: "Hampir setiap minggu ada pelanggan yang membuka galeri HP lalu menunjukkan foto pagar dari Instagram. Pertanyaannya selalu sama, bisakah dibuat seperti ini. Jawabannya bisa, tetapi bukan dengan mengirim foto itu langsung ke mesin. Ada tahap yang harus dilalui lebih dulu, yaitu mengubah gambar menjadi garis vektor. Artikel ini menjelaskan tahap itu beserta biaya dan batasannya."
 kesimpulan: "Foto dan sketsa bukan file potong. Keduanya harus melewati redraw menjadi garis vektor tertutup dengan skala satu banding satu. Untuk pola sederhana, tahap ini cepat dan murah. Untuk pola rumit atau foto miring, biayanya naik karena butuh koreksi proporsi. Kalau Anda punya referensi yang ingin diwujudkan, kirim fotonya ke WhatsApp 0852-1511-1125 beserta ukuran bidang yang diinginkan. Kami sampaikan apakah pola itu bisa dipotong apa adanya atau perlu disederhanakan."
-published: false
+published: true
 faq:
   - question: "Bisakah mengirim foto pagar dari Instagram untuk dipotong apa adanya?"
     answer: "Tidak bisa dipotong apa adanya. Foto adalah kumpulan piksel, sedangkan mesin laser membaca garis vektor. Yang bisa dilakukan adalah menelusuri ulang garis motif pada foto tersebut menjadi jalur potong tertutup. Proses ini disebut redraw, dan hasil akhirnya bergantung pada seberapa jelas foto yang dikirim serta seberapa tegak sudut pengambilannya."
