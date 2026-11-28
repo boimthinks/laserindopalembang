@@ -2,14 +2,14 @@
 title: "Jasa Laser Cutting Sukarami"
 titleSeo: "Jasa Laser Cutting Sukarami Palembang Dekat Talang Jambe"
 excerpt: "Workshop laser cutting di Talang Jambe, Sukarami, Palembang. Ini pertimbangan memilih workshop dekat, dari bongkar muat plat sampai biaya kirim."
-date: "29 November 2026"
+date: "28 November 2026"
 topik: "tips"
 imgurl: "/img/blog/jasa-laser-cutting-cnc-router-sukarami-palembang.webp"
 imgalt: "Workshop laser cutting di Talang Jambe Sukarami Palembang dengan plat besi lembaran dan mesin fiber laser"
 imgPrompt: "Photorealistic photo of ##srifika## opening the workshop gate for a pickup truck carrying steel sheets on a quiet Palembang street in Sukarami, in ##workshop##, morning light, documentary photography"
 pengantar: "Bagi pelanggan di Palembang, jarak workshop jarang masuk pertimbangan awal. Yang dilihat biasanya harga dan contoh hasil. Padahal untuk pekerjaan plat, jarak menentukan tiga hal yang langsung terasa di biaya dan jadwal, yaitu cara mengangkut lembaran, kecepatan revisi, dan biaya kirim panel jadi. Artikel ini menjelaskan mengapa workshop di Talang Jambe, Sukarami, punya keunggulan praktis untuk pelanggan di sisi utara Palembang."
 kesimpulan: "Workshop yang dekat bukan soal gengsi, melainkan soal biaya angkut dan kecepatan revisi. Lembaran plat 122 x 244 cm tidak bisa diangkut mobil kecil, dan panel pagar jadi mudah tergores bila berpindah kendaraan berkali-kali. Workshop kami berada di Talang Jambe, Sukarami, dengan akses jalan yang cukup lebar untuk kendaraan pengangkut. Kalau Anda ingin melihat langsung bahan dan mesinnya, silakan datang. Koordinasi kunjungan lewat WhatsApp 0852-1511-1125."
-published: false
+published: true
 faq:
   - question: "Di mana lokasi workshop Laserindo Palembang?"
     answer: "Workshop kami berada di Jl. AMD Jl. Pertanian No.105, RT.029/RW.005, Talang Jambe, Kecamatan Sukarami, Kota Palembang, Sumatera Selatan 30155. Lokasinya di sisi utara Palembang, dekat jalur menuju bandara SMB II. Kunjungan sebaiknya dijadwalkan lebih dulu lewat WhatsApp supaya ada tim yang mendampingi dan mesin bisa ditunjukkan saat beroperasi."
